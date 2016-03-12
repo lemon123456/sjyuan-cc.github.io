@@ -680,7 +680,8 @@ dd {
 
 .pageTitle {
   margin: 2rem auto 1em;
-  text-align: center
+  text-align: center;
+  font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .content {
@@ -1108,7 +1109,7 @@ footer {
   #home .pageTitle {
     margin: 2rem auto 1em;
     font-weight: 600;
-    font-family: "Xingkai SC";
+    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
   }
 
   .js {
