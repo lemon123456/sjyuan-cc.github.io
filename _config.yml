@@ -1,0 +1,32 @@
+title: CLEAN CODER
+description: 袁慎建的博客
+
+url: http://brianmaierjr.github.com/long-haul
+baseurl: ""
+paginate_path: "/page:num/"
+permalink: /:title/
+
+markdown: kramdown
+#highlighter: rouge
+paginate: 10
+
+sass:
+  style: compressed
+
+navigation:
+ - title: Home
+   url: /
+ - title: About
+   url: /about
+
+social:
+   github: brianmaierjr
+   twitter: brianmaierjr
+   facebook: brianmaierjr
+   email: sjyuan@thoughtworks.com
+   github_username: yuanshenjian
+
+gems:
+ - jekyll-paginate
+
+google_analytics: "UA-58263416-1"

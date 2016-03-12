@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<div class="content main">
+    <div class="container">
+        {{ content }}
+    </div>
+</div>
+
+<div id="back-to-top" data-toggle="tooltip" class="back-to-top" data-placement="left" title="回到顶部">
+    <a href="javascript:void(0);">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+    </a>
+</div>
+{% include footer.html %}
+</body>
+
+
+</html>
+
+<script>
+    var duoshuoQuery = {short_name: "cleancoder"};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+
+</script>
+
+<script>
+    function addBlankTargetForLinks() {
+        $('a[href^="http"]').each(function () {
+            $(this).attr('target', '_blank');
+        });
+    }
+    $(document).bind('DOMNodeInserted', function (event) {
+        addBlankTargetForLinks();
+    });
+</script>
+
