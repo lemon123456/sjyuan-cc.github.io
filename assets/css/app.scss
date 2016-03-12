@@ -531,8 +531,6 @@ h4, .h4 {
   line-height: 1.11111111
 }
 
-
-
 .clearfix {
   zoom: 1
 }
@@ -1004,14 +1002,31 @@ footer .point {
 /**
  * Icons
  */
-.icon svg {
+.icon-bottom svg {
+  width: 20px;
+  height: 20px;
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
+  fill: #000;
+  color: #fff;
+}
+
+.icon-top svg {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
+
+  .icon-top svg {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    fill: gray;
+    color: white;
+    position: fixed;
+    top: 0;
+    border: 0;
+    right: 0;
+  }
 
   .header {
     background: white url("../img/touring.jpg") center center;
@@ -1019,6 +1034,10 @@ footer .point {
     color: white;
     padding: 0;
     height: 3em
+  }
+
+  .header .menu-label-github {
+    display: none;
   }
 
   .navbar-inverse {
@@ -1085,7 +1104,8 @@ footer .point {
 
   .header nav {
     float: right;
-    clear: left
+    clear: left;
+    margin-right: 20px;
   }
 
   .header nav ul {
