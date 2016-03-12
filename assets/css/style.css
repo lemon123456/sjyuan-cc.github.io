@@ -700,6 +700,11 @@ a:hover {
     background-color: white;
 }
 
+.navbar-inverse .navbar-nav > li > a:active {
+    color: black;
+    background-color: wheat;
+}
+
 .nav-collapse {
     z-index: 1
 }
