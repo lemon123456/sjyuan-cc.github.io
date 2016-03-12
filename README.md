@@ -11,7 +11,7 @@
 * `RubyGems`
 * `Python 2.7` (for Jekyll 2 and earlier)
 
-### Setup evn
+### Setup environment
 * `NodeJS`, [Click here to install](https://nodejs.org/en/download/) 
 * `Ruby`, [Click here to install](https://www.ruby-lang.org/en/downloads/)
 * `Python`[Click here to install](https://www.python.org/downloads/)
