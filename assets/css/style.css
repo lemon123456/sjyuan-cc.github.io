@@ -1117,6 +1117,11 @@ dd {
         border-color: transparent;
     }
 
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: wheat;
+        background-color: transparent;
+    }
+
     .header .logo-small {
         display: none;
     }
