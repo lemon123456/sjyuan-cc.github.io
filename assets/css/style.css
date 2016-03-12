@@ -794,7 +794,6 @@ dd {
     background-image: none;
     color: white;
     padding: 0;
-    height: 3em
 }
 
 .header .logo-large {
@@ -802,12 +801,11 @@ dd {
 }
 
 .header .logo-small {
-    padding-top: 10 px¬;
+    font-weight: 600;
 }
 
 .header .logo-small a {
     color: white;
-    padding-top: 10px;
 }
 
 .header .container {
