@@ -26,5 +26,3 @@ social:
 gems:
  - jekyll-paginate
  - jekyll-sass-converter
-
-google_analytics: "UA-58263416-1"

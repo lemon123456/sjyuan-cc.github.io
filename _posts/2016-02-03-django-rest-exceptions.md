@@ -1,7 +1,7 @@
 ---
 layout: post
 
-date: 2016-03-06
+date: 2016-02-03
 title: "Django REST 异常处理"
 time: "10:25"
 category: "DJANGO-REST"

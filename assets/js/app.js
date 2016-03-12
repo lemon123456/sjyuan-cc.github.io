@@ -1,7 +1,7 @@
-// A $( document ).ready() block.
 $( document ).ready(function() {
     backToTop();
 });
+
 
 function backToTop() {
     $(window).scroll(function () {

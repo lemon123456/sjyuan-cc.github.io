@@ -1,7 +1,7 @@
 ---
 layout: post
 
-date: 2016-03-08
+date: 2016-03-02
 title: "Django 数据库事务"
 time: "23:01"
 category: "DJANGO"
