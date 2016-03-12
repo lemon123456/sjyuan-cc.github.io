@@ -694,7 +694,7 @@ dd {
 
   .logo-large {
     display: none;
-    font-family: serif
+    font-family: serif;
   }
 
   .logo-small {
@@ -1002,6 +1002,9 @@ footer {
         display: block;
         color: wheat;
       }
+      span{
+        font-size: 32px;
+      }
     }
     .container {
       position: relative;
@@ -1177,6 +1180,9 @@ footer {
       position: fixed;
       font-size: 35px;
       font-weight: 800;
+      span{
+        font-size: 37px;
+      }
     }
   }
 }
