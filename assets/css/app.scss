@@ -694,10 +694,12 @@ dd {
 
   .logo-large {
     display: none;
+    font-family: serif
   }
 
   .logo-small {
     font-weight: 600;
+    font-family: serif;
     a {
       color: white;
     }
@@ -1174,7 +1176,7 @@ footer {
       margin-left: 15%;
       position: fixed;
       font-size: 35px;
-      font-weight: 700;
+      font-weight: 800;
     }
   }
 }
