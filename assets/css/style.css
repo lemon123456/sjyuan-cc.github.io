@@ -695,6 +695,11 @@ a:hover {
     color: white;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: black;
+    background-color: white;
+}
+
 .nav-collapse {
     z-index: 1
 }
@@ -1097,8 +1102,6 @@ dd {
     background-image: url("../img/touring.jpg");
 }
 
-
-
 @media only screen and (min-width: 768px) {
 
     .header {
@@ -1108,6 +1111,7 @@ dd {
         padding: 0;
         height: 3em
     }
+
     .navbar-inverse {
         background: transparent none;
         border-color: transparent;
