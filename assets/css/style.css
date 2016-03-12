@@ -657,12 +657,12 @@ body p, body ul {
 }
 
 ::-moz-selection {
-    background: #2e8b57;
+    background: #0091C7;
     color: white
 }
 
 ::selection {
-    background: #2e8b57;
+    background: #0091C7;
     color: white
 }
 
@@ -747,7 +747,7 @@ a:hover {
     float: right;
     line-height: 2em;
     margin-top: .5em;
-    background-color: #2e8b57;
+    background-color: #0091C7;
     border-radius: 4px;
     padding: 0 .5em;
     color: white;
@@ -843,7 +843,8 @@ dd {
 .post .postTitle {
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 /*.post blockquote {*/
@@ -909,7 +910,7 @@ dd {
 }
 
 .post .dropcap {
-    color: #2e8b57;
+    color: #0091C7;
     margin-right: .45rem
 }
 
@@ -1366,7 +1367,7 @@ dd {
     height: 60px;
     background-color: #bbb;
     border-radius: 7px;
-    opacity: 0.8;
+    opacity: 0.5;
     display: none;
     z-index: 888;
 }
