@@ -171,10 +171,8 @@ HEADER STYLING
 ***************/
 
 .header {
-  background-color: $background-color;
-  background-image: url('../img/touring.jpg');
   background-size: cover;
-  background-position: center center;
+  background: $background-color url('../../img/touring.jpg') center center;
   color: white;
   padding: 0;
   height: 3em;
@@ -321,9 +319,7 @@ POST NAV STYLING
       transform: translateY(-50%);
       left: 0;
       width: 100%;
-      .
       height: auto
-    ;
     }
 
     span {
