@@ -694,12 +694,13 @@ dd {
 
   .logo-large {
     display: none;
-    font-family: serif;
+    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
   }
 
   .logo-small {
     font-weight: 600;
     font-family: serif;
+    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
     a {
       color: white;
     }
@@ -730,6 +731,9 @@ dd {
       }
     }
   }
+  ul{
+    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
+  }
 }
 
 .post {
@@ -739,7 +743,7 @@ dd {
     margin-bottom: 1rem;
     font-weight: 500;
   }
-  .meta{
+  .meta {
     color: gray;
     text-align: center;
   }
@@ -939,7 +943,7 @@ footer {
   display: inline-block;
   fill: #000;
   color: #fff;
-  padding-top:3px;
+  padding-top: 3px;
 }
 
 .icon-top svg {
@@ -1002,7 +1006,7 @@ footer {
         display: block;
         color: wheat;
       }
-      span{
+      span {
         font-size: 32px;
       }
     }
@@ -1104,6 +1108,7 @@ footer {
   #home .pageTitle {
     margin: 2rem auto 1em;
     font-weight: 600;
+    font-family: "Xingkai SC";
   }
 
   .js {
@@ -1174,13 +1179,13 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  .header{
+  .header {
     .logo-large {
       margin-left: 15%;
       position: fixed;
       font-size: 35px;
       font-weight: 800;
-      span{
+      span {
         font-size: 37px;
       }
     }

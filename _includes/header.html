@@ -21,7 +21,7 @@
 
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="{{ '/' | prepend: site.baseurl }}">HOME</a>
+                        <a href="{{ '/' | prepend: site.baseurl }}" title="Home">HOME</a>
                     </li>
                     {% for p in site.pages %}
                     {% if p.menu_label %}
@@ -30,12 +30,12 @@
                         {% else %}
                     <li>
                         {% endif %}
-                        <a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu_label }}</a>
+                        <a href="{{ p.url | prepend: site.baseurl }}" title="{{ p.menu_label }}">{{ p.menu_label }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}
                     <li class="menu-label-github">
-                        <a href="https://github.com/{{ site.social.github }}">GITHUB</a>
+                        <a href="https://github.com/{{ site.social.github }}" title="GitHub">GITHUB</a>
                     </li>
                 </ul>
             </nav>
