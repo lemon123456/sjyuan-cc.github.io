@@ -2,7 +2,7 @@ logo: 程序•袁
 title: CLEAN CODER
 description: 袁慎建的博客
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://cleancoder.club
 baseurl: ""
 paginate_path: "/page:num/"
 permalink: /:title/
@@ -20,11 +20,8 @@ navigation:
    url: /about
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
+   github: yuanshenjian
    email: sjyuan@thoughtworks.com
-   github_username: yuanshenjian
 
 gems:
  - jekyll-paginate

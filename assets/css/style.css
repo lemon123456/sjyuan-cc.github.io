@@ -1121,7 +1121,7 @@ dd {
     .header .logo-large {
         margin-left: 5%;
         position: fixed;
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 600;
     }
 
@@ -1240,7 +1240,8 @@ dd {
     }
 
     #home .pageTitle {
-        margin: 2rem auto 1em
+        margin: 2rem auto 1em;
+        font-weight: 600;
     }
 
     .js .nav-collapse {
@@ -1349,7 +1350,7 @@ dd {
     .header .logo-large {
         margin-left: 15%;
         position: fixed;
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 700;
     }
 }
