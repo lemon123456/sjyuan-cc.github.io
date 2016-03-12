@@ -1,3 +1,4 @@
+logo: 程序•袁
 title: CLEAN CODER
 description: 袁慎建的博客
 
@@ -13,10 +14,9 @@ paginate: 10
 sass:
   style: compressed
 
+
 navigation:
- - title: Home
-   url: /
- - title: About
+ - title: ABOUT
    url: /about
 
 social:

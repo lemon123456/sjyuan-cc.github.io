@@ -1,5 +1,6 @@
 ---
 layout: page
+menu_label: ABOUT
 title: 关于我
 permalink: /about
 icon: glyphicon-heart
@@ -29,13 +30,12 @@ icon: glyphicon-heart
 ---
 
 
-### 联系
+### 联系我
 
-* 邮箱：[sjyuan@thoughtworks.com](mailto:{{ site.email }})
-* 微信：ysjian_pingcx
-* 领英：[sjyuan.linkedin](https://www.linkedin.com/in/shenjian-yuan-40ab31104)
-* 知乎：[sjyuan.zhihu](https://www.zhihu.com/people/sjyuan)
-* 豆瓣：[sjyuan.douban](http://www.douban.com/people/142814172/)
+[邮箱](mailto:{{ site.email }}) \| 
+[领英](https://www.linkedin.com/in/shenjian-yuan-40ab31104) \| 
+[知乎](https://www.zhihu.com/people/sjyuan) \| 
+[豆瓣](http://www.douban.com/people/142814172/)
 
 ---
 

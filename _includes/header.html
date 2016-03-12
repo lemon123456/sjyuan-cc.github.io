@@ -10,22 +10,28 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <div class="">
-                    <a class="nav-brand" href="{{ site.baseurl }}/">程序•袁</a>
-                    CLEAN CODER
-                </div>
+                <div class="logo-small">
+                    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.logo }}
+                        <span class="width-10"></span>
+                        <span class="">{{ site.title }}</span></a>
 
+                </div>
             </div>
+
             <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav">
-                    {% for p in site.navigation %}
-                    {% if p.title %}
+                    <li>
+                        <a href="{{ '/' | prepend: site.baseurl }}">HOME</a>
+                    </li>
+                    {% for p in site.pages %}
+                    {% if p.menu_label %}
                     {% if p.url == page.url %}
                     <li class="current">
                         {% else %}
                     <li>
                         {% endif %}
-                        <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+                        <a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu_label }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}
@@ -34,4 +40,8 @@
             </nav>
         </div>
     </nav>
+    <div class="logo-large">
+        <a class="" href="{{ site.baseurl }}/">{{ site.logo }}</a>
+        <span class="">{{ site.title }}</span>
+    </div>
 </div>

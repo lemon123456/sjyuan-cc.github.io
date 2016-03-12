@@ -131,7 +131,7 @@ Couple<? extends Employee>
 ```java
 public static void printWife(Couple<Employee> couple) {
 	Employee wife = couple.getWife();
-		System. out.println(wife);
+	System. out.println(wife);
 }
 ```
 `code08`中的方法参数只能将`Employee`组成的夫妇传入，貌似经理的如`Couple<Manager>`就不能了，这有点不合适了，搞得好像`Manager`还不能结婚了。所以要想让`Manager`也能结婚并打印其wife，需要更改我们的设计了：
@@ -141,7 +141,7 @@ public static void printWife(Couple<Employee> couple) {
 ```java
 public static void printWife(Couple<? extends Employee> couple) {
 	Employee wife = couple.getWife();
-		System.out.println(wife);
+	System.out.println(wife);
 }
 ```
 ---
