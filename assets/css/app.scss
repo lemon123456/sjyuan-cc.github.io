@@ -732,7 +732,7 @@ dd {
       }
     }
   }
-  ul{
+  ul {
     font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
   }
 }
@@ -935,6 +935,9 @@ footer {
   }
   .point {
     margin: 0 8px;
+  }
+  .rss, .jekyll, .github, .mail {
+    display: none;
   }
 }
 
@@ -1175,6 +1178,12 @@ footer {
     .next {
       text-align: right;
       float: right
+    }
+  }
+
+  footer {
+    .rss, .jekyll, .github, .mail {
+      display: inline;
     }
   }
 }
