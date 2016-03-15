@@ -695,13 +695,13 @@ dd {
 
   .logo-large {
     display: none;
-    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:  serif, "Open Sans", Helvetica, Arial, sans-serif;
   }
 
   .logo-small {
     font-weight: 600;
     font-family: serif;
-    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: serif, "Open Sans", Helvetica, Arial, sans-serif;
     a {
       color: white;
     }
@@ -733,7 +733,8 @@ dd {
     }
   }
   ul {
-    font-family: "Xingkai SC", serif, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: serif, "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
   }
 }
 
@@ -910,7 +911,7 @@ footer {
   min-height: 50px;
   line-height: 50px;
   margin-top: 80px;
-  background: url("../img/touring.jpg") left top;
+  background: #000;
   background-size: cover;
   color: #aaa;
   text-align: center;
@@ -968,8 +969,8 @@ footer {
   }
 
   .header {
-    background: white url("../img/touring.jpg") center center;
-    background-size: cover;
+    background: white url("../img/main-bg.png");
+    background-size: auto;
     color: white;
     padding: 0;
     height: 3em;
@@ -1184,6 +1185,13 @@ footer {
   footer {
     .rss, .jekyll, .github, .mail {
       display: inline;
+    }
+  }
+
+  .category-container{
+    .category{
+      border: 2px solid greenyellow;
+      border-radius: 7px;
     }
   }
 }

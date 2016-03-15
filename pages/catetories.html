@@ -1,0 +1,16 @@
+---
+layout: page
+menu_label:
+title: 分类
+permalink: /categories/
+icon: glyphicon-saved
+---
+
+<div class="category-container">
+    {% for category in site.categories order:ascending %}
+    <span class="category">
+        {{ category | first }}
+    </span>
+    <span class="width-10"></span>
+    {% endfor %}
+</div>

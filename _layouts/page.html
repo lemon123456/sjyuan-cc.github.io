@@ -11,8 +11,4 @@ layout: default
         {{ content }}
     </article>
 </div>
-
-
-<div class="post-area post-detail comment">
-    <div class="ds-thread" data-thread-key="{{ page.permalink }}" data-title="{{ page.title }}" data-url="yuanshenjian.github.io{{ page.url }}"></div>
-</div>
+{% include ds-comment.html%}

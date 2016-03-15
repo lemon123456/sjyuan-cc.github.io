@@ -2,7 +2,7 @@
 layout: page
 menu_label: ABOUT
 title: 关于我
-permalink: /about
+permalink: /about/
 icon: glyphicon-heart
 ---
 
