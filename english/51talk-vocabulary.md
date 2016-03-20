@@ -18,17 +18,14 @@ icon: glyphicon-saved
 ---
 
 #### sibling ['sɪblɪŋ]
-
 >释义：> a sister or brother  
 >例句：> My siblings will arrive tonight.
 
 #### spoiled [spɔɪlt]
-
 >释义：> (of a ​person) ​treated very well or too well.  
 >例句：> You’re ​acting like a spoiled ​brat.
-I
-#### babysit ['bebɪsɪt]
 
+#### babysit ['bebɪsɪt]
 >释义：> to look after children while their parents are not at home  
 >例句：> She needs to babysit her sister this afternoon.
 
