@@ -17,15 +17,19 @@ icon: glyphicon-saved
 
 ---
 
+
 #### sibling ['sɪblɪŋ]
+
 >释义：> a sister or brother  
 >例句：> My siblings will arrive tonight.
 
 #### spoiled [spɔɪlt]
+
 >释义：> (of a ​person) ​treated very well or too well.  
 >例句：> You’re ​acting like a spoiled ​brat.
-
+I
 #### babysit ['bebɪsɪt]
+
 >释义：> to look after children while their parents are not at home  
 >例句：> She needs to babysit her sister this afternoon.
 
@@ -55,6 +59,16 @@ icon: glyphicon-saved
 #### breeze
 >释义：> a gentle wind.
 >例句：> I like enjoying the sea breeze on beach.
+
+#### jumble [/ˈdʒʌmbl/]
+>释义：- a confused mixture or group of things.  
+>例句：>Her handbag is a jumble of pens, make-up, and keys.
+
+#### landscape
+>释义：- the appearance of an area of land, especially in the countryside.  
+>例句：>The cathedral dominates the landscape for miles around.
+
+
 
 
 
