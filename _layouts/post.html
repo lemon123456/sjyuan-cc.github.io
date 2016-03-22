@@ -11,10 +11,20 @@ layout: default
         {{ page.date | date: "%Y" }}
         <span class="width-10"></span>
         {% if page.category %} <span>{{ page.category }}</span>{% endif %}
+    </p>
 
-    <div>{{ content }}</div>
+    {% if page.type == 'translation' %}
+    <blockquote>
+        声明：本文属于原英文翻译，查看原文 <a href="{{ page.source }}">请点我</a>.
+    </blockquote>
+    {% endif %}
+
+    <div>
+        {{ content }}
+    </div>
 
     {% include bd-share.html%}
+
 
     <!-- POST NAVIGATION -->
     <div class="postNav clearfix">

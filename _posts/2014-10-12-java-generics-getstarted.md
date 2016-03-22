@@ -1,12 +1,15 @@
 ---
 layout: post
 
-date: 2014-10-12
 title: "JAVA泛型•认识泛型"
+date: 2014-10-12
 time: "16:32"
 category: "JAVASE"
+
 author: "袁慎建"
+publish: true
 type: "original"
+
 ---
 
 * content

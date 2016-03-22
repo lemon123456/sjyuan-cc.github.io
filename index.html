@@ -7,6 +7,7 @@ title: CLEAN CODER
 
     <ul class="posts noList">
         {% for post in paginator.posts %}
+        {% if post.publish %}
         <li>
         <span class="date">
             {{ post.date | date: "%B " }}
@@ -21,6 +22,7 @@ title: CLEAN CODER
                     {{ post.content | strip_html | strip_newlines | truncate: 300 }}{% endif%}
             </p>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 

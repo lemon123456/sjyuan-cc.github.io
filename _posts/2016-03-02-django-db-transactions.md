@@ -1,19 +1,18 @@
 ---
 layout: post
 
-date: 2016-03-02
 title: "Django 数据库事务"
+date: 2016-03-02
 time: "23:01"
 category: "DJANGO"
+
 author: "袁慎建"
+publish: true
 type: "translation"
+source: "https://docs.djangoproject.com/en/dev/topics/db/transactions/"
 
 ---
 
-
->声明：本文属于原英文翻译, 查看原文[请点我](https://docs.djangoproject.com/en/dev/topics/db/transactions/)
-
----
 
 * content
 {:toc}

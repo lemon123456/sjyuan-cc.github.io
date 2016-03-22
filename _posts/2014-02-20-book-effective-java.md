@@ -1,12 +1,15 @@
 ---
 layout: post
 
-date: 2014-02-20
 title: "Effective Java中文版（第2版）"
+date: 2014-02-20
 time: "12:49"
 category: "图书分享"
+
 author: "袁慎建"
+publish: true
 type: "book"
+
 ---
 
 * content

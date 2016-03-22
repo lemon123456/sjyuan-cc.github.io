@@ -1,11 +1,13 @@
 ---
 layout: post
 
-date: 2014-10-14
 title: "JAVA泛型•虚拟机执行泛型代码"
+date: 2014-10-14
 time: "09:46"
 category: "JAVASE"
+
 author: "袁慎建"
+publish: true
 type: "original"
 ---
 

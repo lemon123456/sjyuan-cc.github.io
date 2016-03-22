@@ -14,7 +14,7 @@
 
 ---
 
-### Use Ruby	
+### Use Ruby	，
 * `$ ruby -v`
 * `$ irb`
 

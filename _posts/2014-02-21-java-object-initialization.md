@@ -1,12 +1,15 @@
 ---
 layout: post
 
-date: 2014-02-21
 title: "JAVA对象初始化（阿里巴巴面试题）"
+date: 2014-02-21
 time: "10:12"
 category: "JAVASE"
+
 author: "袁慎建"
+publish: true
 type: "original"
+
 ---
 
 * content

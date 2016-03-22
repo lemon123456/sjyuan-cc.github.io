@@ -1,12 +1,15 @@
 ---
 layout: post
 
-date: 2014-10-15
 title: "JAVA泛型•约束和局限性"
+date: 2014-10-15
 time: "09:42"
 category: "JAVASE"
+
 author: "袁慎建"
+publish: true
 type: "original"
+
 ---
 
 * content

@@ -1,23 +1,21 @@
 ---
 layout: post
 
-date: 2016-02-03
 title: "Django REST 异常处理"
+date: 2016-02-03
 time: "10:25"
 category: "DJANGO-REST"
+
 author: "袁慎建"
+publish: true
 type: "translation"
+source: "http://www.django-rest-framework.org/api-guide/exceptions/"
 
 ---
 
-
->声明：本文属于原英文翻译, 查看原文[请点我](http://www.django-rest-framework.org/api-guide/exceptions/)
-
----
 
 * content
 {:toc}
-
 
 
 ---

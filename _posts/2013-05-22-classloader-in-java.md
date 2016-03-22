@@ -1,12 +1,15 @@
 ---
 layout: post
 
-date: 2013-05-25
 title: "JAVA类加载器"
+date: 2013-05-25
 time: "17:35"
 category: "JAVASE"
+
 author: "袁慎建"
+publish: true
 type: "original"
+
 ---
 
 * content

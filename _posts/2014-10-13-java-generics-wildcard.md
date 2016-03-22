@@ -1,12 +1,15 @@
 ---
 layout: post
 
-date: 2014-10-13
 title: "JAVA泛型•通配符限定"
+date: 2014-10-13
 time: "09:42"
 category: "JAVASE"
+
 author: "袁慎建"
+publish: true
 type: "original"
+
 ---
 
 * content
