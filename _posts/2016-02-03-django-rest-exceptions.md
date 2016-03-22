@@ -7,11 +7,20 @@ time: "10:25"
 category: "DJANGO-REST"
 author: "袁慎建"
 type: "translation"
+
+---
+
+
+>声明：本文属于原英文翻译, 查看原文[请点我](http://www.django-rest-framework.org/api-guide/exceptions/)
+
 ---
 
 * content
 {:toc}
 
+
+
+---
 
 ## 异常
 异常处理...允许错误处理在程序结构的中心或者高层级的地方被清晰有条理的组织起来。 

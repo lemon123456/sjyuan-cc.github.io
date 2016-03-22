@@ -37,6 +37,9 @@ I found out that learning English is interesting.(✅)
 7. It must be to download.(❌)  
 It must be downloaded.(✅)
 
+8. I prefer to choose the beach.(❌)  
+I prefer the beach.(✅)
+
 
 
 

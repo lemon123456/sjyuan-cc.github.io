@@ -7,11 +7,18 @@ time: "23:01"
 category: "DJANGO"
 author: "袁慎建"
 type: "translation"
+
+---
+
+
+>声明：本文属于原英文翻译, 查看原文[请点我](https://docs.djangoproject.com/en/dev/topics/db/transactions/)
+
 ---
 
 * content
 {:toc}
 
+---
 
 ### 管理数据库事务
 Django框架提供了好几种方式来控制和管理数据库事务。（以下`Django框架`会简化为`Django`，读者可自行脑补`框架`两字）
@@ -294,8 +301,6 @@ Django中的**TestCase**类将每个测试包裹在一个事务中，并且在�
 尽可能的选择使用atomic()。它更契合每个数据的特性，并且阻止了非法操作。
 底层APIs仅仅在你实现了自己的事务管理时有用。
 ```
-详细内容参见原文链接。
 
-
-[原文链接](https://docs.djangoproject.com/en/dev/topics/db/transactions/)
-[原文链接](https://docs.djangoproject.com/en/1.9/topics/db/transactions/)
+[原文链接1](https://docs.djangoproject.com/en/dev/topics/db/transactions/)  \|
+[原文链接2](https://docs.djangoproject.com/en/1.9/topics/db/transactions/)
