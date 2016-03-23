@@ -68,9 +68,17 @@ I
 >释义：- the appearance of an area of land, especially in the countryside.  
 >例句：>The cathedral dominates the landscape for miles around.
 
+#### arrest
+>释义：-If the police arrest someone, they take them away to ask them about a crime that they might have committed.  
+>例句：>He was arrested for possession of illegal drugs.
 
+#### newsworthy
+>释义：- interesting or important enough to be included in the news.  
+>例句：>The two-child policy in china is newsworthy.
 
-
+#### cancer
+>释义：-a serious disease that is caused when cells in the body grow in a way that is uncontrolled and not normal.  
+>例句：>His wife died of cancer.
 
 
 

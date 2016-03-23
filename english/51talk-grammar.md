@@ -40,6 +40,15 @@ It must be downloaded.(✅)
 8. I prefer to choose the beach.(❌)  
 I prefer the beach.(✅)
 
+9. Did you hear about go Lala go？(❌)  
+Have you heard about Go Lala Go?(✅)
+
+10.  I was failed from the examination.(❌)  
+I failed from the examination.(✅)
+
+11. They didn't blame to me.(❌)  
+They didn't blame me.(✅)
+
 
 
 

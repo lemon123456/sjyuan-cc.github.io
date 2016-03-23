@@ -42,6 +42,11 @@ icon: glyphicon-saved
 #### breeze  
 >/briːz/
 
+#### cigarette
+>/sɪɡəˈrɛt, ˈsɪɡəˌrɛt/
+
+#### rule  
+>/ruːl/
 
 
 ---
