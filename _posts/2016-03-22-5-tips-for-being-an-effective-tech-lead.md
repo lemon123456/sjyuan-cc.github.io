@@ -22,11 +22,11 @@ source: "https://docs.djangoproject.com/en/dev/topics/db/transactions/"
 
 Becoming a Tech Lead is a tough transition for any developer, because only part of the skills and experience you had as a developer prepares you for the expectations of a new role. Instead of simply designing and writing code, a Tech Lead is suddenly responsible for an entire development team - and this means dealing with people, both technical and non-technical.
 
->成为一个技术领导者(后文简称TL)对任何开发人员来讲都是一个艰难的转型，因为开发人员的经验和技能仅仅只有部分有助于他们达到对这个新角色的期望。除了简单的设计和编码，TL最重要的职责就是管理整个开发团队了，这意味着TL要与不同角色的人沟通协作，这些工作涵盖了技术和非技术的东西。
+>成为一个技术领导者(后文简称TL)对任何开发人员来讲都是一个艰难的转型，因为开发人员的经验和技能仅仅只有部分有助于他们达到对这个新角色的期望。除了简单的设计和编码，TL最重要的职责在于管理整个开发团队，这意味着TL要经常与技术人员以及非技术人员进行沟通协作。
 
 The time a developer spent focusing on writing well-designed code does not translate into the skills necessary for understanding people, resolving conflict, or suddenly having to juggle more tasks than they can possibly achieve by themselves.
 
->一个开发人员花在编写良好结构代码的时间并不能等效地转化成一些必要的技能，比如了解他人，解决冲突，以及突然需要同时处理多个他们自己并不太可能独立搞定的任务。
+>一个开发人员花在编写良好结构的代码的时间并不能等效地转化成一些必要的技能，比如了解他人，解决冲突，以及突然需要同时处理多个他们自己并不太可能独立搞定的任务。
 
 ![Alt text]({{ "/assets/img/5-tips-for-being-an-effective-tech-lead-1.png" }})
 
@@ -42,10 +42,10 @@ I present 5 tips for being an effective Tech Lead.
 
 As a developer, you get a kick from working out what the hard, technical problem is to solve. You research different ways to solve the problem, seek the most simple solution and celebrate a victory when you want that red, failing test going green.
 
->作为一个开发人员，当你在工作中遇到了一个难以解决的技术问题时，你会寻找各种解决方案，最终你挑了一个最简单的方案把问题解决了，此时你很高兴地庆祝你的测试如愿以偿的由红变绿。
+>作为开发人员，当你在工作中遇到了一个难以解决的技术问题时，你会寻找各种解决方案，你挑了一个最简单的方案把问题解决了，最后你高兴地庆祝你的测试如愿以偿的由红变绿。
 
 As a Tech Lead, you cannot take on all the coding tasks, and cannot take on all the hard or interesting problems, regardless of your experience. You have many more responsibilities that need time and attention, and if you are focused solely on a single task, those other responsibilities will fail to be fulfilled. When you take on the harder problems, it also misses opportunities for other developers to grow and problem solve, which will lead to frustration and potentially people leaving your team!
->作为一个TL，不论你经验多少，你都不能去承担所有的编码工作，也不能去解决所有有挑战和有趣的问题。因为有更多的职责需要你去关注，而一旦你独自将自己专注在一个任务里，你就不能兼顾其他的职责了。当你着手去解决棘手的难题时，这会剥夺团队其他开发人员成长的机会。这可能会让一些开发人员觉得没意思，进而选择离开团队。
+>作为TL，不论你有多少经验，你都不能去承担所有的编码工作，也不能去解决所有有挑战和有趣的问题。因为有更多的职责需要你去关注，一旦你独自将自己专注在一个任务里，你就不能兼顾其他的职责了。当你着手去解决棘手的难题时，这会剥夺团队其他开发人员成长的机会。这可能会让一些开发人员觉得没意思，进而选择离开团队。
 
 Of course, there are some problems when your experience and knowledge are important, but you do not want to be a bottleneck in solving problems, so you want to find a way to delegate and still be involved. Solutions might include kicking off a design session with developers to talk about general approaches, and reviewing progress with the developer on a regular basis to see if things are on track.
 >当然，有时候你的经验和知识对于一些问题非常有用，但你又不想成为解决问题的瓶颈（译者注：意思是只有你能解决那些问题），所以你想找到一种合适的方式将它委托给其他开发人员。你可以召集开发人员一起开会讨论一些常用的方案，将问题派给某些人去做，然后定期的检查他们的进展，确保进展在可控的范围内。
