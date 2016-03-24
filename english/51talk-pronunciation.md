@@ -31,7 +31,6 @@ icon: glyphicon-saved
 #### expect 
 >/ɪkˈspekt/
 
----
 
 #### previous  
 >/ˈpriːviəs/
@@ -48,6 +47,20 @@ icon: glyphicon-saved
 #### rule  
 >/ruːl/
 
+#### exploration    
+>/ˌekspləˈreɪʃən/ 
+
+#### spacecraft  
+>/ˈspeɪskrɑːft/ 
+
+#### politics  
+>/ˈpɒlətɪks/
+
+#### fabric 
+>/ˈfæbrɪk/
+ 
+#### sole   
+>/sol/
 
 ---
 

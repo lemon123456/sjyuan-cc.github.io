@@ -49,6 +49,19 @@ I failed from the examination.(✅)
 11. They didn't blame to me.(❌)  
 They didn't blame me.(✅)
 
+12. Today I feel very warm.(❌)  
+Today, it feels very warm.(✅)
+
+13. I'm hang-out.(❌)  
+I'm went out by myself.(✅)
+
+14. The video is broken.(❌)  
+The video is not clear.(✅)
+
+15. There have some reminders.(❌)  
+There are some reminders.(✅)
+
+
 
 
 

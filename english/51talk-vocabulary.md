@@ -80,6 +80,29 @@ I
 >释义：-a serious disease that is caused when cells in the body grow in a way that is uncontrolled and not normal.  
 >例句：>His wife died of cancer.
 
+#### politics   
+>释义：- ideas and activities relating to how a country or area is governed:
+>例句：>He has little interest in local politics.
+
+#### reflect on sb/sth
+>释义：- If something reflects on someone or something, it affects other people's opinion of them, especially in a bad way.  
+>例句：>The whole affair reflects badly on the government.
+
+#### fabric
+>释义：- cloth produced by weaving or knitting textile fibres: heavy cream fabric. 
+>例句：> It is a light fabric.
+
+#### sole 
+>释义：-the bottom part of your foot that you walk on. single.  
+>例句：> The sole of my shoes are worn out.
+
+#### teapot
+>释义：- a container used for making and serving tea, which has a lid, a handle, and a spout (= tube that liquid comes out of)  
+>例句：> You can use the teapot in the kitchen.
+
+#### hoodie
+>释义：-a sweatshirt (= a piece of clothing made of soft cotton which covers the top of your body) with a hood (= part which covers your head)  
+>例句：> His hoodie is colorful.
 
 
 ---
