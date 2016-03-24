@@ -9,7 +9,7 @@ category: "CAREER"
 author: "袁慎建"
 publish: true
 type: "translation"
-source: "https://docs.djangoproject.com/en/dev/topics/db/transactions/"
+source: "http://cleancoder.club/5-tips-for-being-an-effective-tech-lead/"
 
 ---
 
@@ -118,4 +118,4 @@ Find out more about the experiences of other tech leads in Patrick's book 'Talki
 > 在Patrick写的《Talking with Tech Leads》书里可以找到更多关于TL的经验。你可以下载一本免费的样本，或者，不要错过[初次做Teac Lead的三个常犯的错误]()这篇精彩的文章。
 
 
-[原文链接](https://docs.djangoproject.com/en/dev/topics/db/transactions/)
+[原文链接](http://cleancoder.club/5-tips-for-being-an-effective-tech-lead/)
