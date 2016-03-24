@@ -36,9 +36,7 @@ I present 5 tips for being an effective Tech Lead.
 
 ---
 
-###1. Learn to Delegate
-
->### 1.学会委托
+### 1.学会委托
 
 
 As a developer, you get a kick from working out what the hard, technical problem is to solve. You research different ways to solve the problem, seek the most simple solution and celebrate a victory when you want that red, failing test going green.
@@ -58,9 +56,7 @@ As you and the developer build trust with each other, you can be less involved a
 
 ---
 
-###2. Find Time to Code
-
->### 2.抽出时间写代码
+### 2.抽出时间写代码
 
 The role is called "Tech Lead" for a reason, and it is essential that you find some time to spend in the codebase. Being involved in the code helps you build respect with the rest of the team, but it also helps keep your knowledge up to date and current with constraints, problems and the "shape" of the current codebase.
 >这个角色之所以被称作TL有一个原因，它是最基本的一点：你要花时间在代码库上。让自己熟悉代码能够有助于你获得团队成员的尊敬，同时也使你的知识技能得到更新，并且你还能清楚的了解代码库的当前的现状，比如代码库的一些约束和存在的问题。
@@ -77,9 +73,7 @@ There are many different ways a Tech Lead can find time to code, but it is essen
 
 ---
 
-###3. Visualise Your Architecture
-
->### 3. 可视化你的系统架构
+### 3. 可视化你的系统架构
 
 I have worked in several teams where developers had no idea how their task fit into a bigger picture. A small technical decision made by a developer might have a wider architectural impact, but is impossible to prevent if developers do not understand the broader picture.
 >我待过的几个团队中，开发人员不明白他们所做的工作是怎样跟系统架构的设计融合在一起的。开发人员一个小的技术决策可能会造成大范围的架构影响。如果开发人员不能理解这些抽象的系统架构，这些将无法避免。
@@ -92,18 +86,16 @@ A whole-team whiteboard session is often a useful exercise for reviewing the ove
 
 ---
 
-###4. Spend Time 1-on-1 with Team Members
 
->### 4. 与团队成员一对一交流
+### 4. 与团队成员一对一交流
 
 An effective Tech Lead will not be measured with how many coding tasks they complete. They are measured by how effective their software team is. Anything that a Tech Lead can do to make each person on their team better, makes the overall team better. Sit down with members on your team to understand their backgrounds, their strengths, their interests and their goals to understand how the people in your team fit together as a group. Connect developers with opportunities for them to grow. This means allowing them to take risks so they can learn and grow, but also contribute to the team. Encourage people sharing knowledge across the team and find ways to help each team member connect with each other.
 >衡量一个TL是否高效并不是看他完成了多少编码工作，而要看整个团队有多么的高效。一个TL所做的任何事情就是让团队成员成长，让整个团队持续进步。坐下来跟团队成员进行一对一的交流沟通，了解每个人的知识背景、长处以及他们的目标，从而了解你的团队成员如何在一起工作的。同时也要让开发人员都有机会成长。这意味着你要允许他们尝试冒险、挑战有难度的工作，让自己成长的同时也为团队做出贡献。鼓励团队成员在团队中分享知识，并且让他们有更多的交流互动。
 
 ---
 
-###5. Learn to Speak the Language of the Business
 
->### 5. 学会使用业务语言
+### 5. 学会说业务语言
 
 To be an effective Tech Lead, you will need a great relationship with people outside of the development team including people like Product Managers, Marketing, Sales and CxOs. They will not understand the vocabulary you accumulated as a developer, and talking to them in terms of frameworks, technical tools and platforms will only confuse them.
 >想要成为一个高效的TL，你还需要跟开发团队之外的人保持好关系，比如产品经理、市场人员、销售等。他们并不能理解你作为一个开发人员的一些术语，所以跟他们讲框架、技术工具以及平台只会让他们困惑。
