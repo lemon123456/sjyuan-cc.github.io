@@ -6,41 +6,51 @@ permalink: /about/
 icon: glyphicon-heart
 ---
 
-### 简介
+### 生平
 
 > 1990.08 出生于湖北省，名**袁慎建**，江湖人称**神剑**。
 
-> 2013.06 年毕业于长安大学，因为热爱，转行从事了软件开发行业。
+> 2013.06 年毕业于长安大学，大四转行从事软件开发。
  
-> 2015.03 加入[**ThoughtWorks**](https://thoughtworks.com/)，从此爱上这里。
+> 2015.03 加入[**ThoughtWorks**](https://thoughtworks.com/)，结下情缘。
 
 
 ---
 
->***程序员***，就职于[***`ThoughtWorks`***](https://thoughtworks.com/)，兴趣在`整洁代码`/`TDD`，一直坚信，优秀的程序员有责任和义务写出整洁的代码，并致力于影响更多的人。
+### 职业
 
->置身敏捷开发领域中，对`CI`，`CD`，`Standup`， `Pair`，`Code Review`， `Retro`等有良好的实践。
+>***程序员***，就职于[***`ThoughtWorks`***](https://thoughtworks.com/)，热衷于`整洁代码`/`TDD`。
+
+>置身敏捷开发领域中，对`CI`，`CD`，`PAIR`，`TDD`，`CODE REVIEW`，`STANDUP`等有良好的实践。
+
+>一直坚信，优秀的程序员有责任和义务写出整洁的代码，并致力于影响更多的人。
+
 
 ---
 
->`A`型`狮子座`，追求完美，相信美好的事物，热爱分享，热衷于持续学习。
+### 爱好
 
->热爱`篮球`，`羽毛球`，`桌球`，`游泳`，`看书`~
-   
+>球类 -> `篮球`，`羽毛球`，`桌球`，`保龄球`
+
+>户外 -> `爬山`，`游泳`，`骑行`
+
+>健身 -> `椭圆机`，`综合器械`，`腹肌板`
+
+>书籍 -> `《不抱怨的世界》`\|`《程序员的职业素养》`\|`《拆掉思维的墙》`...
+
 ---
 
 
-### 联系我
+### 动态
 
 [邮箱](mailto:{{ site.email }}) \| 
 [领英](https://www.linkedin.com/in/shenjian-yuan-40ab31104) \| 
 [知乎](https://www.zhihu.com/people/sjyuan) \| 
-[豆瓣](http://www.douban.com/people/142814172/)
+[豆瓣](http://www.douban.com/people/142814172/) \| 
+[CSDN](http://blog.csdn.net/ysjian_pingcx) \| 
+[简书](http://www.jianshu.com/users/c379cdabd121/latest_articles)
 
----
 
 
-#### 友情链接
-
-[CSDN](http://blog.csdn.net/ysjian_pingcx) \| [简书](http://www.jianshu.com/users/c379cdabd121/latest_articles)  
+  
   

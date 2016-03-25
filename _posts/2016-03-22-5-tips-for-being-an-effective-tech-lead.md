@@ -121,7 +121,7 @@ Minimize the translation layer as much as possible by bringing business terms in
 
 Find out more about the experiences of other tech leads in Patrick's book 'Talking with Tech Leads'. You can download a free sample of the book here.​ Also, don't miss the author's post on Three Common Mistakes of the First Time Tech Lead.
 
-> 在Patrick写的《Talking with Tech Leads》书里可以找到更多关于TL的经验。你可以下载一本免费的样本，或者，不要错过[初次做Teac Lead的三个常犯的错误]()这篇精彩的文章。
+> 在Patrick写的《Talking with Tech Leads》书里可以找到更多关于TL的经验。你可以下载一本免费的样本，或者，不要错过[初次做技术领导常犯的三个错误]()这篇精彩的文章。
 
 
 [原文链接](http://cleancoder.club/5-tips-for-being-an-effective-tech-lead/)
