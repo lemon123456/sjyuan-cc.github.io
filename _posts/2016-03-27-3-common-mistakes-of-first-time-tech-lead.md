@@ -22,7 +22,7 @@ source: "http://cleancoder.club/3-common-mistakes-of-first-time-tech-lead/"
 
 Don't miss the author's earlier post on the 5 Tips for Being an Effective Tech Lead.
 
->不要错过作者之前发表的文章[”高效技术领导者的5个锦囊妙计”]({{ site.url }}{{"/5-tips-for-being-an-effective-tech-lead/"}})
+>不要错过作者之前发表的文章[高效技术领导的5个锦囊妙计]({{ site.url }}{{"/5-tips-for-being-an-effective-tech-lead/"}})
 
 The first time a developer steps into the role of a Tech Lead can be difficult. The skills and experience of a seasoned developer do not automatically translate into the skills necessary for the Tech Lead role. In fact, some of the habits of a developer can do more harm than good, when not applied well and with more authority in this new role.
 
