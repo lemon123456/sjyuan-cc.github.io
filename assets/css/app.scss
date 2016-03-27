@@ -7,6 +7,10 @@ $sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
   margin-left: 10px;
 }
 
+.height-50 {
+  margin-top: 50px;
+}
+
 html {
   font-size: 100%;
   line-height: 1.5em
@@ -587,6 +591,7 @@ a:hover {
 
 .navbar-inverse {
   background: #fff url("../img/main-bg.png");
+  background-size: cover;
   .navbar-nav {
     li {
 
@@ -911,7 +916,7 @@ footer {
   min-height: 50px;
   line-height: 50px;
   margin-top: 80px;
-  background: #000;
+  background: #000 url("../img/main-bg.jpg");
   background-size: cover;
   color: #aaa;
   text-align: center;
@@ -969,7 +974,7 @@ footer {
   }
 
   .header {
-    background: #fff url("../img/main-bg.png");
+    background: #fff url("../img/main-bg.jpg");
     background-size: auto;
     color: white;
     padding: 0;
@@ -989,7 +994,7 @@ footer {
   }
 
   .header {
-    height: 15em;
+    height: 13em;
     position: relative;
     padding-bottom: 2em;
     padding-top: 1em;
@@ -1199,7 +1204,7 @@ footer {
 @media only screen and (min-width: 1200px) {
   .header {
     .logo-large {
-      margin-left: 15%;
+      margin-left: 25%;
       position: fixed;
       font-size: 35px;
       font-weight: 800;
