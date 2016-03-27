@@ -73,14 +73,10 @@ The more experienced Tech Lead realizes there are different ways of making decis
 - Being autocratic - They use the information they have to make a decision, choosing to involve or not involve team members, but inform everyone about the outcome.
 
 >- 仅仅委派 - 在没有任何沟通的前提下，TL将决定告知某个成员。  
-
->- 提供建议 - TL将决定委派给某个成员后，还提供了输入和自己的建议。
-
->- 询问调查 - TL将决定委派给某个成员后，还对后续的产出和影响因素做了跟踪调查。
-
->- 达成共识 - TL将团队所有成员召集起来，让大家对某个决定达成共识。
-
->- 独裁专制 - TL运用自己已有的信息去做决定，至于要不要和团队成员商量完全看自己的意愿，最后将结果告知大家。
+- 提供建议 - TL将决定委派给某个成员后，还提供了输入和自己的建议。
+- 询问调查 - TL将决定委派给某个成员后，还对后续的产出和影响因素做了跟踪调查。
+- 达成共识 - TL将团队所有成员召集起来，让大家对某个决定达成共识。
+- 独裁专制 - TL运用自己已有的信息去做决定，至于要不要和团队成员商量完全看自己的意愿，最后将结果告知大家。
 
 ---
 
