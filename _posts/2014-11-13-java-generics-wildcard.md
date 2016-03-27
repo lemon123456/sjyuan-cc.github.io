@@ -2,7 +2,7 @@
 layout: post
 
 title: "JAVA泛型•通配符限定"
-date: 2014-10-13
+date: 2014-11-13
 time: "09:42"
 category: "JAVASE"
 

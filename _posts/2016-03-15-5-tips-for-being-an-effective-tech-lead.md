@@ -2,7 +2,7 @@
 layout: post
 
 title: "高效技术领导者的5个锦囊妙计"
-date: 2016-03-22
+date: 2016-03-15
 time: "23:01"
 category: "CAREER"
 
@@ -37,7 +37,6 @@ I present 5 tips for being an effective Tech Lead.
 ---
 
 ### 1.学会委托
-
 
 As a developer, you get a kick from working out what the hard, technical problem is to solve. You research different ways to solve the problem, seek the most simple solution and celebrate a victory when you want that red, failing test going green.
 
