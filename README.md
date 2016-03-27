@@ -30,7 +30,8 @@
 >http://127.0.0.1:4000/
 
 ## About theme
-![Alert Text](https://github.com/ysj-cc/ysj-cc.github.io/master/assets/img/sample-home.png)
+
+![Alert Text](https://github.com/ysj-cc/ysj-cc.github.io/assets/img/sample-home.png)
 
 
 ## Sample
@@ -48,9 +49,6 @@
 
 这里是我的博客：[袁慎建的博客](http://cleancoder.club)
 
->Thank you for you support!
-
->Here is my blog: [Yuan Shenjian's home page](http://cleancoder.club)
 
 
 ---
