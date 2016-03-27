@@ -452,7 +452,7 @@ body {
   margin: 0;
   font-family: $sans-serif;
   line-height: 1.75;
-  font-size: 112.5%;
+  font-size: 1em;
   color: #111;
   overflow-x: hidden;
 
@@ -590,7 +590,7 @@ a:hover {
 }
 
 .navbar-inverse {
-  background: #fff url("../img/main-bg.png");
+  background: #fff url("../img/main-bg.jpg");
   background-size: cover;
   .navbar-nav {
     li {
