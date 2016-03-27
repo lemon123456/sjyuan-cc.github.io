@@ -31,7 +31,7 @@
 
 ## About theme
 
-![Alert Text](https://github.com/ysj-cc/ysj-cc.github.io/tree/master/assets/img/sample-home.png)
+![Alert Text]("/assets/img/sample-home.png")
 
 
 ## Sample
