@@ -31,7 +31,7 @@
 
 ## About theme
 
-![Alert Text]("/assets/img/sample-home.png")
+![Alert Text](/assets/img/sample-home.png)
 
 
 ## Sample
