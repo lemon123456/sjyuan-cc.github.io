@@ -20,90 +20,123 @@ icon: glyphicon-saved
 
 #### sibling ['sɪblɪŋ]
 
->释义：> a sister or brother  
->例句：> My siblings will arrive tonight.
+>Meaning: > a sister or brother  
+>Sample : > My siblings will arrive tonight.
 
 #### spoiled [spɔɪlt]
 
->释义：> (of a ​person) ​treated very well or too well.  
->例句：> You’re ​acting like a spoiled ​brat.
+>Meaning: > (of a ​person) ​treated very well or too well.  
+>Sample : > You’re ​acting like a spoiled ​brat.
 I
 #### babysit ['bebɪsɪt]
 
->释义：> to look after children while their parents are not at home  
->例句：> She needs to babysit her sister this afternoon.
+>Meaning: > to look after children while their parents are not at home  
+>Sample : > She needs to babysit her sister this afternoon.
 
 #### nephew ['nɛfju]
->释义：> a son of one's brother or sister, or of one's brother-in-law or sister-in-law.
+>Meaning: > a son of one's brother or sister, or of one's brother-in-law or sister-in-law.
 
 #### niece [nis]
->释义：> a daughter of one's brother or sister, or of one's brother-in-law or sister-in-law.
+>Meaning: > a daughter of one's brother or sister, or of one's brother-in-law or sister-in-law.
 
 #### idol
->释义：> someone that you admire and respect very much.  
->例句：> He is a pop idol.
+>Meaning: > someone that you admire and respect very much.  
+>Sample : > He is a pop idol.
 
 #### be expecting sb/sth
->释义：> to be waiting for someone or something to arrive.  
->例句：> I'm expecting a letter from my sister.
+>Meaning: > to be waiting for someone or something to arrive.  
+>Sample : > I'm expecting a letter from my sister.
 
 #### coherent
->释义：> (of an argument, theory, or policy)logical and consistent,   (of a person) able to speak clearly and logically.  
->例句：> They failed to develop a coherent economic strategy.  
->例句：> She was lucid and coherent and did not appear to be injured.
+>Meaning: > (of an argument, theory, or policy)logical and consistent,   (of a person) able to speak clearly and logically.  
+>Sample : > They failed to develop a coherent economic strategy.  
+>Sample : > She was lucid and coherent and did not appear to be injured.
 
 #### tropical
->释义：> from or in the hottest parts of the world.  
->例句：> The Philippines is a tropical country.
+>Meaning: > from or in the hottest parts of the world.  
+>Sample : > The Philippines is a tropical country.
 
 #### breeze
->释义：> a gentle wind.
->例句：> I like enjoying the sea breeze on beach.
+>Meaning: > a gentle wind.
+>Sample : > I like enjoying the sea breeze on beach.
 
 #### jumble [/ˈdʒʌmbl/]
->释义：- a confused mixture or group of things.  
->例句：>Her handbag is a jumble of pens, make-up, and keys.
+>Meaning: >  a confused mixture or group of things.  
+>Sample : >Her handbag is a jumble of pens, make-up, and keys.
 
 #### landscape
->释义：- the appearance of an area of land, especially in the countryside.  
->例句：>The cathedral dominates the landscape for miles around.
+>Meaning: >  the appearance of an area of land, especially in the countryside.  
+>Sample : >The cathedral dominates the landscape for miles around.
 
 #### arrest
->释义：-If the police arrest someone, they take them away to ask them about a crime that they might have committed.  
->例句：>He was arrested for possession of illegal drugs.
+>Meaning: > If the police arrest someone, they take them away to ask them about a crime that they might have committed.  
+>Sample : >He was arrested for possession of illegal drugs.
 
 #### newsworthy
->释义：- interesting or important enough to be included in the news.  
->例句：>The two-child policy in china is newsworthy.
+>Meaning: >  interesting or important enough to be included in the news.  
+>Sample : >The two-child policy in china is newsworthy.
 
 #### cancer
->释义：-a serious disease that is caused when cells in the body grow in a way that is uncontrolled and not normal.  
->例句：>His wife died of cancer.
+>Meaning: > a serious disease that is caused when cells in the body grow in a way that is uncontrolled and not normal.  
+>Sample : >His wife died of cancer.
 
 #### politics   
->释义：- ideas and activities relating to how a country or area is governed:
->例句：>He has little interest in local politics.
+>Meaning: >  ideas and activities relating to how a country or area is governed:
+>Sample : >He has little interest in local politics.
 
 #### reflect on sb/sth
->释义：- If something reflects on someone or something, it affects other people's opinion of them, especially in a bad way.  
->例句：>The whole affair reflects badly on the government.
+>Meaning: >  If something reflects on someone or something, it affects other people's opinion of them, especially in a bad way.  
+>Sample : >The whole affair reflects badly on the government.
 
 #### fabric
->释义：- cloth produced by weaving or knitting textile fibres: heavy cream fabric. 
->例句：> It is a light fabric.
+>Meaning: >  cloth produced by weaving or knitting textile fibres: heavy cream fabric. 
+>Sample : > It is a light fabric.
 
 #### sole 
->释义：-the bottom part of your foot that you walk on. single.  
->例句：> The sole of my shoes are worn out.
+>Meaning: > the bottom part of your foot that you walk on. single.  
+>Sample : > The sole of my shoes are worn out.
 
 #### teapot
->释义：- a container used for making and serving tea, which has a lid, a handle, and a spout (= tube that liquid comes out of)  
->例句：> You can use the teapot in the kitchen.
+>Meaning: >  a container used for making and serving tea, which has a lid, a handle, and a spout (= tube that liquid comes out of)  
+>Sample : > You can use the teapot in the kitchen.
 
 #### hoodie
->释义：-a sweatshirt (= a piece of clothing made of soft cotton which covers the top of your body) with a hood (= part which covers your head)  
->例句：> His hoodie is colorful.
+>Meaning: > a sweatshirt (= a piece of clothing made of soft cotton which covers the top of your body) with a hood (= part which covers your head)  
+>Sample : > His hoodie is colorful.
 
+#### demonstrate ['dɛmən'stret] vt. 证明；展示；论证
+>Meaning: >clearly show the existence or truth of (something) by giving proof or evidence.  
+>Sample : > Their shameful silence demonstrates their inepitute.  
+>Sample : > In fact, it is easy for them to assume that they need to demonstrate their leadership by writing code all the time
+
+#### cohesiveness [ko'hisɪvnɪs] n. 凝聚力；粘结性；内聚力
+>Meaning: > the quality of forming a united whole.  
+>Sample : > They split their time daily, or at the very least weekly, to ensure that they spend time addressing other responsibilities including building a shared architectural vision, identifying and addressing technical risks, being involved in planning sessions and focusing on team and code cohesiveness and consistency.
+
+#### bottleneck ['bɑtlnɛk] n. 瓶颈；障碍物
+>Meaning: > the neck or mouth of a bottle.  
+>Sample : > When a Tech Lead is making all the technical decisions, they become a bottleneck in the team and the team cannot progress when the Tech Lead is not around.  
+
+#### demotivate [,di'motɪvet] vt. 使失去动力；使变得消极
+>Meaning: > make (someone) less eager to work or study.  
+>Sample : > Other team members might feel demotivated when the Tech Lead makes all the important decisions, because their contributions are overruled and this could lead to resentment.
+
+#### overrule [,ovɚ'rul] vt. 否决；统治；对…施加影响
+>Meaning: > reject or disallow by exercising one's superior authority.  
+>Sample : > Chief Judge Moran overruled the government's objections.  
+>Sample : > Other team members might feel demotivated when the Tech Lead makes all the important decisions, because their contributions are overruled and this could lead to resentment.
+
+#### resentment [rɪ'zɛntmənt] n. 愤恨，怨恨
+>Meaning: > bitter indignation at having been treated unfairly.  
+>Sample : > Some people harbour resentments going back many years.  
+>Sample : > Other team members might feel demotivated when the Tech Lead makes all the important decisions, because their contributions are overruled and this could lead to resentment.
+
+#### cultivate ['kʌltɪvet] vt. 培养；陶冶；耕作
+>Meaning: > try to acquire or develop (a quality or skill).  
+>Sample : > A first time Tech Lead often forget about cultivating the team culture.
+
+>Meaning: > Biology grow or maintain (living cells or tissue) in culture.  
+>Sample : > blood cells that can be most easily cultivated are macrophages.
 
 ---
 
