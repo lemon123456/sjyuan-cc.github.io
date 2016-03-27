@@ -79,7 +79,7 @@ There are many different ways a Tech Lead can find time to code, but it is essen
 
 ---
 
-### 3. 可视化你的系统架构
+### 3.可视化你的系统架构
 
 I have worked in several teams where developers had no idea how their task fit into a bigger picture. A small technical decision made by a developer might have a wider architectural impact, but is impossible to prevent if developers do not understand the broader picture.
 
@@ -96,7 +96,7 @@ A whole-team whiteboard session is often a useful exercise for reviewing the ove
 ---
 
 
-### 4. 与团队成员一对一交流
+### 4.与团队成员一对一交流
 
 An effective Tech Lead will not be measured with how many coding tasks they complete. They are measured by how effective their software team is. Anything that a Tech Lead can do to make each person on their team better, makes the overall team better. Sit down with members on your team to understand their backgrounds, their strengths, their interests and their goals to understand how the people in your team fit together as a group. Connect developers with opportunities for them to grow. This means allowing them to take risks so they can learn and grow, but also contribute to the team. Encourage people sharing knowledge across the team and find ways to help each team member connect with each other.
 
@@ -105,7 +105,7 @@ An effective Tech Lead will not be measured with how many coding tasks they comp
 ---
 
 
-### 5. 学会说业务语言
+### 5.学会说业务语言
 
 To be an effective Tech Lead, you will need a great relationship with people outside of the development team including people like Product Managers, Marketing, Sales and CxOs. They will not understand the vocabulary you accumulated as a developer, and talking to them in terms of frameworks, technical tools and platforms will only confuse them.
 
