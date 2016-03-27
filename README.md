@@ -30,17 +30,14 @@
 >http://127.0.0.1:4000/
 
 ## About theme
-
+![Alert Text](https://github.com/ysj-cc/ysj-cc.github.io/master/assets/img/sample-home.png)
 
 
 ## Sample
-
-例子在这里。[点我穿越](http://cleancoder.club)
->Here is the sample. [Click me](http://cleancoder.club)
+[点我穿越](http://cleancoder.club)
 
 
 ## Attention
-
 
 
 
@@ -60,7 +57,7 @@
 
 LICENSE
 
-[MIT License](https://github.com/yuanshenjian/yuanshenjian.github.io/blob/master/LICENSE.md)
+[MIT License](https://github.com/ysj-cc/ysj-cc.github.io/master/LICENSE.md)
 
 
 
