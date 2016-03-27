@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "初次做技术领导常犯的三个错误"
+title: "初次做技术领导常犯的3个错误"
 date: 2016-03-27
 time: "10:25"
 category: "CAREER"
