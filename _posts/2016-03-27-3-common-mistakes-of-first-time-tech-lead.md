@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "初次做技术领导的3个陷阱"
+title: "初次做技术领导常犯的三个错误"
 date: 2016-03-27
 time: "10:25"
 category: "CAREER"
@@ -63,7 +63,7 @@ A first time Tech Lead may sometimes be the most experienced developer on the te
 
 The more experienced Tech Lead realizes there are different ways of making decisions, and often, the best decision comes from using the breadth of experience and knowledge from the entire team. They might draw upon the following techniques, depending on how critical a decision is, how quick a decision must be made and how much commitment they want from team members:
 
->有经验的TL知道他们可以有很多种方式去做决定。通常，最好的决定是源自于整个团队的经验和技能，而非某个个体。下面列出的一些值得借鉴技巧，而它们取决于决定的重要性、时间性以及他们想要从团队成员中获得多少的承诺：
+>有经验的TL知道他们可以有很多种方式去做决定。通常，最好的决定是源自于整个团队的经验和技能，而非某个个体。下面列出的一些值得借鉴技巧，而它们取决于决定的重要性、紧急程度以及他们想要从团队成员中获得多少的承诺：
 
 - Only delegating - A Tech Lead gives the decision to someone else without any other interaction
 - Offering advice - A Tech Lead delegates the decision to someone else, but offers their input and opinions for consideration
