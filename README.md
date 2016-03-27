@@ -31,7 +31,7 @@
 
 ## About theme
 
-![Alert Text](https://github.com/ysj-cc/ysj-cc.github.io/assets/img/sample-home.png)
+![Alert Text](https://github.com/ysj-cc/ysj-cc.github.io/tree/master/assets/img/sample-home.png)
 
 
 ## Sample
@@ -55,7 +55,7 @@
 
 LICENSE
 
-[MIT License](https://github.com/ysj-cc/ysj-cc.github.io/master/LICENSE.md)
+[MIT License](https://github.com/ysj-cc/ysj-cc.github.io/blob/master/LICENSE.md)
 
 
 
