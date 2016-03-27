@@ -31,27 +31,20 @@
 
 ## About theme
 
+### 示例
 ![Alert Text](/assets/img/sample-home.png)
 
 
-## Sample
+### 博主主页
 [点我穿越](http://cleancoder.club)
 
 
 ## Attention
 
-
-
----
-
-
-谢谢你的支持
+此主题完全开源免费，功能也正后续完善中，欢迎你的意见来袭。非常感谢你的支持!
 
 这里是我的博客：[袁慎建的博客](http://cleancoder.club)
 
-
-
----
 
 LICENSE
 
