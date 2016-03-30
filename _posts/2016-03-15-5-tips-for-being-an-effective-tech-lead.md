@@ -9,7 +9,7 @@ category: "CAREER"
 author: "袁慎建"
 publish: true
 type: "translation"
-source: "http://cleancoder.club/5-tips-for-being-an-effective-tech-lead/"
+source: "https://www.thoughtworks.com/insights/blog/5-tips-being-effective-tech-lead"
 
 ---
 

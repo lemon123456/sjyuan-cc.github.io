@@ -9,7 +9,7 @@ category: "CAREER"
 author: "袁慎建"
 publish: true
 type: "translation"
-source: "http://cleancoder.club/3-common-mistakes-of-first-time-tech-lead/"
+source: "https://www.thoughtworks.com/insights/blog/three-common-mistakes-first-time-tech-lead"
 
 ---
 
