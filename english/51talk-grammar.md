@@ -11,7 +11,6 @@ icon: glyphicon-saved
 {:toc}
 
 [VOCABULARY]({{ "/51talk-vocabulary/" }}) \|
-[PRONUNCIATION]({{ "/51talk-pronunciation/" }}) \|
 [GRAMMAR]({{ "/51talk-grammar/" }})
 
 ---
@@ -61,6 +60,20 @@ The video is not clear.(✅)
 15. There have some reminders.(❌)  
 There are some reminders.(✅)
 
+16. I found learning English interesting.(❌)  
+I found out that learning English is interesting.(✅)
+
+17. Css is belong to front end.(❌)  
+Css belong's to front end.(✅)
+
+18. The translation is confused.(❌)  
+The translation is confusing.(✅)
+
+19. I'm even not familiar with the person next door.(❌)  
+I'm not even familiar with the person next door.(✅)
+
+20. For a long time nobody dropped by me.(❌)  
+For a long time nobody dropped by my place to visit me.(✅)
 
 
 
@@ -68,5 +81,4 @@ There are some reminders.(✅)
 ---
 
 [VOCABULARY]({{ "/51talk-vocabulary/" }}) \|
-[PRONUNCIATION]({{ "/51talk-pronunciation/" }}) \|
 [GRAMMAR]({{ "/51talk-grammar/" }})

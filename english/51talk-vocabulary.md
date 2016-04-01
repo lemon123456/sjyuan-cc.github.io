@@ -12,7 +12,6 @@ icon: glyphicon-saved
 
 
 [VOCABULARY]({{ "/51talk-vocabulary/" }}) \|
-[PRONUNCIATION]({{ "/51talk-pronunciation/" }}) \|
 [GRAMMAR]({{ "/51talk-grammar/" }})
 
 ---
@@ -27,7 +26,7 @@ icon: glyphicon-saved
 
 >Meaning: > (of a ​person) ​treated very well or too well.  
 >Sample : > You’re ​acting like a spoiled ​brat.
-I
+
 #### babysit ['bebɪsɪt]
 
 >Meaning: > to look after children while their parents are not at home  
@@ -138,8 +137,39 @@ I
 >Meaning: > Biology grow or maintain (living cells or tissue) in culture.  
 >Sample : > blood cells that can be most easily cultivated are macrophages.
 
+#### jumble ['dʒʌmbl] n.混乱；杂乱的一堆东西  vt.使混乱；搞乱
+>Meaning: > a confused mixture or group of things:
+>Sample : > Her handbag is a jumble of pens, make-up, and keys.
+
+#### landscape ['lænd'skep] n. 风景；风景画；景色；山水画；乡村风景画；地形；
+>Meaning: > the appearance of an area of land, especially in the countryside.
+>Sample : > The cathedral dominates the landscape for miles around.
+
+>Meaning: > make (a garden or other area of ground) more attractive by altering the existing design, adding ornamental features, and planting trees and shrubs
+>Sample : > the site has been tastefully landscaped | (as adj.landscaped) : landscaped gardens.
+
+#### tenant ['tɛnənt] n. 承租人；房客；佃户；居住者
+>Meaning: > a person who occupies land or property rented from a landlord
+>Sample : > Can you help me find a new tenant for my flat.
+
+#### occupant ['ɑkəpənt] n. 居住者；占有者
+(tenant synonym)
+>Meaning: > a person who resides or is present in a house, vehicle, seat, place, etc., at a given time.
+>Sample : > The occupant of that room gave me a present.
+
+#### lease [lis] n. 租约；租期；租赁物；租赁权
+>Meaning: > a legal agreement in which you pay money in order to use a building or a piece of land for a period of time:
+>Sample : > We signed a three-year lease when we moved into the house.
+
+#### forte ['fɔrte] n. 长处；特长
+>Meaning: > something that a ​person can do well; a ​strong ​ability:
+>Sample : > Singing is ​definitely her forte.
+
+#### exaggerate [ɪɡ'zædʒəret] vi. 夸大；夸张  vt. 使扩大；使增大
+>Meaning: > to make something seem larger, better, worse, etc than it really is:
+>Sample : > Don't exaggerate - it didn't cost that much!
+
 ---
 
 [VOCABULARY]({{ "/51talk-vocabulary/" }}) \|
-[PRONUNCIATION]({{ "/51talk-pronunciation/" }}) \|
 [GRAMMAR]({{ "/51talk-grammar/" }})

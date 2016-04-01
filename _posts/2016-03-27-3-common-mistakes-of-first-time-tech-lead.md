@@ -107,3 +107,6 @@ Find out more about the experiences of other Tech Leads in Patrick's book 'Talki
 
 >在Patrick写的《Talking with Tech Leads》书里可以找到更多关于TL的经验。你可以[下载](http://info.thoughtworks.com/talking-with-tech-leads-book.html)一本免费的样本。
 
+
+[原文链接](https://www.thoughtworks.com/insights/blog/three-common-mistakes-first-time-tech-lead)
+
