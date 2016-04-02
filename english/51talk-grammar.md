@@ -75,6 +75,18 @@ I'm not even familiar with the person next door.(✅)
 20. For a long time nobody dropped by me.(❌)  
 For a long time nobody dropped by my place to visit me.(✅)
 
+21. I didn't have idea on what to do.(❌)  
+I don't have an idea on what to do.(✅)
+
+22. I don't know about your number.(❌)  
+I don't know your number.(✅)
+
+23. Do you mind I sit here?(❌)  
+Do you mind if I sit here?(✅)
+
+24. It‘s not the improve of my English skills but the process.(❌)  
+It’s not about the improvement of my English skills but the process I had gone through.(✅)
+
 
 
 

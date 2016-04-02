@@ -169,6 +169,32 @@ icon: glyphicon-saved
 >Meaning: > to make something seem larger, better, worse, etc than it really is:
 >Sample : > Don't exaggerate - it didn't cost that much!
 
+#### haze [hez] n. 阴霾；薄雾；疑惑  vt. 使变朦胧；使变糊涂
+>Meaning: > the air when it is not very clear because of something such as heat or smoke, making it difficult to see well
+>Sample : > The haze is so thick.
+
+#### muggy ['mʌɡi] adj. 闷热的；潮湿的
+>Meaning: > (of the weather) unpleasantly warm and humid.     
+>Sample : > When the weather is muggy, it is unpleasantly warm and the air contains a lot of water.
+>Sample : > It is a muggy afternoon.
+
+#### scheme [ski:m] n. 计划；组合；体制；诡计  vt. 计划；策划
+>Meaning: > an official plan or system:
+>Sample : > A training scheme for teenagers.
+
+#### court [kɔrt] vi. 求爱  n. 法院；球场；朝廷；奉承
+>Meaning: > to have a romantic relationship with someone that you hope to marry:
+>Sample : > They courted for two years before getting married.
+
+#### spacious ['speʃəs] adj. 宽敞的，广阔的；无边无际的
+>Meaning: > (especially of a room or building) having ample space.
+>Sample : > The hotel has a spacious lounge and TV room.
+
+#### remind sb of sth/sb
+>Meaning: > to make someone think of something or someone else:
+>Sample : > This song reminds me of our trip to Spain.
+
+
 ---
 
 [VOCABULARY]({{ "/51talk-vocabulary/" }}) \|
