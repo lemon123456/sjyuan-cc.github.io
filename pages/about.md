@@ -44,7 +44,7 @@ icon: glyphicon-heart
 ### 动态
 
 [邮箱](mailto:{{ site.email }}) \| 
-[领英](https://www.linkedin.com/in/shenjian-yuan-40ab31104) \| 
+[领英](https://www.linkedin.com/in/慎建-袁-40ab31104) \|
 [知乎](https://www.zhihu.com/people/sjyuan) \| 
 [豆瓣](http://www.douban.com/people/142814172/) \| 
 [CSDN](http://blog.csdn.net/ysjian_pingcx) \| 
