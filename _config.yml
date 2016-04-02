@@ -21,7 +21,8 @@ navigation:
 
 social:
    github: sjyuan-cc
-   email: sjyuan@thoughtworks.com
+   work_email: sjyuan@thoughtworks.com
+   personal_email: sjyuan.cc@gmail.com
 
 gems:
  - jekyll-paginate
