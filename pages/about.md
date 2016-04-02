@@ -49,6 +49,8 @@ icon: glyphicon-heart
 [CSDN](http://blog.csdn.net/ysjian_pingcx) \| 
 [简书](http://www.jianshu.com/users/c379cdabd121/latest_articles)
 
+---
+
 ### 通讯
 
 [个人邮箱](mailto:{{ site.social.personal_email }}) \|
