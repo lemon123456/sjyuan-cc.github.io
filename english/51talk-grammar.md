@@ -52,7 +52,7 @@ They didn't blame me.(✅)
 Today, it feels very warm.(✅)
 
 13. I'm hang-out.(❌)  
-I'm went out by myself.(✅)
+I went out by myself.(✅)
 
 14. The video is broken.(❌)  
 The video is not clear.(✅)
@@ -64,7 +64,7 @@ There are some reminders.(✅)
 I found out that learning English is interesting.(✅)
 
 17. Css is belong to front end.(❌)  
-Css belong's to front end.(✅)
+Css belongs to front end.(✅)
 
 18. The translation is confused.(❌)  
 The translation is confusing.(✅)
