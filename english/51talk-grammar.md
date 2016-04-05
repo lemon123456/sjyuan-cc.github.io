@@ -60,8 +60,8 @@ The video is not clear.(✅)
 15. There have some reminders.(❌)  
 There are some reminders.(✅)
 
-16. I found learning English interesting.(❌)  
-I found out that learning English is interesting.(✅)
+16. The last week the editor has corrected our translation.(❌)  
+Last week, the editor has corrected our translation.(✅)
 
 17. Css is belong to front end.(❌)  
 Css belongs to front end.(✅)
@@ -87,6 +87,18 @@ Do you mind if I sit here?(✅)
 24. It‘s not the improve of my English skills but the process.(❌)  
 It’s not about the improvement of my English skills but the process I had gone through.(✅)
 
+25. I'm not feel very deep.(❌)  
+I don't have a deep feeling for her.(✅)  
+My feeling of her is not deep.(✅)
+
+26. We drank grape wine when we were eating noodles.(❌)  
+We drank grape wine while we were eating noodles.(✅)
+
+26. Even I haven't do anything it's already evening.(❌)  
+Even I haven't done anything, it‘s already evening.(✅)
+
+27. If the children go to college.(❌)  
+If the children will go to college.(✅)
 
 
 

@@ -194,6 +194,38 @@ icon: glyphicon-saved
 >Meaning: > to make someone think of something or someone else:
 >Sample : > This song reminds me of our trip to Spain.
 
+#### energetic [,ɛnɚ'dʒɛtɪk] adj. 精力充沛的；积极的；有力的
+>Meaning: > having or involving a lot of energy:
+>Sample : > Aerobics is too energetic for me.
+
+#### outskirts ['aʊt'skɝts] n. 市郊，郊区
+>Meaning: > the outer area of a city, town, or village:
+>Sample : > We stayed in a hotel on the outskirts of Palma.
+
+#### lounge  [laʊndʒ] n. 休息室；闲逛；躺椅；（英）酒吧间
+>Meaning: > the room in a home where you sit and relax
+>Sample : > The game lounge is in the corner.
+
+#### image ['ɪmɪdʒ] n. 影像；想象；肖像；偶像  vt. 想象；反映；象征；作…的像(imagine)
+>Meaning: > the way that people think someone or something is:
+>Sample : > The aim is to improve the public image of the police.
+
+#### waistline ['westlaɪn] n. 腰围
+>Meaning: > how big or small your waist is, or the part of a piece of clothing that goes around the waist
+>Sample : > Her waistline is very small.
+
+#### condominium [,kɑndə'mɪnɪəm] n. 共同统治；财产共有权；独立产权的公寓
+>Meaning: > a building containing apartments that are owned by the people living in them, or one of these apartments
+>Sample : > The condominium is very tall.
+
+#### inheritance [ɪn'hɛrɪtəns] n. 继承；遗传；遗产
+>Meaning: > money or possessions that someone gives you when they die:
+>Sample : > Nick has sold off much of his inheritance.
+
+#### scramble down/out/up, etc ['skræmbl] vi. 爬行，攀登 n. 抢夺，争夺；混乱，混乱的一团
+>Meaning: > to move or climb quickly but with difficulty, often using your hands:
+>Sample : > We scrambled up the hill.
+
 
 ---
 
