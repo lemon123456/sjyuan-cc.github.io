@@ -166,7 +166,11 @@ nav ul, nav ol {
 
 img {
   border: 0;
-  -ms-interpolation-mode: bicubic
+  box-shadow: 3px 3px 30px 3px #ccc;
+  -ms-interpolation-mode: bicubic;
+  -webkit-box-shadow: 3px 3px 30px 3px #ccc;
+  -moz-box-shadow: 3px 3px 30px 3px #ccc;
+
 }
 
 svg:not(:root) {
