@@ -29,7 +29,7 @@ The first time a developer steps into the role of a Tech Lead can be difficult. 
 >开发人员初次走进技术领导（后文简称TL）这个角色的时候都是很困难的。即便经验再丰富的开发人员，他的技能和经验也是不能自动转换成一个TL必备的技能的。事实上，如果开发人员不能很好地运用已有的技能和经验，或者不能在这个新角色中树立更多权威，一些旧有的习惯不但没有帮助，反而会带来阻碍。
 
 
-![Alt text]({{ "/assets/img/3-common-mistakes-of-first-time-tech-lead-1.png" }})
+![Alt text]({{ "/assets/img/career/3-common-mistakes-of-first-time-tech-lead-1.png" }})
 
 
 In this article, we explore three common traps a first time Tech Lead experiences, and what they can do to avoid them.
@@ -97,7 +97,7 @@ The more experienced Tech Lead realizes that the lead part of their role is just
 ---
 
 ### 总结
-![Alt text]({{ "/assets/img/3-common-mistakes-of-first-time-tech-lead-2.png" }})
+![Alt text]({{ "/assets/img/career/3-common-mistakes-of-first-time-tech-lead-2.png" }})
 
 The first time Tech Lead can easily fall for a number of traps, often caused by habits developed from their time as a developer. To overcome these traps, they must find ways to strike a balance between their technical and leadership responsibilities.
 

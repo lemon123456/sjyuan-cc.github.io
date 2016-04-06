@@ -28,7 +28,7 @@ The time a developer spent focusing on writing well-designed code does not trans
 
 >一个开发人员花在编写良好结构的代码的时间并不能等效地转化成一些必要的技能，比如了解他人，解决冲突，以及突然需要同时处理多个他们自己并不太可能独立搞定的任务。
 
-![Alt text]({{ "/assets/img/5-tips-for-being-an-effective-tech-lead-1.png" }})
+![Alt text]({{ "/assets/img/career/5-tips-for-being-an-effective-tech-lead-1.png" }})
 
 I present 5 tips for being an effective Tech Lead.
 

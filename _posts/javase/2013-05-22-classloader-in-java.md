@@ -148,7 +148,7 @@ Grandparent loader:null
 ### CLassLoader与对象的关系
 以下用一个图描述类装载器与对象的关系：
 
-![程序员的职业素养]({{ "/assets/img/classloader-in-java-1.png" }})
+![程序员的职业素养]({{ "/assets/img/javase/classloader-in-java-1.png" }})
 
 >Object.getClass()   Class ---实例对象获得类字节码  
 >Class.getClassLoader()    ClassLoader  ----类字节码对象获得类装载器  

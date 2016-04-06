@@ -49,6 +49,6 @@ type: "book"
 
 
 ### 封面截图
-![程序员的职业素养]({{ "/assets/img/professional-quality-of-programmer-1.png" }})
+![程序员的职业素养]({{ "/assets/img/book/professional-quality-of-programmer-1.png" }})
 
 

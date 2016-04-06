@@ -1,26 +1,42 @@
+---
+layout: post
+
+title: "Ruby on Rails 初次冲浪体验"
+date: 2016-04-06
+time: "09:46"
+category: "RAILS"
+
+author: "袁慎建"
+publish: false
+type: "original"
+---
+
+* content
+{:toc}
 
 
-## Ruby-on-rails 初次冲浪搬的体验
 
 >Rails是一个用Ruby编写的Web应用开发框架。它的设计目标是通过给定每个开发人员开始时所需要的东西来，从而让Web应用开发更加容易。它可以让你写更少的代码来完成其他语言和框架所不能完成的工作。有过Rail开发经验的人都说它让web应用开发变得更有趣。
 
 >Rails is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.
 
 ### 环境准备
+
 1. Ruby，版本 >= 1.9.3。[Ruby安装](https://www.ruby-lang.org/en/documentation/installation/)
 2. RubyGems包管理系统, 跟Ruby@1.9以上版本一起安装。
 3. SQLite3数据库.
 
-	```
-	 $ ruby -v  
-	 ruby 2.2.3p173  
-	
-	 $ gem -v  
-	 2.4.8
-	
-	 $ sqlite3 --version  
-	 3.8.10.2
-	```
+```
+ $ ruby -v
+ ruby 2.2.3p173
+
+ $ gem -v
+ 2.4.8
+
+ $ sqlite3 --version
+ 3.8.10.2
+```
+
 ---
 
 ### 创建Rails项目
@@ -39,7 +55,7 @@ Rails 4.2.5
 >$ rails new blog  
 >$ cd blog
 
-* 生成工程的目录结构
+* 生成工程的目录结构，建议读一读，心里有个数。
 
 	File/Folder |	Purpose
 	|:----------|:-----------:|
@@ -59,6 +75,8 @@ Rails 4.2.5
 	vendor/	  | A place for all third-party code. In a typical Rails application this includes vendored gems.
 
 
+---
+
 ### Hello, Rails！
 
 #### 启动Rails服务
@@ -76,6 +94,8 @@ Rails 4.2.5
 
 #### 访问Rail服务
 >打开你的浏览器，输入[http://localhost:3000](http://localhost:3000)
+
+![Alt text]({{ "/assets/img/rails/rails-get-started-1.png" }})
 
 
 

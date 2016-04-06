@@ -42,5 +42,5 @@ type: "book"
 
  
 ### 封面截图
-![程序员的职业素养]({{ "/assets/img/effective-java-1.png" }})
+![程序员的职业素养]({{ "/assets/img/book/effective-java-1.png" }})
 

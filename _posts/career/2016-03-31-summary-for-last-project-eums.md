@@ -37,7 +37,7 @@ ThoughtWorks团队成员，犹如一架生猛的战斗机：PM英文一流，敏
 
 团队还有一个`全员运动`的文化特色，向⬇️看：
 
-![Alt text]({{ "/assets/img/summary-for-last-project-eums-1.png" }})
+![Alt text]({{ "/assets/img/career/summary-for-last-project-eums-1.png" }})
 
 
 ---
