@@ -2,12 +2,12 @@
 layout: post
 
 title: "项目总结•EUMS"
-date: 2016-03-27
+date: 2016-04-27
 time: "11:25"
 category: "CAREER"
 
 author: "袁慎建"
-publish: false
+publish: true
 type: "original"
 
 ---
