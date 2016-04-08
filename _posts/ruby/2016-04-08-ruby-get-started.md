@@ -18,7 +18,7 @@ type: "original"
 
 
 ## 安装Ruby
->推荐使用[rvm](https://rvm.io)来安装ruby
+推荐使用[rvm](https://rvm.io)来安装ruby
 
 >$ brew install ruby  
 >$ rvm install 2.2.3
@@ -75,6 +75,7 @@ ruby 2.2.3p173
 $ irb
 2.2.3 :001 >
 ```
+
 ---
 
 ## 查看Ruby本地化文档
