@@ -955,5 +955,29 @@ end
 ## 剩下的事情
 >在实际项目中 ，我们通常开发RESTful Web API，对Rails自带的模板很少使用，所以本文没有去做`抽取视图中组件到单独的文件中，提高代码整洁度和重用性`这件事情。欲了解全貌，请访问[Rails Get Started](http://guides.rubyonrails.org/getting_started.html)
 
+---
+
+## 总结
+1. Rail是一个遵循`约定优于配置`的开发框架，所以一定要当心一些基本命名约定，经过了这次冲浪，如果严格按照文章中的规范走下来，应该是很顺利的。举个最基本的命名约定，可以来回顾一下，列出来：
+	- Article -> ArticlesController
+	- Comment -> CommentsController
+
+2. Rails提供的是RESTful API，比较显著的特点是在`routes.rb`中添加一个资源后，使用`$ rake routes`就可以看到生成了很多对这个资源的不同操作对应的请求动作和路由信息。
+3. Rails是一个MVC的开发框架，默认的约定如下：
+
+	     M       |      V    |     C
+	|:-----------|:----------------|:----------|
+	app/models   | app/controllers | app/views
+	article.rb   | articles_controller.rb | articles/index.html.rb
+	ArticlesController | Article | index
+
+4. 通常在实际项目中，我们会面临很多较复杂业务处理，要在同一个请求中操作多个model，有人说将这些处理逻辑放在model层或者controller层，理论上这是可以的，带来的不好的结果有：
+	- controller层或者model层代码过于复杂，不利于扩展和维护，更有甚者，会陷入`同级调用`误区。
+	- 不利于事务控制和维护。（在Spring框架中通常会有一个service层，并利用`AOP`统一给service中的方法加上事务管理）
+	- 一些本可以共用的服务需要在不同的controller中重复实现，不利于服务重用，也违反了DRY原则。
+5. 三层架构是Web应用开发中的经典实践，在复杂度不是足够高的系统中，这三层架构基本上能够满足要求。所以通常的实践是，在controller层与model层之间加一个service层，用来给controller层提供服务，controller负责从请求中提取数据，然后调用service，并返回处理结果，model层则负责数据库的CRUD相关操作，事务管理则可以在service层进行。
 
 
+
+	
+	
