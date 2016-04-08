@@ -84,7 +84,7 @@ $ irb
 ---
 
 ### 启动Ruby Index服务
->$ ri --server
+>$ ri \-\-server
 
 ---
 
