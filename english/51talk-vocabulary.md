@@ -306,6 +306,23 @@ icon: glyphicon-saved
 >Meaning: > to move or climb quickly but with difficulty, often using your hands.  
 >Sample : > We scrambled up the hill.
 
+#### upside down
+>Meaning: > turned so that the part that is usually at the top is now at the bottom.  
+>Sample : > One of the pictures had been hung upside down.
+
+#### head-turning
+>adj. 回头率高的，极其引人注目的 
+
+>Meaning: > extremely noticeable or attractive.  
+>Sample : > her skimpy, head-turning costumes['kɑstjʊm].
+
+#### situated ['sɪtʃuetɪd]
+>adj. 位于…的；处于…境遇的 v. 使位于；使处于（situate的过去分词）
+
+>Meaning: > fix or build (something) in a certain place or position
+>Sample : > the pilot light is usually situated at the front of the boiler 
+
+
 
 ---
 
