@@ -319,7 +319,7 @@ icon: glyphicon-saved
 #### situated ['sɪtʃuetɪd]
 >adj. 位于…的；处于…境遇的 v. 使位于；使处于（situate的过去分词）
 
->Meaning: > fix or build (something) in a certain place or position
+>Meaning: > fix or build (something) in a certain place or position  
 >Sample : > the pilot light is usually situated at the front of the boiler 
 
 

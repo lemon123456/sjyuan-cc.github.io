@@ -64,7 +64,7 @@ gem 'uglifier', '>= 1.3.0'
 
 ---
 
-## 使用Ruby的REPL
+## 使用Ruby的REPL(Interactive Ruby)
 >$ ruby -v  
 >$ irb
 
