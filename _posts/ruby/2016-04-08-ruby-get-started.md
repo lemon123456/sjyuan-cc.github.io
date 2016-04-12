@@ -87,7 +87,12 @@ $ irb
 
 **启动Ruby Index服务**  
 
->`$ ri --server`
+```
+$ ri --server
+[2016-04-12 20:39:16] INFO  WEBrick 1.3.1
+[2016-04-12 20:39:16] INFO  ruby 2.2.3 (2015-08-18) [x86_64-darwin14]
+[2016-04-12 20:39:16] INFO  WEBrick::HTTPServer#start: pid=67854 port=8214
+```
 
 **获取学习工具**
 
