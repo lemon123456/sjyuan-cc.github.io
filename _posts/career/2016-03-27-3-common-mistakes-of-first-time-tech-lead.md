@@ -38,7 +38,7 @@ In this article, we explore three common traps a first time Tech Lead experience
 
 ---
 
-### 1. 所有时间都在编码
+## 1. 所有时间都在编码
 
 A first time Tech Lead will miss writing code. In fact, it is easy for them to assume that they need to demonstrate their leadership by writing code all the time. Although effective Tech Leads need to spend some time writing, reading and reviewing code, other responsibilities are left unfulfilled when they spend too much time writing code, - such as creating a technical vision and ensuring that the team understands key system quality attributes.
 
@@ -55,7 +55,7 @@ The more experienced Tech Lead understands that they must balance their time to 
 
 ---
 
-### 2. 做了所有的技术决定
+## 2. 做了所有的技术决定
 
 A first time Tech Lead may sometimes be the most experienced developer on the team, or feel the pressure to make all the technical decisions to demonstrate their authority or influence. When a Tech Lead is making all the technical decisions, they become a bottleneck in the team and the team cannot progress when the Tech Lead is not around. Other team members might feel demotivated when the Tech Lead makes all the important decisions, because their contributions are overruled and this could lead to resentment.
 
@@ -80,7 +80,7 @@ The more experienced Tech Lead realizes there are different ways of making decis
 
 ---
 
-### 3. 忘记培养团队文化
+## 3. 忘记培养团队文化
 
 A team is a group of people working together towards the same goal. The first time Tech Lead might mistakenly see their role leading on all the technical aspects and forget about how the team works together. Although this responsibility may be shared with other roles such as the Team Lead or Project Manager, a Tech Lead must also shepherd the team to move in the same technical direction.
 
@@ -96,7 +96,7 @@ The more experienced Tech Lead realizes that the lead part of their role is just
 
 ---
 
-### 总结
+## 总结
 ![Alt text]({{ "/assets/img/career/3-common-mistakes-of-first-time-tech-lead-2.png" }})
 
 The first time Tech Lead can easily fall for a number of traps, often caused by habits developed from their time as a developer. To overcome these traps, they must find ways to strike a balance between their technical and leadership responsibilities.

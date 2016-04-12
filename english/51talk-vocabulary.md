@@ -349,16 +349,52 @@ icon: glyphicon-saved
 ### phenomenal [fɪ'nɒmɪn(ə)l]
 >adj.显著的；异常的；能知觉的；惊人的，非凡的
 
->Meaning: > extremely successful or showing great qualities or abilities:
+>Meaning: > extremely successful or showing great qualities or abilities.  
 >Sample : > The film has been a phenomenal success.
+
+#### synonym [ˈsɪnənɪm]
+>n. 同义词；同义字
+
+>Meaning: > a word or phrase that means exactly or nearly the same as another word or phrase in the same language.  
+>Sample : > shut is a synonym of close.
 
 #### routine [rʊ'tin]
 >n. 日常工作；例行公事；[计] 程序；
 
->Meaning: > the things you regularly do, and how and when you do them:
+>Meaning: > the things you regularly do, and how and when you do them.  
 >Sample : > He longed to escape the routine of an office job.
 
 
+#### workout ['wɝkaʊt]
+>n. 锻炼；练习；试验
+
+>Meaning: > a series of exercises to make your body strong and healthy.  
+>Sample : > I have a daily workout at the gym.
+
+#### rural ['rʊrəl]
+>adj. 农村的，乡下的；田园的，有乡村风味的
+
+>Meaning: > relating to the countryside and not to towns.  
+>Sample : > My hometown is in the rural area.
+
+
+#### stable ['stebl]
+>adj. 稳定的；牢固的；坚定的
+
+>Meaning: > fixed or safe and not likely to move.  
+>Sample : > Be careful! That chair isn't very stable.
+
+#### sturdy ['stɝdi]
+>adj. 坚定的；强健的；健全的
+
+>Meaning: > very strong and solid.  
+>Sample : > It is asturdy walking boots.
+
+#### prone [pron]
+>adj. 有…倾向的，易于…的；俯卧的；
+
+>Meaning: > to often do something or suffer from something, especially something bad.  
+>Sample : > He's prone to forgetting things.
 
 ---
 

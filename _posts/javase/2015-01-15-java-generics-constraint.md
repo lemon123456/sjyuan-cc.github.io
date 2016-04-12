@@ -15,7 +15,7 @@ type: "original"
 * content
 {:toc}
 
-
+---
 
 ### 泛型参数的限制
 

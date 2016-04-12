@@ -115,6 +115,23 @@ The signal won't be stable.(✅)
 32. I use the elevator.(❌)  
 I will be using the elevator.(✅)
 
+33. I want go another city.(❌)  
+I want to go to  another city.(✅)
+
+34. I can't found the record.(❌)  
+I can't find the record.(✅)
+
+35. I haven't plans to travel yet.(❌)  
+I don't have plans to travel yet.(✅)
+
+36. When I was not busy.(❌)  
+When I am not busy.(✅)
+
+37. The volcano is life.(❌)  
+The volcano is alive.(✅)
+
+38. I prepare some slideshows.(❌)  
+I am preparing some slideshows.(✅)
 
 
 ---

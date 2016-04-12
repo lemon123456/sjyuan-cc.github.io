@@ -16,8 +16,9 @@ type: "original"
 {:toc}
 
 
+---
 
-### JAVA中的反射
+## JAVA中的反射
 
 简单写写Java反射和ClassLoader，之前玩过反射，觉得很有趣。
 
@@ -71,13 +72,13 @@ driveMtd.invoke(pcar, (Object[]) null);
 
 ---
 
-### ClassLoader
+## ClassLoader
 
 Java反射机制在诸多的框架中应用很广泛，我们在开发中常用的也不多，如需要自己编写一些框架，底层是逃离不了对Java反射的运用的，在JDK中reflect包中提供了这些类和接口，详细的可以在API中找到。
 
 ---
 
-#### ClassLoader工作机制
+### ClassLoader工作机制
 
 >`ClassLoader`是一个重要的Java运行时环境组件，负责在运行时查找和载入Class字节码文件。类加载工作是有`ClassLoader`及其子类负责的。
 
@@ -110,7 +111,7 @@ Grandparent loader:null
 
 ---
 
-#### 全盘负责委托机制
+### 全盘负责委托机制
 `全盘负责`：当一个ClassLoader装载一个类时，除非显式地指定使用另一个ClassLoader，该类锁依赖及引用的类也由这个ClassLoader载入。
 
 `委托机制`：先委托父装载器寻找目标，只有在找不到的情况下在从自己的类路径中查找并装载目标类，这样就避免了一个安全隐患，
@@ -119,9 +120,9 @@ Grandparent loader:null
 
 ---
 
-### ClassLoader常用的方法
+## ClassLoader常用的方法
 
-#### loadClass
+### loadClass
 `Class loadClass(String name)`，`name`参数指定类装载器需要装载类的名字，必须使用全限定类名，如`com.baobaotao.beans.Car`。
 
 >该方法有一个重载方法loadClass(Stringname ,boolean resolve)，resolve参数告诉类装载器是否需要解析该类。在初始化类之前，应考虑进行类解析的工作，
@@ -129,23 +130,23 @@ Grandparent loader:null
 
 ---
 
-#### findSystemClass
+### findSystemClass
 
 `Class findSystemClass(String name)`，从本地文件系统载入Class文件，如果本地文件系统不存在该Class文件，将抛出`ClassNotFoundException`异常。该方法是JVM默认使用的装载机制。
 
 ---
 
-#### findLoadedClass
+### findLoadedClass
 `Class findLoadedClass(String name)`，调用该方法来查看`ClassLoader `是否已装入某个类。如果已装入，那么返回`java.lang.Class`对象，否则返回`null`。如果强行装载已存在的类，将会抛出链接错误。
 
 ---
 
-#### getParent
+### getParent
 `ClassLoader getParent()`，获取类装载器的父装载器，除根装载器外，所有的类装载器都有且仅有一个父装载器，`ExtClassLoader`的父装载器是根装载器，因为根装载器非Java编写，所以无法获得，将返回`null`。
 
 ---
 
-### CLassLoader与对象的关系
+## CLassLoader与对象的关系
 以下用一个图描述类装载器与对象的关系：
 
 ![程序员的职业素养]({{ "/assets/img/javase/classloader-in-java-1.png" }})
