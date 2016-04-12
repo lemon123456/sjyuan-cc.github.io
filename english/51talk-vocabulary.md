@@ -322,6 +322,42 @@ icon: glyphicon-saved
 >Meaning: > fix or build (something) in a certain place or position  
 >Sample : > the pilot light is usually situated at the front of the boiler 
 
+#### guilty ['ɡɪlti]
+>adj. 有罪的；内疚的
+
+>Meaning: > ashamed because you have done something wrong.  
+>Sample : > I feel so guilty about not going to see them.
+
+#### inventory ['ɪnvəntɔri]
+>n. 存货，存货清单；详细目录；财产清册
+
+>Meaning: > a list of all the things that are in a place.  
+>Sample : > The inventory software is not working.
+
+#### frustration [frʌ'streʃən]
+>n. 失望，受挫
+
+>Meaning: > the feeling of being upset or annoyed as a result of being unable to change or achieve something.  
+>Sample : > People often are full of frustration after they fail from a examination again and again.
+
+#### infrastructure ['ɪnfrə'strʌktʃɚ]
+>n. 基础设施；公共建设；下部构造
+
+>Meaning: > the basic physical and organizational structures and facilities (e.g. buildings, roads, power supplies) needed for the operation of a society or enterprise.  
+>Sample : > The social and economic infrastructure of a country.
+
+### phenomenal [fɪ'nɒmɪn(ə)l]
+>adj.显著的；异常的；能知觉的；惊人的，非凡的
+
+>Meaning: > extremely successful or showing great qualities or abilities:
+>Sample : > The film has been a phenomenal success.
+
+#### routine [rʊ'tin]
+>n. 日常工作；例行公事；[计] 程序；
+
+>Meaning: > the things you regularly do, and how and when you do them:
+>Sample : > He longed to escape the routine of an office job.
+
 
 
 ---

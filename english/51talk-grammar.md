@@ -103,6 +103,18 @@ If the children will go to college.(✅)
 28. I have dreamed of a house, not very big.(❌)  
 I have dreamt of a house which is not very big.(✅)
 
+29. I have an interesting news to share you.(❌)  
+I have an interesting news to share with you.(✅)
+
+30. Everyone can check out it.(❌)  
+Everyone can check it out.(✅)
+
+31. The signal will be broken.(❌)  
+The signal won't be stable.(✅)
+
+32. I use the elevator.(❌)  
+I will be using the elevator.(✅)
+
 
 
 ---
