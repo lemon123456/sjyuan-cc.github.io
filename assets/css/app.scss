@@ -199,6 +199,12 @@ code, kbd, pre, samp {
   font-size: 0.9em;
 }
 
+code {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #000
+
+}
+
 form {
   margin: 0
 }
@@ -1218,3 +1224,4 @@ footer {
     }
   }
 }
+

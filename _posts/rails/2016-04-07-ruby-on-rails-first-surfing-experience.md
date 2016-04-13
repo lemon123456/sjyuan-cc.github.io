@@ -17,7 +17,7 @@ type: "original"
 
 >Rails is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.
 
->Rails是一个用Ruby编写的Web应用开发框架。它的设计目标是通过预先提供开发人员最开始需要的基础设施，从而让Web应用开发更加容易。它可以让你写更少的代码来完成其他语言和框架所不能完成的工作。有过Rail开发经验的人都说它能让web应用开发变得更有趣。
+Rails是一个用Ruby编写的Web应用开发框架。它的设计目标是通过预先提供开发人员最开始需要的基础设施，从而让Web应用开发更加容易。它可以让你写更少的代码来完成其他语言和框架所不能完成的工作。有过Rail开发经验的人都说它能让web应用开发变得更有趣。
 
 ---
 
@@ -41,14 +41,14 @@ type: "original"
 ---
 
 ## 心里准备
->此文档篇幅着实太长，单从目录来看就可能被吓退三尺。`实践是最好的学习方式`，你不必太担心，此文章乃纯干货，通篇在编码实践，让你在实践中感受Rails的魅力。它比一个简单的`Hello World`更加有趣以及充满了挑战性。它是一个循序渐进的过程，能让你在每一小步都能获得信心和成就感。同时，请相信我，在你到达终点前，你都不必纠结于其中的实现细节。而当你敲下最后一个`回车`的时候，你对Rail的感觉也许会从陌生人到恋人。开启愉快的Rails之旅吧，美好的风景在后面。
+此文档篇幅着实太长，单从目录来看就可能被吓退三尺。`实践是最好的学习方式`，你不必太担心，此文章乃纯干货，通篇在编码实践，让你在实践中感受Rails的魅力。它比一个简单的`Hello World`更加有趣以及充满了挑战性。它是一个循序渐进的过程，能让你在每一小步都能获得信心和成就感。同时，请相信我，在你到达终点前，你都不必纠结于其中的实现细节。而当你敲下最后一个`回车`的时候，你对Rail的感觉也许会从陌生人到恋人。开启愉快的Rails之旅吧，美好的风景在后面。
 
 ---
 
 ## 创建Rails项目
 
 ### 安装Rails
->$ gem install rails  
+>`$ gem install rails`
 
 ```
 $ rails -v  
@@ -58,8 +58,8 @@ Rails 4.2.5
 ---
 
 ### 创建一个blog应用
->$ rails new blog  
->$ cd blog
+>`$ rails new blog`  
+>`$ cd blog`
 
 * 生成工程的目录结构，此处英文较为通俗，建议读一读，心里稍微有个数。
 
@@ -86,7 +86,7 @@ Rails 4.2.5
 ## Hello, Rails！
 
 ### 启动Rails服务
->$ rails server
+>`$ rails server`
 
 ```
 $ rails server
@@ -111,7 +111,7 @@ $ rails server
 
 
 ### 添加一个控制器
->$ rails generate controller welcome index
+>`$ rails generate controller welcome index`
 
 ```
 $ rails generate controller welcome index
@@ -132,12 +132,12 @@ $ rails generate controller welcome index
 	create      app/assets/stylesheets/welcome.scss	
 ```
 
->下面是generator为你生成的两个重要的控制器和视图文件
+下面是generator为你生成的两个重要的控制器和视图文件
 
 - app/controllers/welcome_controller.rb   
 - app/views/welcome/index.html.erb.
 
->将`index.html.erb`文件内容替换成:`<h1>Hello, Rails!</h1>`  
+将`index.html.erb`文件内容替换成:`<h1>Hello, Rails!</h1>`  
 
 - 再次访问[http://localhost:3000](http://localhost:3000)，你会有新的发现。
 
@@ -145,7 +145,7 @@ $ rails generate controller welcome index
 
 
 ### 设置应用主页
->打开路由配置文件`config/routes.rb`，添加内容`root 'welcome#index'`：
+打开路由配置文件`config/routes.rb`，添加内容`root 'welcome#index'`：
 
 ```
 Rails.application.routes.draw do
@@ -167,7 +167,7 @@ Rails.application.routes.draw do
 ## 让程序跑起来
 
 ### 添加**Article**资源
->继续编辑路由配置文件`config/routes.rb`，添加内容`resources :articles`：
+继续编辑路由配置文件`config/routes.rb`，添加内容`resources :articles`：
 
 ```
 Rails.application.routes.draw do
@@ -182,7 +182,7 @@ end
 
 
 ### 查看资源的RESTful API
->$ rake routes
+>`$ rake routes`
 
 ```
 $ rake routes
@@ -203,7 +203,7 @@ welcome_index GET    /welcome/index(.:format)     welcome#index
 
 
 ### 为**Article**资源添加控制器
->$ rails generate controller articles
+>`$ rails generate controller articles`
 
 ```
 $ rails generate controller articles
@@ -222,7 +222,7 @@ $ rails generate controller articles
       create      app/assets/stylesheets/articles.scss
 ```
 
->会生成`articles_controller.rb`控制器文件
+会生成`articles_controller.rb`控制器文件
 
 ```ruby
 class ArticlesController < ApplicationController
@@ -233,7 +233,7 @@ end
 
 
 ### 创建添加**Article**的表单视图
->创建文件`app/views/articles/new.html.erb`，添加表单内容：
+创建文件`app/views/articles/new.html.erb`，添加表单内容：
 
 ```html
 <h1>New Article</h1>
@@ -253,7 +253,7 @@ end
   </p>
 <% end %>
 ``` 
->访问链接[http://127.0.0.1:3000/articles/new](http://127.0.0.1:3000/articles/new)
+访问链接[http://127.0.0.1:3000/articles/new](http://127.0.0.1:3000/articles/new)
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-2.png" }})
 
@@ -261,7 +261,7 @@ end
 
 
 ### 为**Article**添加create控制器方法
->打开文件`articles_controller.rb`，添加`create`方法：
+打开文件`articles_controller.rb`，添加`create`方法：
 
 ```ruby
 class ArticlesController < ApplicationController
@@ -273,14 +273,18 @@ class ArticlesController < ApplicationController
   end
 end
 ```
->此时提交表单之后，页面会显示: `{"title"=>"First article!", "text"=>"This is my first article."}`
+此时提交表单之后，页面会显示:
+
+```
+{"title"=>"First article!", "text"=>"This is my first article."}`
+```
 
 
 ---
 
 
 ### 创建一个**Article**数据库模型
->$ rails generate model Article title:string text:text
+>`$ rails generate model Article title:string text:text`
 
 ```
 $ rails generate model Article title:string text:text
@@ -292,7 +296,7 @@ $ rails generate model Article title:string text:text
       create      test/fixtures/articles.yml
 ```
 
->生成了一个重要文件`db/migrate/20160406072726_create_articles.rb`
+生成了一个重要文件`db/migrate/20160406072726_create_articles.rb`
 
 ```ruby
 class CreateArticles < ActiveRecord::Migration
@@ -310,7 +314,7 @@ end
 ---
 
 ### 同步数据库表
->$ rake db:migrate
+>`$ rake db:migrate`
 
 ```
 $ rake db:migrate
@@ -323,7 +327,7 @@ $ rake db:migrate
 ---
 
 ### 在Controller中保存**Article**
->更改`articles_controller.rb`中的`create`方法
+更改`articles_controller.rb`中的`create`方法
 
 ```ruby
   def create
@@ -335,11 +339,11 @@ $ rake db:migrate
   end
 ```
 
->此时提交之后会发生异常
+此时提交之后会发生异常
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-3.png" }})
 
->添加一个提取request form data参数的方法来解决这个问题
+添加一个提取request form data参数的方法来解决这个问题
 
 ```ruby
 def create
@@ -358,14 +362,14 @@ end
 ---
 
 ### 别急着提交表单，添加一个展示文章的视图页面
->在`articles_controller.rb`中添加`show`方法
+在`articles_controller.rb`中添加`show`方法
 
 ```ruby
 def show
     @article = Article.find(params[:id])
 end
 ```
->添加视图页面`app/views/articles/show.html.erb`
+添加视图页面`app/views/articles/show.html.erb`
 
 ```html
 <p>
@@ -378,14 +382,14 @@ end
   <%= @article.text %>
 </p>
 ```
->提交表单后，会将刚才添加的内容展示出来
+提交表单后，会将刚才添加的内容展示出来
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-4.png" }})
 
 ---
 
 ### 列出所有的文章
->在`articles_controller.rb`中添加`index`方法
+在`articles_controller.rb`中添加`index`方法
 
 ```ruby
 def index
@@ -393,7 +397,7 @@ def index
 end
 ```
 
->添加视图页面`app/views/articles/index.html.erb`
+添加视图页面`app/views/articles/index.html.erb`
 
 ```html
 <h1>Listing articles</h1>
@@ -413,26 +417,26 @@ end
 </table>
 ```
 
->访问[http://localhost:3000/articles ](http://localhost:3000/articles)，可以看到文章列表
+访问[http://localhost:3000/articles ](http://localhost:3000/articles)，可以看到文章列表
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-5.png" }})
 
 ---
 
 ### 添加导航链接
->给主页`app/views/welcome/index.html.erb`添加跳转`Article`列表链接
+给主页`app/views/welcome/index.html.erb`添加跳转`Article`列表链接
 
 ```html
 <%= link_to 'My Blog', controller: 'articles' %>
 ```
 
->从`app/views/articles/index.html.erb`跳转到添加`Article`页面
+从`app/views/articles/index.html.erb`跳转到添加`Article`页面
 
 ```html
 <%= link_to 'New article', new_article_path %>
 ```
 
->给`app/views/articles/new.html.erb`添加返回`Article`列表的链接
+给`app/views/articles/new.html.erb`添加返回`Article`列表的链接
 
 ```html
 <%= link_to 'Back', articles_path %>
@@ -441,7 +445,7 @@ end
 ---
 
 ### 添加数据校验，让我们的数据更好看
->该在` app/models/article.rb`model文件中做文章了
+该在`app/models/article.rb`model文件中做文章了
 
 ```ruby
 class Article < ActiveRecord::Base
@@ -449,7 +453,7 @@ class Article < ActiveRecord::Base
 end
 ```
 
->添加了校验之后，Controller保存`Article`时做一些兼容，更改`articles_controller.rb`中的`create`和`new`方法。**注意：**不要忘了`new`方法的更改
+添加了校验之后，Controller保存`Article`时做一些兼容，更改`articles_controller.rb`中的`create`和`new`方法。**注意：**不要忘了`new`方法的更改
 
 ```ruby
 def new
@@ -468,7 +472,7 @@ end
 
 ```
 
->将校验信息展示在`app/views/articles/new.html.erb`页面上
+将校验信息展示在`app/views/articles/new.html.erb`页面上
 
 ```html
 <%= form_for :article, url: articles_path do |f| %>
@@ -505,7 +509,7 @@ end
 <%= link_to 'Back', articles_path %>
 
 ```
->故意不填title提交表单，可以看到如下提示
+故意不填title提交表单，可以看到如下提示
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-6.png" }})
 
@@ -520,7 +524,7 @@ end
 - 在Controller对应方法中操作处理model，并返回处理结果。
 - 创建视图文件，展示Controller响应结果(V)。
 
->具体添加什么方法，可以运行`$ rake routes`来查看
+具体添加什么方法，可以运行`$ rake routes`来查看
 
 ```
 $ rake routes
@@ -540,14 +544,14 @@ welcome_index GET    /welcome/index(.:format)     welcome#index
 ---
 
 ### 更新**Article**
->在`app/controllers/articles_controller.rb`中添加`edit`方法，返回`Article`对象到编辑页面
+在`app/controllers/articles_controller.rb`中添加`edit`方法，返回`Article`对象到编辑页面
 
 ```ruby
 def edit
   @article = Article.find(params[:id])
 end
 ```
->创建`Article`编辑页面`app/views/articles/edit.html.erb`
+创建`Article`编辑页面`app/views/articles/edit.html.erb`
 
 ```html
 <h1>Editing article</h1>
@@ -586,7 +590,7 @@ end
 
 <%= link_to 'Back', articles_path %>
 ```
->添加更新`Article`的控制器中`update`方法
+添加更新`Article`的控制器中`update`方法
 
 ```ruby
 def update
@@ -599,7 +603,7 @@ def update
   end
 end
 ```
->给`Article`列表页面添加编辑`Article`的链接
+给`Article`列表页面添加编辑`Article`的链接
 
 ```html
 <table>
@@ -619,7 +623,7 @@ end
   <% end %>
 </table>
 ```
->访问[http://127.0.0.1:3000/articles/](http://127.0.0.1:3000/articles/)
+访问[http://127.0.0.1:3000/articles/](http://127.0.0.1:3000/articles/)
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-7.png" }})
 
@@ -628,13 +632,13 @@ end
 ### 再来看看怎么删除**Article**
 >运行`$ rake routes`后，可以看到`DELETE /articles/:id(.:format)      articles#destroy`，所以删除`Article`对应的控制器方法是`destroy`
 
->我们只需要在`app/views/articles/index.html.erb`中添加一个删除的链接
+我们只需要在`app/views/articles/index.html.erb`中添加一个删除的链接
 
 ```html
 <a href='http://example.com/articles/1/destroy'>look at this cat!</a>
 ```
 
->添加控制器方法
+添加控制器方法
 
 ```ruby
 def destroy
@@ -645,7 +649,7 @@ def destroy
 end
 ```
 
->添加删除超链接之后的页面
+添加删除超链接之后的页面
 
 ```html
 <h1>Listing Articles</h1>
@@ -674,7 +678,7 @@ end
 ---
 
 ### 再来一个Model，给你的文章添加评论
->$ rails generate model Comment commenter:string body:text article:references
+>`$ rails generate model Comment commenter:string body:text article:references`
 
 ```
 $ rails generate model Comment commenter:string body:text article:references
@@ -686,16 +690,16 @@ $ rails generate model Comment commenter:string body:text article:references
       create      test/fixtures/comments.yml
 ```
 
->运行之后生成了如下文件：
+运行之后生成了如下文件：
 
-文件       |     用途
+|文件       |     用途
 |:--------|:---------|
-db/migrate/20160406120306_create_comments.rb | Migration to create the comments table in your database (your name will include a different timestamp)
-app/models/comment.rb                        | The Comment model
-test/models/comment_test.rb                  | Testing harness for the comments model
-test/fixtures/comments.yml	                  | Sample comments for use in testing
+|db/migrate/20160406120306_create_comments.rb | Migration to create the comments table in your |database (your name will include a different timestamp)
+|app/models/comment.rb                        | The Comment model
+|test/models/comment_test.rb                  | Testing harness for the comments model
+|test/fixtures/comments.yml	                  | Sample comments for use in testing
 
->打开`app/models/comment.rb`，可以看到多了一个`belongs_to`
+打开`app/models/comment.rb`，可以看到多了一个`belongs_to`
 
 ```ruby
 class Comment < ActiveRecord::Base
@@ -703,7 +707,7 @@ class Comment < ActiveRecord::Base
 end
 ```
 
->再看看生成的Migration文件`app/db/migrate/20160406120306_create_comments.rb`，`t.references`创建了一个外键`article_id`，引用了`Article`表
+再看看生成的Migration文件`app/db/migrate/20160406120306_create_comments.rb`，`t.references`创建了一个外键`article_id`，引用了`Article`表
 
 ```ruby
 class CreateComments < ActiveRecord::Migration
@@ -719,7 +723,7 @@ class CreateComments < ActiveRecord::Migration
 end
 ```
 
->同样运行`$ rake db:migrate`
+同样运行`$ rake db:migrate`
 
 ```
 $ rake db:migrate
@@ -732,7 +736,7 @@ $ rake db:migrate
 ---
 
 ### 手动关联两个模型
->`Article`与`Comment`存在一对多的，反过来就是多对一
+`Article`与`Comment`存在一对多的，反过来就是多对一
 
 - 每条评论属于一篇文章
 - 一篇文章有多条评论 
@@ -751,7 +755,7 @@ end
 ---
 
 ### 让客户端能访问资源**Comments**
->配置`config/routes.rb`
+配置`config/routes.rb`
 
 ```ruby
 resources :articles do
@@ -760,7 +764,7 @@ end
 ```
 
 ### 给**Comment**添加控制器
->$ rails generate controller Comments
+>`$ rails generate controller Comments`
 
 ```
 $ rails generate controller Comments
@@ -779,19 +783,19 @@ $ rails generate controller Comments
       create      app/assets/stylesheets/comments.scss
 ```
 
->运行之后生成了如下文件：
+运行之后生成了如下文件：
 
-文件       |     用途
+|文件       |     用途
 |:--------|:---------|
-app/controllers/comments_controller.rb	     | The Comments controller app/views/comments/ Views of the controller are stored here
-test/controllers/comments_controller_test.rb | The test for the controller
-app/helpers/comments_helper.rb	            | A view helper file
-app/assets/javascripts/comment.js.coffee     | CoffeeScript for the controller
-app/assets/stylesheets/comment.css.scss	     | Cascading style sheet for the controller
+|app/controllers/comments_controller.rb	     | The Comments controller app/views/comments/ Views of the controller are stored here
+|test/controllers/comments_controller_test.rb | The test for the controller
+|app/helpers/comments_helper.rb	            | A view helper file
+|app/assets/javascripts/comment.js.coffee     | CoffeeScript for the controller
+|app/assets/stylesheets/comment.css.scss | Cascading style sheet for the controller
 
----
 
->编辑`app/views/articles/show.html.erb`文件，在页面上给资源添加评论
+
+编辑`app/views/articles/show.html.erb`文件，在页面上给资源添加评论
 
 ```html
 <p>
@@ -824,7 +828,7 @@ app/assets/stylesheets/comment.css.scss	     | Cascading style sheet for the con
 ```
 
 
->给`CommentsController`添加`create`方法
+给`CommentsController`添加`create`方法
 
 ```ruby
 class CommentsController < ApplicationController
@@ -841,7 +845,7 @@ class CommentsController < ApplicationController
 end
 ```
 
->再次编辑`app/views/articles/show.html.erb`文件，在页面上将已经添加的评论展示出来
+再次编辑`app/views/articles/show.html.erb`文件，在页面上将已经添加的评论展示出来
 
 ```html
 ...
@@ -859,14 +863,14 @@ end
 <% end %>
 ... 
 ```
->访问[http://127.0.0.1:3000/articles/1](http://127.0.0.1:3000/articles/1)，当然你要先确保有id=1的数据
+访问[http://127.0.0.1:3000/articles/1](http://127.0.0.1:3000/articles/1)，当然你要先确保有id=1的数据
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-8.png" }})
 
 ---
 
 ### 删除Comments
->添加删除链接，编辑`app/views/articles/show.html.erb`文件
+添加删除链接，编辑`app/views/articles/show.html.erb`文件
 
 ```html
 ...
@@ -890,7 +894,7 @@ end
 ...
 
 ```
->在`CommentsController`中添加`destroy`方法
+在`CommentsController`中添加`destroy`方法
 
 ```ruby
 def destroy
@@ -904,7 +908,7 @@ end
 ---
 
 ### 删除关联的对象
->当删除一个`Article`的时候，确保数据的完整性，需要将`Article`关联的`Comments`删除掉，只需给`Article`model配置`has_many :comments, dependent: :destroy`
+当删除一个`Article`的时候，确保数据的完整性，需要将`Article`关联的`Comments`删除掉，只需给`Article`model配置`has_many :comments, dependent: :destroy`
 
 ```ruby
 class Article < ActiveRecord::Base
@@ -916,12 +920,12 @@ end
 ---
 
 ## 安全
->到这里，冲浪基本上已经结束了，有没有很累了，相信收获也不小了吧，sense十足的你，最后引出一个关于安全的主题，不要担心，这里要说的安全非常轻量。
+到这里，冲浪基本上已经结束了，有没有很累了，相信收获也不小了吧，sense十足的你，最后引出一个关于安全的主题，不要担心，这里要说的安全非常轻量。
 
 ---
 
 ### 基本的登录认证
->只需要在Controller中配置登录验证拦截器
+只需要在Controller中配置登录验证拦截器
 
 ```ruby
 class ArticlesController < ApplicationController
@@ -944,36 +948,36 @@ class CommentsController < ApplicationController
   ...
 end
 ```			
->浏览器地址栏输入[http://127.0.0.1:3000/articles/](http://127.0.0.1:3000/articles/)，敲下最后一个`enter`键，点击添加`Article`链接，会弹出登录框
+浏览器地址栏输入[http://127.0.0.1:3000/articles/](http://127.0.0.1:3000/articles/)，敲下最后一个`enter`键，点击添加`Article`链接，会弹出登录框
 
 ![Alt text]({{ "/assets/img/rails/rails-get-started-9.png" }})
 		
->更多Rails安全主题，请访问[Rails Security](http://guides.rubyonrails.org/security.html)
+更多Rails安全主题，请访问[Rails Security](http://guides.rubyonrails.org/security.html)
 
 ---
 
 ## 剩下的事情
->在实际项目中 ，我们通常开发RESTful Web API，对Rails自带的模板很少使用，所以本文没有去做`抽取视图中组件到单独的文件中，提高代码整洁度和重用性`这件事情。欲了解全貌，请访问[Rails Get Started](http://guides.rubyonrails.org/getting_started.html)
+在实际项目中 ，我们通常开发RESTful Web API，对Rails自带的模板很少使用，所以本文没有去做`抽取视图中组件到单独的文件中，提高代码整洁度和重用性`这件事情。欲了解全貌，请访问[Rails Get Started](http://guides.rubyonrails.org/getting_started.html)
 
 ---
 
 ## 总结
->Rail是一个遵循`约定优于配置`的开发框架，所以一定要当心一些基本命名约定，经过了这次冲浪，如果严格按照文章中的规范走下来，应该是很顺利的。可以来回顾一下一些最基本的命名约定
+Rail是一个遵循`约定优于配置`的开发框架，所以一定要当心一些基本命名约定，经过了这次冲浪，如果严格按照文章中的规范走下来，应该是很顺利的。可以来回顾一下一些最基本的命名约定
 
 - Article -> ArticlesController
 - Comment -> CommentsController
 
->Rails提供的是RESTful API，比较显著的特点是在`routes.rb`中添加一个资源后，使用`$ rake routes`就可以看到生成了很多对这个资源的不同操作对应的请求动作和路由信息。
+Rails提供的是RESTful API，比较显著的特点是在`routes.rb`中添加一个资源后，使用`$ rake routes`就可以看到生成了很多对这个资源的不同操作对应的请求动作和路由信息。
 
->Rails是一个MVC的开发框架，默认的约定如下：
+Rails是一个MVC的开发框架，默认的约定如下：
 
-M       |      V    |     C
+|M       |      V    |     C
 |:-----------|:----------------|:----------|
-app/models   | app/views | app/controllers 
-article.rb   | articles/index.html.rb | articles_controller.rb 
-Article      | index  | ArticlesController
+|app/models   | app/views | app/controllers 
+|article.rb   | articles/index.html.rb | articles_controller.rb 
+|Article      | index  | ArticlesController
 
->通常在实际项目中，我们会面临很多较复杂业务处理，要在同一个请求中操作多个model，有人说将这些处理逻辑放在model层或者controller层，理论上这是可以的，带来的不好的结果有：
+通常在实际项目中，我们会面临很多较复杂业务处理，要在同一个请求中操作多个model，有人说将这些处理逻辑放在model层或者controller层，理论上这是可以的，带来的不好的结果有：
 
 - controller层或者model层代码过于复杂，不利于扩展和维护，更有甚者，会陷入`同级调用`误区。
 - 不利于事务控制和维护。（在Spring框架中通常会有一个service层，并利用`AOP`统一给service中的方法加上事务管理）
