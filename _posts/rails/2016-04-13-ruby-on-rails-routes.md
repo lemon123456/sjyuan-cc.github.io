@@ -20,7 +20,7 @@ type: "original"
 
 
 ## Route是什么
-Rails的URL的约定严格基于`RESTful`风格的。客户端的请求是在操作一些资源，同一资源的不同的请求动作(`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)分别对资源进行不同的操作(CRUD)。默认的情况下，我们只需要在routes.rb文件中配置好资源，Rails会为该资源生成7种不同的路由，根据路由就可以将客户端的请求转交给对应的控制器进行处理，做出正确的响应。Rails Route就是来识别这种资源式(`RESTful`风格)的路由以及非资源式的路由，它是客户端请求和服务端控制器的粘合剂，能将URL分发给控制器进行处理。
+Rails中URL的约定严格基于`RESTful`风格的。客户端的请求其实是在操作一些资源，同一资源的不同的请求动作(`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)分别对资源进行不同的操作(CRUD)。默认的情况下，我们只需要在routes.rb文件中配置好资源，Rails会为该资源生成7种不同的路由，根据路由就可以将客户端的请求转交给服务端对应的控制器进行处理，然后做出正确的响应。Rails Route能识别这种资源式(`RESTful`风格)的路由以及非资源式的路由，它是客户端请求和服务端控制器的粘合剂，能将URL分发给控制器进行处理。
 
 ---
 
@@ -108,12 +108,12 @@ edit_photo GET    /photos/:id/edit(.:format) photos#edit
 |DELETE	|/photos/:id	|photos#destroy	|删除指定的文章
 
 
-除了生成对应的7种不同的路由，还会生成一些辅助方法
+除了生成对应的7种不同的路由，还会生成一些具名辅助方法
 
-- `photos_path`，返回 /photos
-- `new_photo_path`， 返回 /photos/new
-- `edit_photo_path(:id)`， 返回 /photos/:id/edit，例如 edit_photo_path(10) 返回 /photos/10/edit
-- `photo_path(:id)`， 返回 /photos/:id，例如 photo_path(10) 返回 /photos/10
+- `photos_path`，返回 `/photos`
+- `new_photo_path`， 返回 `/photos/new`
+- `edit_photo_path(:id)`， 返回 `/photos/:id/edit`，例如 `edit_photo_path(10)` 返回 `/photos/10/edit`
+- `photo_path(:id)`， 返回 `/photos/:id`，例如 `photo_path(10)` 返回 `/photos/10`
 
 
 ---
@@ -168,9 +168,9 @@ edit_geocoder GET    /geocoder/edit(.:format) geocoders#edit
 
 同样单数资源式路由生成以下帮助方法：
 
-- `new_geocoder_path`， 返回 /geocoder/new
-- `edit_geocoder_path`，返回 /geocoder/edit
-- `geocoder_path`， 返回 /geocoder
+- `new_geocoder_path`， 返回 `/geocoder/new`
+- `edit_geocoder_path`，返回 `/geocoder/edit`
+- `geocoder_path`， 返回 `/geocoder`
 
 
 >**提示**  
@@ -312,7 +312,7 @@ new_article_comment GET    /articles/:article_id/comments/new(.:format) comments
 #### 提高资源的复用
 当一个资源需要重复嵌套到另一个资源的时候，我们可以选择重复定义，但这并不是好的实践，DRY也告诉我们要使用某种手段来使得资源定义能被复用。
 
-使用`Concerns`来抽取资源
+使用`concern`来抽取资源
 
 ```ruby
 concern :commentable do
@@ -323,7 +323,7 @@ concern :image_attachable do
   resources :images, only: :index
 end
 
-# 复用我们写好的concerns
+# 复用我们写好的concern
 resources :messages, concerns: :commentable
 resources :articles, concerns: [:commentable, :image_attachable]
 ```
@@ -377,6 +377,7 @@ resources :photos do
 end
 ```
 - 可以不使用 `:on` 选项，得到的成员路由是相同的，但资源 ID 存储在 `params[:photo_id]` 而不是 `params[:id]` 中。
+- 使用`:on`和不使用`:on`的情况的生成的路径分别是`/photos/:id/preview`和`/photos/:photo_id/preview`
 
 ---
 
@@ -390,7 +391,7 @@ resources :photos do
   end
 end
 ```
-- 这段路由能识别 /photos/search 是个 GET 请求，映射到 PhotosController 的 search 动作上。同时还会生成 search_photos_url 和 search_photos_path 两个帮助方法
+- 这段路由能识别 `/photos/search` 是个 GET 请求，映射到 `PhotosController` 的 `search` 动作上。同时还会生成 `search_photos_url` 和 `search_photos_path` 两个具名帮助方法
 
 同样，只有一个集合路由的时候
 
@@ -430,13 +431,13 @@ end
 ```ruby
 get ':controller(/:action(/:id))'
 ```
-- `GET /photos/show/1` 请求由这个路由处理（没匹配路由文件中其他路由声明），会映射到 `PhotosController` 的 `show` 动作上，最后一个参数 "1" 可通过 `params[:id]` 获取。
+- `GET /photos/show/1` 请求由这个路由处理（没匹配路由文件中其他路由声明），会映射到 `PhotosController` 的 `show` 动作上，最后一个参数 `"1"` 可通过 `params[:id]` 获取。
 - 上述路由还能处理 `/photos` 请求，映射到 `PhotosController#index`，因为 `:action` 和 `:id` 放在括号中，是可选参数。
 
 ```ruby
 get ':controller/:action/:id/:user_id'
 ```
-- `/photos/show/1/2` 请求会映射到 `PhotosController` 的 `show` 动作。`params[:id]` 的值是 "1"，`params[:user_id]` 的值是 "2"。
+- `/photos/show/1/2` 请求会映射到 `PhotosController` 的 `show` 动作。`params[:id]` 的值是 `"1"`，`params[:user_id]` 的值是 `"2"`。
 
 ```ruby
 get ':controller/:action/:id/with_user/:user_id'
@@ -465,7 +466,7 @@ get 'photos/*other', to: 'photos#unknown'
 ```
 - 这个路由可以匹配 `photos/12` 或 `/photos/long/path/to/12`，`params[:other]` 的值为 `"12"` 或 `"long/path/to/12"`。以星号开头的路径片段叫做“通配片段”。
 
-统配片段还可以放在任意位置
+通配片段还可以放在任意位置
 
 ```ruby
 get 'books/*section/:title', to: 'books#show'
@@ -583,7 +584,7 @@ resources :comments, only: [:index, :new, :create]
 resources :comments, except: :destroy
 
 ```
->**提示**  
+>**最佳实践**  
 >如果程序中有很多 REST 路由，使用 :only 和 :except 指定只生成所需的路由，可以节省内存，加速路由处理过程。
 
 ---
@@ -683,7 +684,7 @@ edit_photo GET    /photos/:id/edit(.:format) images#edit
 ```
 - 此时，路由生成的辅助方法还是依据 `photos` 来命名的，所以要使用 `photos_path`、`new_photo_path` 等生成该资源的路径.
 
-还可以指定命名空间的控制器
+还可以指定命名空间下的控制器
 
 ```ruby
 resources :user_permissions, controller: 'admin/user_permissions'
@@ -700,9 +701,8 @@ resources :user_permissions, controller: 'admin/user_permissions'
 
 ```ruby
 resources :photos, as: 'images'
-
 ```
-- 此时，该路由生成的辅助方法还是依据 `images ` 来命名的，所以要使用 `images_path`、`new_image_path` 等生成该资源的路径.
+- 此时，该路由生成的具名辅助方法还是依据 `images ` 来命名的，所以要使用 `images_path`、`new_image_path` 等生成该资源的路径.
 
 针对非资源式的路由，`:as`也同样使用
 
@@ -790,7 +790,7 @@ scope '/admin' do
 	resources :photos, as: :image, path: :image, controller: :image, defaults: {format: 'json'}
 end
 ```
-- 看看看，想想想，赶紧动手试试吧~
+- 看看看，想想想，赶紧动动动手试试吧~ ~
 
 ---
 
