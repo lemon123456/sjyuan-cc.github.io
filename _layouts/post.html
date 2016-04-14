@@ -24,7 +24,20 @@ layout: default
         {{ content }}
     </div>
 
-    {% include bd-share.html%}
+    <div class="height-50">
+            Posted by <a href="{{site.baseurl}}/about">{{ site.author }}</a> • {{ page.date | date: "%B " }}
+        {% assign d = page.date | date: "%-d" %}{% case d %}{% when '1' or '21' or '31 %}{{ d }}st{% when '2' or '22'
+        %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+        {{ page.date | date: "%Y" }} • <a href="https://thoughtworks.com/">ThoughtWorks</a>
+        <p>
+           <b>版权声明：</b>自由转载•非商用•非衍生•保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons
+            BY-NC-ND 3.0</a>
+        </p>
+    </div>
+
+    <div class="height-50">
+        {% include bd-share.html%}
+    </div>
 
 
     <!-- POST NAVIGATION -->
@@ -40,7 +53,8 @@ layout: default
         </a>
         {% endif %}
     </div>
-    {% include ds-comment.html%}
+
+    <div>{% include ds-comment.html%}</div>
 </div>
 
 

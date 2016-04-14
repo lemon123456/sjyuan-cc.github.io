@@ -791,3 +791,10 @@ scope '/admin' do
 end
 ```
 - 看看看，想想想，赶紧动手试试吧~
+
+---
+
+## 参考
+本文参考了Rails官方的指南，另外结合实际项目中用到的点做了提炼总结，以及对内容顺序进行了归纳整理，更适合循序渐进的阅读和实践。
+
+[Rails 路由全解•中文](http://guides.ruby-china.org/routing.html) \| [Rails 路由全解•英文](http://guides.rubyonrails.org/routing.html)
