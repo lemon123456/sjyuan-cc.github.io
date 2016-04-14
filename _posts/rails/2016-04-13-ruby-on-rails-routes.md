@@ -25,28 +25,39 @@ Rails的URL的约定严格基于`RESTful`风格的。客户端的请求是在操
 ---
 
 ## Rails路由有啥用
-- 把URL与代码链接起来
-	>请求`GET /articles/17`对应的路由是`get '/articles/:id', to: 'articles#show'`，这个请求就会被交给`articles`控制器中的`show`动作处理，并把`{ id: '17' }`传入params
+Rails路由主要有两个作用，首先作为客户端请求和服务端控制器的粘合剂，它负责分发请求，链接URL和Controller。另一个主要作用是动态生成路径和URL。
 
-- 生成路径和URL，比如以下路由
+---
 
-	```ruby
-	get '/articles/:id', to: 'articles#show', as: 'article'
-	```
+### 把URL与代码链接起来
+请求`GET /articles/17`对应的路由是
 
-	在控制器中有
+```ruby
+get '/articles/:id', to: 'articles#show'，
+```
+- 这个请求就会被交给`articles`控制器中的`show`动作处理，并把`{ id: '17' }`传入params
+
+---
+
+### 动态生成路径和URL
+
+```ruby
+get '/articles/:id', to: 'articles#show', as: 'article'
+```
+
+在控制器中有
 	
-	```ruby
-	@article = Article.find(17)
-	```
+```ruby
+@article = Article.find(17)
+```
 
-	视图中有
+视图中有
 	
-	```ruby
-	<%= link_to 'Article Record', article_path(@patient) %>
-	```
+```ruby
+<%= link_to 'Article Record', article_path(@patient) %>
+```
 	
-	会生成路径`/articles/17`
+会生成路径`/articles/17`。
 
 
 >**提示**  
@@ -55,8 +66,8 @@ Rails的URL的约定严格基于`RESTful`风格的。客户端的请求是在操
 
 ---
 
-## 聊一聊资源路径
->使用资源路径可以快速声明资源式控制器所有的常规路由，无需分别为 index、show、new、edit、create、update 和 destroy 动作分别声明路由，只需一行代码就能搞定
+## 资源式路由
+使用资源路径可以快速声明资源式控制器所有的常规路由，无需分别为 index、show、new、edit、create、update 和 destroy 动作分别声明路由，只需一行代码就能搞定
 
 ---
 
@@ -168,56 +179,9 @@ edit_geocoder GET    /geocoder/edit(.:format) geocoders#edit
 
 ---
 
-### 使用命名空间对控制器进行归类
-有些时候，我们需要将同一类控制器放在一个命名空间中，便于管理维护。最常见的是把相关的控制器放在Amin::命名空间内，此时需要将控制器放在app/controllers/admin文件夹中。
-
-通常有三种方式添加命名空间
-
-`namespace`，同时给控制器和URL添加命名空间
-
-```ruby
-namespace :admin do
-    resources :articles, :comments
-end
-```
-
-`scope module`，只给控制器添加命名空间
-
-```ruby
-scope module: 'admin' do
-	resources :articles, :comments
-end
-
-# 或者针对单个资源
-resources :articles, module: 'admin'
-```
-	
-`scope ''` 只给URL添加命名空间
-
-```ruby
-scope '/admin' do
-	resources :articles, :comments
-end
-
-# 或者针对单个资源
-resources :articles, path: '/admin/articles'
-```
-
-这三种方式生成的`GET`请求对应的路径和控制器#动作
-
-| 添加方式方式 | 路径 | 控制器#动作 | 辅助方法
-|:-----|:-----|:------|:------|
-|`namespace` | /admin/articles | admin/articles#index | `admin_articles_path`
-|`scope module` | /articles | admin/articles#index | `admin_articles_path`
-|`scope ''`  | /admin/articles | articles#index | `articles_path`
-
->补充：如果在 namespace 代码块中想使用其他的控制器命名空间，可以指定控制器的绝对路径，例如`get '/foo' => '/foo#index'`。
-
----
-
 ### 资源嵌套
 
->实际项目中资源通常不是独立存在的，互相有具有一定业务和逻辑关系，比如`一对多`，`一对一`，`多对多`。在rails中，解决一个资源属于另一个资源的子资源的情况，需要使用到`资源嵌套`来定义它们的路由。
+实际项目中资源通常不是独立存在的，互相有具有一定业务和逻辑关系，比如`一对多`，`一对一`，`多对多`。在rails中，解决一个资源属于另一个资源的子资源的情况，需要使用到`资源嵌套`来定义它们的路由。
 
 有两个资源
 
@@ -256,7 +220,7 @@ end
 ---
 
 #### 资源嵌套的一些限制
->资源嵌套中可以将子资源嵌套进来，很方便的生成嵌套的路由，然而当资源嵌套超过一层时，又会怎么样呢？
+资源嵌套中可以将子资源嵌套进来，很方便的生成嵌套的路由，然而当资源嵌套超过一层时，又会怎么样呢？
 
 看看下面资源
 
@@ -275,7 +239,9 @@ end
 ---
 
 #### 浅层嵌套提高可读性和可维护性
->在操作嵌套的资源中，一子资源的成员操作(`:show`, `:edit`, `:update`, `:destroy`)是可以根据自身的唯一标识`id`来进行的，此时就可以将这些操作单独定义出来，然后把需要与父级控制器集合起来的动作放在父级资源中来表名层级关系。
+在操作嵌套的资源中，一子资源的成员操作(`:show`, `:edit`, `:update`, `:destroy`)是可以根据自身的唯一标识`id`来进行的，此时就可以将这些操作单独定义出来，然后把需要与父级控制器集合起来的动作放在父级资源中来表名层级关系。
+
+看一个浅层嵌套的例子
 
 ```ruby
 resources :articles do
@@ -344,7 +310,7 @@ new_article_comment GET    /articles/:article_id/comments/new(.:format) comments
 ---
 
 #### 提高资源的复用
->当一个资源需要重复嵌套到另一个资源的时候，我们可以选择重复定义，但这并不是好的实践，DRY也告诉我们要使用某种手段来使得资源定义能被复用。
+当一个资源需要重复嵌套到另一个资源的时候，我们可以选择重复定义，但这并不是好的实践，DRY也告诉我们要使用某种手段来使得资源定义能被复用。
 
 使用`Concerns`来抽取资源
 
@@ -362,7 +328,7 @@ resources :messages, concerns: :commentable
 resources :articles, concerns: [:commentable, :image_attachable]
 ```
 
-上面的使用等价于
+上面资源定义等价于
 
 ```ruby
 resources :messages do
@@ -375,7 +341,7 @@ resources :articles do
 end
 ```
 
-同时，`concerns`也可以用在空间中
+同时，`concerns`也可以跟命名空间一起使用
 
 ```ruby
 namespace :articles do
@@ -385,8 +351,8 @@ end
 
 ---
 
-### 当7中默认的REST动作无法满足需求时
->在实际开发中，通常我们还需要更多的REST动作来满足业务需求，此时我们需要添加一些额外的的路由，主要有`成员路由`和`集合路由`两类REST风格的路由，他们主要是针对单个资源和资源集合的操作。
+### 当Rails默认的REST动作无法满足需求时
+在实际开发中，通常我们还需要更多的REST动作来满足业务需求，此时我们需要添加一些额外的的路由，主要有`成员路由`和`集合路由`两类REST风格的路由，他们主要是针对单个资源和资源集合的操作。
 
 ---
 
@@ -410,7 +376,7 @@ resources :photos do
   get 'preview', on: :member
 end
 ```
-- 可以不使用 :on 选项，得到的成员路由是相同的，但资源 ID 存储在 params[:photo_id] 而不是 params[:id] 中。
+- 可以不使用 `:on` 选项，得到的成员路由是相同的，但资源 ID 存储在 `params[:photo_id]` 而不是 `params[:id]` 中。
 
 ---
 
@@ -450,12 +416,12 @@ end
 >如果在资源式路由中添加了过多额外动作，这时就要停下来问自己，是不是要新建一个资源。
 
 
-----
+---
 
 ## 非资源式路由
->通常使用资源式路由是一个好的实践，实际开发中有些情况下使用简单的路由来的更便捷。而且简单的路由特别适合把传统的URL映射到Rails动作上。
+通常使用资源式路由是一个好的实践，实际开发中有些情况下使用简单的路由来的更便捷。而且简单的路由特别适合把传统的URL映射到Rails动作上。
 
->在Rails中，除了资源路由之外，Rails还可以把任意URL映射到动作上。这样就不会生成一系列资源式路，而是分别声明各个路由。
+在Rails中，除了资源路由之外，Rails还可以把任意URL映射到动作上。这样就不会生成一系列资源式路，而是分别声明各个路由。
 
 ---
 
@@ -491,26 +457,89 @@ get ':controller/:action/:id'
 
 ---
 
-### 重命名路由
-可以使用`:as`来重命名路由
+### 通配符匹配
+路由中的通配符可以匹配其后的所有路径片段，`*`来表示通配符，可以在路径中插入`*`表示统配片段
 
 ```ruby
-get 'exit', to: 'sessions#destroy', as: :logout
+get 'photos/*other', to: 'photos#unknown'
 ```
-- 这段路由会生成 `logout_path` 和 `logout_url` 这两个具名路由帮助方法。调用 `logout_path` 方法会返回 `/exit`。
+- 这个路由可以匹配 `photos/12` 或 `/photos/long/path/to/12`，`params[:other]` 的值为 `"12"` 或 `"long/path/to/12"`。以星号开头的路径片段叫做“通配片段”。
 
-`:as`还可以重设资源的路径方法
+统配片段还可以放在任意位置
 
 ```ruby
-get ':username', to: 'users#show', as: :user
+get 'books/*section/:title', to: 'books#show'
 ```
-- 这段路由会定义一个名为 `user_path` 的方法，可在控制器、帮助方法和视图中使用。在 `UsersController` 的 `show` 动作中，`params[:username]` 的值即用户的用户名。如果不想使用 `:username` 作为参数名，可在路由声明中修改。
-
+- 这个路由可以匹配 `books/some/section/last-words-a-memoir`，`params[:section]` 的值为 `'some/section'`，`params[:title]` 的值为 `'last-words-a-memoir'`。
 
 ---
 
-## 给路由加以管制
->通常，我们会给资源加上一些限制，只允许部分请求能够访问该资源，就需要对请求进行过滤，可以通过一些资源路由的配置来管制HTTP方法。
+### 重定向
+在路由中可以使用辅助方法`redirect`来讲一个路径重定向到另外一个路径
+
+```ruby
+get '/stories', to: redirect('/articles')
+```
+
+重定向动态路径
+
+```ruby
+get '/stories/:name', to: redirect('/articles/%{name}')
+```
+
+还可以使用代码块的形式
+
+```ruby
+get '/stories/:name', to: redirect {|path_params, req| "/articles/#{path_params[:name].pluralize}" }
+```
+
+>**提示**  
+>redirect 实现的是 301 "Moved Permanently" 重定向，有些浏览器或代理服务器会缓存这种重定向，导致旧的页面不可用。  
+>如果不指定主机（http://www.example.com），Rails 会从当前请求中获取。
+
+---
+
+### 定义默认值
+Rails允许我们指定默认值，比如路由中我们无需特别使用 `:controller` 和 `:action`
+
+```ruby
+get 'photos/:id', to: 'photos#show'
+```
+- 此路由这样声明后，Rails 会把 `/photos/12` 映射到 `PhotosController` 的 `show` 动作上
+
+Rails还可以允许我们使用`:default`选项来设置默认值
+
+```ruby
+get 'photos/:id', to: 'photos#show', defaults: { format: 'jpg' }
+
+resources :articles, constraints: {format: :json}, :defaults => {:format => :json}
+```
+
+---
+
+### 使用root
+`root`方法是用来指定`/`的路由的，通常一个网站用它来做主页路由或者登陆入口路由，它只支持`GET`请求。
+
+```ruby
+root to: 'welcome#index'
+
+# 简写成
+root 'welcome#index' 
+```
+
+在命名空间中也可以使用路由
+
+```ruby
+namespace :admin do
+    root to: "admin#index"
+end
+```
+- 上述路由会将 `/admin` 定位到 `/admin/index` 
+
+---
+
+## 对路由加以管制
+通常，我们会给资源加上一些限制，只允许部分请求能够访问该资源，就需要对请求进行过滤，可以通过一些资源路由的配置来管制HTTP方法。
 
 ---
 
@@ -523,6 +552,9 @@ match 'photos', to: 'photos#show', via: [:get, :post]
 match 'photos', to: 'photos#show', via: :all
 ```
 
+>**最佳实践**  
+>同一个路由不要允许所有的HTTP方法。因为同个路由即处理 GET 请求又处理 POST 请求有安全隐患。一般情况下，除非有特殊原因，切记不要允许在一个动作上使用所有 HTTP 方法。
+
 ---
 
 ### 路径片段约束
@@ -532,13 +564,230 @@ match 'photos', to: 'photos#show', via: :all
 ```ruby 
 get 'photos/:id', to: 'photos#show', constraints: { id: /[A-Z]\d{5}/ }
 
+# 简化形式
 get 'photos/:id', to: 'photos#show', id: /[A-Z]\d{5}/
 ```
-- 这个路由能匹配 /photos/A12345，但不能匹配 /photos/893。上述路由还可简化成
-
-### 
+- 这个路由能匹配 `/photos/A12345`，但不能匹配 `/photos/893`。
 
 
+---
 
->**最佳实践**  
->同一个路由不要允许所有的HTTP方法。因为同个路由即处理 GET 请求又处理 POST 请求有安全隐患。一般情况下，除非有特殊原因，切记不要允许在一个动作上使用所有 HTTP 方法。
+### 资源式路由的动作约束
+使用`:only`和`:except`约束资源动作
+
+```ruby
+# 只生成index, new, create路由
+resources :comments, only: [:index, :new, :create]
+
+# 生成除了destroy以外的路由
+resources :comments, except: :destroy
+
+```
+>**提示**  
+>如果程序中有很多 REST 路由，使用 :only 和 :except 指定只生成所需的路由，可以节省内存，加速路由处理过程。
+
+---
+
+### 资源式路由的路径片段约束
+`:constraints`还可以约束资源路径
+
+```ruby
+resources :photos, constraints: {id: /[A-Z][A-Z][0-9]+/}
+```
+- 这个路由声明限制参数 `:id` 必须匹配指定的正则表达式。因此，这个路由能匹配 `/photos/RR27`，不能匹配 `/photos/1`。
+
+还可以通过`constraint`块来约束路径
+
+```ruby
+constraints(id: /[A-Z][A-Z][0-9]+/) do
+  resources :photos
+  resources :accounts
+end
+```
+
+---
+
+## 让路由更个性化
+像 `resources :articles` 这种路由通常已经能够满足我们的需求，Rails中也推荐使用框架的约定来使用资源式路由。而软件开发人生中也是不如意十有八九，这时候我们需要打破常规，做一些有个性的事情了。
+
+
+---
+
+### 使用命名空间对控制器进行归类
+有些时候，我们需要将同一类控制器放在一个命名空间中，便于管理维护。最常见的是把相关的控制器放在Amin::命名空间内，此时需要将控制器放在app/controllers/admin文件夹中。
+
+通常有三种方式添加命名空间
+
+`namespace`，同时给控制器和URL添加命名空间
+
+```ruby
+namespace :admin do
+    resources :articles, :comments
+end
+```
+
+`scope module`，只给控制器添加命名空间
+
+```ruby
+scope module: 'admin' do
+	resources :articles, :comments
+end
+
+# 或者针对单个资源
+resources :articles, module: 'admin'
+```
+	
+`scope ''` 只给URL添加命名空间
+
+```ruby
+scope '/admin' do
+	resources :articles, :comments
+end
+
+# 或者针对单个资源
+resources :articles, path: '/admin/articles'
+```
+
+这三种方式生成的`GET`请求对应的路径和控制器#动作
+
+| 添加方式方式 | 路径 | 控制器#动作 | 具名辅助方法
+|:-----|:-----|:------|:------|
+|`namespace` | /admin/articles | admin/articles#index | `admin_articles_path`
+|`scope :module` | /articles | admin/articles#index | `articles_path`
+|`scope ''`  | /admin/articles | articles#index | `articles_path`
+
+>**提示**  
+>如果在 namespace 代码块中想使用其他的控制器命名空间，可以指定控制器的绝对路径，例如`get '/foo' => '/foo#index'`。
+
+---
+
+### 指定控制器
+在新起的项目中，最好的方式是我们按照命名约定去命名控制器，这样便于合作开发和维护。而在实际中，我们会遇到命名无法匹配的情况，此时就可以通过制定资源的控制器来兼容遗留代码。
+
+```ruby
+resources :photos, controller: 'images'
+```
+运行 `$ rake routes` 可以看到生成的路径和控制器
+
+```
+$ rake routes
+    Prefix Verb   URI Pattern                Controller#Action
+    photos GET    /photos(.:format)          images#index
+           POST   /photos(.:format)          images#create
+ new_photo GET    /photos/new(.:format)      images#new
+edit_photo GET    /photos/:id/edit(.:format) images#edit
+     photo GET    /photos/:id(.:format)      images#show
+           PATCH  /photos/:id(.:format)      images#update
+           PUT    /photos/:id(.:format)      images#update
+           DELETE /photos/:id(.:format)      images#destroy
+```
+- 此时，路由生成的辅助方法还是依据 `photos` 来命名的，所以要使用 `photos_path`、`new_photo_path` 等生成该资源的路径.
+
+还可以指定命名空间的控制器
+
+```ruby
+resources :user_permissions, controller: 'admin/user_permissions'
+```
+
+>**提示**  
+>指定命名空间控制器时只支持目录形式。如果使用Ruby常量形式，例如 controller: 'Admin::UserPermissions'，会导致路由报错。
+
+---
+
+### 定制路由具名辅助方法名成
+默认的资源式路由生成的具名辅助方法是依据资源名称来的，在一些特殊情况下，我们可能需要更改具名方法的名称。`:as` 可以让我们在定义资源路由式更改具名方法的名称。
+
+
+```ruby
+resources :photos, as: 'images'
+
+```
+- 此时，该路由生成的辅助方法还是依据 `images ` 来命名的，所以要使用 `images_path`、`new_image_path` 等生成该资源的路径.
+
+针对非资源式的路由，`:as`也同样使用
+
+```ruby
+get ':username', to: 'users#show', as: :user
+```
+- 这段路由会定义一个名为 `user_path` 的方法，可在控制器、帮助方法和视图中使用。在 `UsersController` 的 `show` 动作中，`params[:username]` 的值即用户的用户名。如果不想使用 `:username` 作为参数名，可在路由声明中修改。
+
+
+---
+
+
+### 给具名路由辅助方法加上前缀
+使用 `:as` 选项可在 Rails 为资源式路由生成的路由帮助方法前加上前缀。这个选项可以避免作用域内外产生命名冲突
+
+```ruby
+scope 'admin' do
+  resources :photos, as: 'admin_photos'
+end
+```
+- 这段路由会生成 `admin_photos_path` 和 `new_admin_photo_path` 等帮助方法
+
+要为多个资源添加前缀时
+
+```ruby
+scope 'admin', as: 'admin' do
+    resources :photos, :accounts
+end
+```
+- 这段路由会生成 `admin_photos_path` 和 `admin_accounts_path` 等帮助方法，分别映射到 `/admin/photos` 和 `/admin/accounts` 上。
+
+>**提示**  
+>namespace 作用域会自动添加 :as 以及 :module 和 :path 前缀。
+
+---
+
+### 定制路由的路径名称
+当默认的路由路径不能满足要求是，Rails还允许通过`:path`来定制路径名称
+
+```ruby
+resources :photos, path: 'img'
+```
+
+运行`$ rake routes`会看到
+
+```
+$ rake routes
+    Prefix Verb   URI Pattern             Controller#Action
+    photos GET    /img(.:format)          photos#index
+           POST   /img(.:format)          photos#create
+ new_photo GET    /img/new(.:format)      photos#new
+edit_photo GET    /img/:id/edit(.:format) photos#edit
+     photo GET    /img/:id(.:format)      photos#show
+           PATCH  /img/:id(.:format)      photos#update
+           PUT    /img/:id(.:format)      photos#update
+           DELETE /img/:id(.:format)      photos#destroy
+```
+
+---
+
+### 个性化小结
+- `namespace`同时为控制器、路径和具名辅助方法添加命名空间
+- `scope :module`只为控制器添加命名空间
+- `scope ''`只为路径添加命名空间
+- `:controller`定制控制器
+- `:as`用来定制路由具名辅助方法名称，为其添加前缀
+- `:path`用来定制路径名称
+
+---
+
+### 思考实践
+
+以下三中路由有什么区别？
+
+```ruby
+namespace :admin do
+	resources :photos, as: :image, path: :image, controller: :image, defaults: {format: 'json'}
+end
+
+scope module: 'admin' do
+	resources :photos, as: :image, path: :image, controller: :image, defaults: {format: 'json'}
+end
+
+scope '/admin' do
+	resources :photos, as: :image, path: :image, controller: :image, defaults: {format: 'json'}
+end
+```
+- 看看看，想想想，赶紧动手试试吧~
