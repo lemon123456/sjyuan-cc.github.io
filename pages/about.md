@@ -6,18 +6,18 @@ permalink: /about/
 icon: glyphicon-heart
 ---
 
-### 生平
+## 生平
 
 > 1990.08 出生于湖北省，名**袁慎建**，江湖人称**神剑**。
 
-> 2013.06 毕业于[**长安大学**](http://www.chd.edu.cn/)，大四转行从事软件开发。
+> 2013.06 毕业于[长安大学](http://www.chd.edu.cn/)，大四转行从事软件开发。
  
-> 2015.03 加入[**ThoughtWorks**](https://thoughtworks.com/)，结下情缘。
+> 2015.03 加入[ThoughtWorks](https://thoughtworks.com/)，结下情缘。
 
 
 ---
 
-### 职业
+## 职业
 
 >***程序员***，就职于[***`ThoughtWorks`***](https://thoughtworks.com/)，热衷于`整洁代码`/`TDD`。
 
@@ -28,7 +28,7 @@ icon: glyphicon-heart
 
 ---
 
-### 爱好
+## 爱好
 
 >球类 -> `篮球`，`羽毛球`，`桌球`，`保龄球`，`兵乓球`
 
@@ -41,22 +41,29 @@ icon: glyphicon-heart
 ---
 
 
-### 动态
+## 动态
 
 [领英](https://www.linkedin.com/in/慎建-袁-40ab31104) \|
 [CSDN](http://blog.csdn.net/ysjian_pingcx) \|
 [豆瓣](http://www.douban.com/people/142814172/) \|
 [知乎](https://www.zhihu.com/people/sjyuan)
  
-
-
 ---
 
-### 通讯
+## 通讯
 
 [个人邮箱](mailto:{{ site.social.personal_email }}) \|
 [工作邮箱](mailto:{{ site.social.work_email }})
 
+---
+
+## 邀您共事
+
+* 如果你有想法，并且热爱编程。
+* 如果你想通过自己的努力IT界有所成就。
+* 如果你想与[ThoughtWorks](https://thoughtworks.com/)中的牛人一起工作。
+
+期待你的来信，我将不遗余力把你举荐给伟大的[ThoughtWorks](https://thoughtworks.com/)`HR`团队。
 
   
   
