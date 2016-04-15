@@ -7,7 +7,7 @@ time: "09:46"
 category: "RAILS"
 
 author: "袁慎建"
-publish: true
+published: true
 type: "original"
 ---
 
@@ -36,6 +36,10 @@ Rails路由主要有两个作用，首先作为客户端请求和服务端控制
 get '/articles/:id', to: 'articles#show'，
 ```
 - 这个请求就会被交给`articles`控制器中的`show`动作处理，并把`{ id: '17' }`传入params
+	
+	```ruby
+	get '/articles/:id', to: 'articles#show'，
+	```
 
 ---
 

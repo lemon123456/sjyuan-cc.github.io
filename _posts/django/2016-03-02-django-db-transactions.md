@@ -7,7 +7,7 @@ time: "23:01"
 category: "DJANGO"
 
 author: "袁慎建"
-publish: true
+published: true
 type: "translation"
 source: "https://docs.djangoproject.com/en/dev/topics/db/transactions/"
 

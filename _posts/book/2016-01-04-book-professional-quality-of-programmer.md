@@ -7,7 +7,7 @@ time: "21:58"
 category: "图书分享"
 
 author: "袁慎建"
-publish: true
+published: true
 type: "book"
 
 ---

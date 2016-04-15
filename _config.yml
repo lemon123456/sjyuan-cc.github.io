@@ -11,6 +11,9 @@ permalink: /:title/
 
 markdown: kramdown
 #highlighter: rouge
+#lsi: false
+#excerpt_separator: "\n\n"
+
 paginate: 10
 
 sass:

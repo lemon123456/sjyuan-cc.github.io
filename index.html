@@ -2,12 +2,12 @@
 layout: default
 title: CLEAN CODER
 ---
+
 <div class="height-50"></div>
 <div class="home" id="home">
 
     <ul class="posts noList">
         {% for post in paginator.posts %}
-        {% if post.publish %}
         <li>
         <span class="date">
             {{ post.date | date: "%B " }}
@@ -17,12 +17,11 @@ title: CLEAN CODER
             <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <p class="description">
                 {% if post.description %}
-                    {{ post.description | strip_html | strip_newlines | truncate: 300 }}
+                    {{ post.description | strip_html | strip_newlines | truncate: 550 }}
                 {% else %}
-                    {{ post.content | strip_html | strip_newlines | truncate: 300 }}{% endif%}
+                    {{ post.content | strip_html | strip_newlines | truncate: 550 }}{% endif%}
             </p>
         </li>
-        {% endif %}
         {% endfor %}
     </ul>
 

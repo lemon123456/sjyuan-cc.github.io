@@ -7,7 +7,7 @@ time: "10:25"
 category: "CAREER"
 
 author: "袁慎建"
-publish: true
+published: true
 type: "translation"
 source: "https://www.thoughtworks.com/insights/blog/three-common-mistakes-first-time-tech-lead"
 

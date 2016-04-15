@@ -7,7 +7,7 @@ time: "23:01"
 category: "CAREER"
 
 author: "袁慎建"
-publish: true
+published: true
 type: "translation"
 source: "https://www.thoughtworks.com/insights/blog/5-tips-being-effective-tech-lead"
 

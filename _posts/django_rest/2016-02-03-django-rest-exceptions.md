@@ -7,7 +7,7 @@ time: "10:25"
 category: "DJANGO-REST"
 
 author: "袁慎建"
-publish: true
+published: true
 type: "translation"
 source: "http://www.django-rest-framework.org/api-guide/exceptions/"
 
