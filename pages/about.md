@@ -46,8 +46,7 @@ icon: glyphicon-heart
 [领英](https://www.linkedin.com/in/慎建-袁-40ab31104) \|
 [知乎](https://www.zhihu.com/people/sjyuan) \| 
 [豆瓣](http://www.douban.com/people/142814172/) \| 
-[CSDN](http://blog.csdn.net/ysjian_pingcx) \| 
-[简书](http://www.jianshu.com/users/c379cdabd121/latest_articles)
+[CSDN](http://blog.csdn.net/ysjian_pingcx)
 
 ---
 
