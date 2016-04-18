@@ -61,7 +61,7 @@ get '/articles/:id', to: 'articles#show', as: 'article'
 <%= link_to 'Article Record', article_path(@patient) %>
 ```
 	
-会生成路径`/articles/17`。
+`article_path(@patient)`会生成路径`/articles/17`。
 
 
 >**提示**  
