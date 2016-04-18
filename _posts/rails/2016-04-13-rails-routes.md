@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Ruby on Rails 路由"
+title: "Ruby on Rails 路由解析"
 date: 2016-04-13
 time: "09:46"
 category: "RAILS"
@@ -71,7 +71,7 @@ get '/articles/:id', to: 'articles#show', as: 'article'
 ---
 
 ## 资源式路由
-使用资源路径可以快速声明资源式控制器所有的常规路由，无需分别为 index、show、new、edit、create、update 和 destroy 动作分别声明路由，只需一行代码就能搞定
+使用资源路径可以快速声明资源式控制器所有的常规路由，无需分别为 `index`、`show`、`new`、`edit`、`create`、`update` 和 `destroy` 动作分别声明路由，只需一行代码就能搞定
 
 ---
 
@@ -699,7 +699,7 @@ resources :user_permissions, controller: 'admin/user_permissions'
 
 ---
 
-### 定制路由具名辅助方法名成
+### 定制路由具名辅助方法名称
 默认的资源式路由生成的具名辅助方法是依据资源名称来的，在一些特殊情况下，我们可能需要更改具名方法的名称。`:as` 可以让我们在定义资源路由式更改具名方法的名称。
 
 
@@ -779,7 +779,7 @@ edit_photo GET    /img/:id/edit(.:format) photos#edit
 
 ### 思考实践
 
-以下三中路由有什么区别？
+以下三种路由有什么区别？
 
 ```ruby
 namespace :admin do
