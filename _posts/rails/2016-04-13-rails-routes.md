@@ -139,7 +139,7 @@ resources :videos
 ---
 
 ### 单数资源路径
-我们会有不使用 ID就能查看资源的场景。例如，/profile 一直显示当前登入用户的个人信息。此时，我们可以把 /profile（不是 /profile/:id）映射到 show 动作：
+我们会有不使用 ID就能查看资源的场景。例如，`/profile` 一直显示当前登入用户的个人信息。此时，我们可以把 `/profile`（不是`/profile/:id`）映射到`show`动作
 
 ```ruby
 get 'profile', to: 'users#show'
@@ -235,7 +235,7 @@ resources :publishers do
   end
 end
 ```
-- 上面资源潜逃后会生成`/publishers/1/magazines/2/photos/3`这样的路由。这种路由嵌套层次多，可读性不高，而且处理起来也比较复杂。
+- 上面资源嵌套后会生成`/publishers/1/magazines/2/photos/3`这样的路由。这种路由嵌套层次多，可读性不高，而且处理起来也比较复杂。
 
 >**最佳实践**  
 >嵌套资源不要超过一层，可以使用浅层嵌套来解决这个问题。
@@ -243,7 +243,7 @@ end
 ---
 
 #### 浅层嵌套提高可读性和可维护性
-在操作嵌套的资源中，一子资源的成员操作(`:show`, `:edit`, `:update`, `:destroy`)是可以根据自身的唯一标识`id`来进行的，此时就可以将这些操作单独定义出来，然后把需要与父级控制器集合起来的动作放在父级资源中来表名层级关系。
+在操作嵌套的资源中，子资源的成员操作(`:show`, `:edit`, `:update`, `:destroy`)是可以根据自身的唯一标识`id`来进行的，此时就可以将这些操作单独定义出来，然后把需要与父级控制器集合起来的动作放在父级资源中来表名层级关系。
 
 看一个浅层嵌套的例子
 
@@ -498,10 +498,6 @@ get '/stories/:name', to: redirect('/articles/%{name}')
 get '/stories/:name', to: redirect {|path_params, req| "/articles/#{path_params[:name].pluralize}" }
 ```
 
->**提示**  
->redirect 实现的是 301 "Moved Permanently" 重定向，有些浏览器或代理服务器会缓存这种重定向，导致旧的页面不可用。  
->如果不指定主机（http://www.example.com），Rails 会从当前请求中获取。
-
 ---
 
 ### 定义默认值
@@ -532,7 +528,7 @@ root to: 'welcome#index'
 root 'welcome#index' 
 ```
 
-在命名空间中也可以使用路由
+在命名空间中也可以使用root
 
 ```ruby
 namespace :admin do
