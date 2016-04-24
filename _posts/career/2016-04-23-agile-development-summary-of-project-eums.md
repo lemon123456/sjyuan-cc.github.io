@@ -7,7 +7,7 @@ time: "11:25"
 category: "CAREER"
 
 author: "袁慎建"
-published: true
+published: false
 type: "original"
 
 ---
@@ -249,7 +249,7 @@ ___
 * BA：Business Analyst
 * TL：Techonical Leader
 * QA：Quality Assurance
-* DEV：DEVeloper
+* DEV：Developer
 * AC：Acceptance Criteria
 
 
