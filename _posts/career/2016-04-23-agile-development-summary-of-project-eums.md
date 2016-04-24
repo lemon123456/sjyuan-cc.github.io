@@ -1,8 +1,8 @@
 ---
 layout: post
 
-title: "项目总结•EUMS"
-date: 2016-04-27
+title: "敏捷开发实践总结•EUMS"
+date: 2016-04-23
 time: "11:25"
 category: "CAREER"
 

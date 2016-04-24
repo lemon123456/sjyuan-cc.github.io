@@ -133,6 +133,44 @@ The volcano is alive.(✅)
 38. I prepare some slideshows.(❌)  
 I am preparing some slideshows.(✅)
 
+39. Our time is free.(❌)  
+Our time is flexible.(✅)
+
+40. Second expensive hotel in the world.(❌)  
+Second most expensive hotel in the world.(✅)
+
+41. Not arrived.(❌)  
+The taxi has not yet arrived.(✅)
+
+42. If I going to the left there won't be a signal.(❌)  
+If I go left, there won't be a signal.(✅)
+
+43. I got award in the sports competition.(❌)  
+I got an award in the sports competition.(✅)
+
+44. I'm searching it.(❌)  
+I'm searching for it.(✅)
+
+45. It can help me to improve my program skills.(❌)  
+It can help me improve my programming skills.(✅)
+
+46. The book just can tell me what can happen to your life.(❌)  
+The book can gives me inspirations and life lessons.(✅)
+
+47. It improve 2 parts.(❌)  
+It will improve 2 parts.(✅)
+
+48. They driver gifted me a bottle of water.(❌)  
+They driver gave me a bottle of water.(✅)
+
+49. My homework is passed.(❌)  
+I passed my homework.(✅)
+
+50. It's the summarize about the last project.(❌)  
+It's the summary of the last project.(✅)
+
+
+
 
 ---
 
