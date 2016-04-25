@@ -187,7 +187,7 @@ n. 连帽衫 带帽夹克 穿着连帽衫的小混混
 #### demonstrate ['dɛmən'stret]
 
 ```
-Meaning:   ```clearly show the existence or truth of (something) by giving proof or evidence.  
+Meaning: clearly show the existence or truth of (something) by giving proof or evidence.  
 Sample : Their shameful silence demonstrates their inepitute.  
 Sample : In fact, it is easy for them to assume that they need to demonstrate their leadership by writing code all the time
 
@@ -251,8 +251,6 @@ n. 愤恨，怨恨
 Meaning: try to acquire or develop (a quality or skill).  
 Sample : A first time Tech Lead often forget about cultivating the team culture.
 
-
-```
 Meaning: Biology grow or maintain (living cells or tissue) in culture.  
 Sample : blood cells that can be most easily cultivated are macrophages.
 
