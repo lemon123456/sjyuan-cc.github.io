@@ -1232,5 +1232,13 @@ footer {
       }
     }
   }
+  .container {
+    max-width: 50%;
+  }
 }
 
+
+@media only screen and (min-width: 1400px) {
+  .container {
+  }
+}
