@@ -4,7 +4,7 @@ description: 袁慎建的博客
 author: 袁慎建
 
 
-url: http://cleancoder.club
+url: http://blog.sjyuan.cc
 baseurl: ""
 paginate_path: "/page:num/"
 permalink: /:title/
