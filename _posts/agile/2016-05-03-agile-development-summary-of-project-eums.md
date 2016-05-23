@@ -107,7 +107,7 @@ EUMs(End User Monitor System)是一个在线的物资跟踪监控系统。由[Th
 ### Regular catch up with client
 >跟客户建立信任关系是基础条件，而让客户保持愉悦，也是项目成功交付的助推剂。
 
-客户是位于非洲东部乌干达的子民，5个小时的时差没有造成太大的沟通障碍，他们也没有参与到我们[Standup](#standup)中来。所以我们团队在与客户沟通上处理两周一次IPM和[Showcase](#showcase)，增加里一个每天的Catch up环节，在客户上班后的固定时间一起开个小会，会议时间跟[Standup](#standup)差不多，主要涉及内容有：
+客户是位于非洲东部乌干达的子民，5个小时的时差没有造成太大的沟通障碍，他们也没有参与到我们[Standup](#standup)中来。所以我们团队在与客户沟通上除了两周一次IPM和[Showcase](#showcase)，还增加里一个每天的Catch up环节，在客户上班后的固定时间一起开个小会，会议时间跟[Standup](#standup)差不多，主要涉及内容有：
 
 ```
 1. 我们团队昨天的更新.
