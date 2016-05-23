@@ -139,7 +139,7 @@ Story kick off的核心目的是确保DEV开发出的功能都是符合客户期
 4. DEV开始开发Story，并自行将Story参照AC拆分成很多个子任务列表，然后一个一个干掉他们。
 ```
 
-最后一个实践严格上讲不是kick off环节里面的，它发生在kick off后，DEV采取自己怎么去完成功能。我比较推荐DEV在kick off后将Story划分成子任务列表，按照依赖关系和优先级排序，逐个干掉他们。一些敏捷管理工具([Trello](https://trello.com/), [mingle](https://www.thoughtworks.com/mingle/), [Pivotal Tracker](http://www.pivotaltracker.com/), [teambition](https://www.teambition.com/))都支持这种任务拆分，你还可以很容易的记录与跟踪。我个人很喜欢这么做，这个过程不断锻炼了我拆分任务的技能，最值得一提的是当我将任务列表最后一个勾上的时候，我重重的呼出一口气：哈，我又完成了一个Story。轻松加愉快😉。
+最后一个实践严格上讲不是kick off环节里面的，它发生在kick off后，DEV自行决定怎么去完成功能。我比较推荐DEV在kick off后将Story划分成子任务列表，按照依赖关系和优先级排序，逐个干掉他们。一些敏捷管理工具([Trello](https://trello.com/), [mingle](https://www.thoughtworks.com/mingle/), [Pivotal Tracker](http://www.pivotaltracker.com/), [teambition](https://www.teambition.com/))都支持这种任务拆分，你还可以很容易的记录与跟踪。我个人很喜欢这么做，这个过程不断锻炼了我拆分任务的技能，最值得一提的是当我将任务列表最后一个勾上的时候，我重重的呼出一口气：哈，我又完成了一个Story。轻松加愉快😉。
 
 >一些项目会引入好的开发实践，比如说`BDD`。它能按照人类自然语言去描述一个功能的实现。我们的Story描述通常会参照这种方式: `as...when...then...when...then`。这个时候，DEV、QA、BA可以在Story kick off的时候利用一些测试工具（[Cucumber](https://cucumber.io/)）一起来编写Story验收测试用例（主要由QA来编写），DEV负责编写代码来通过这些测试。理想情况下，验收测试用例如果正确完整，当所有测试都通过后，意味着Story功能已经完成。而且这种`TDD`的方式，代码出现bug的几率也会大幅度降低。
 
