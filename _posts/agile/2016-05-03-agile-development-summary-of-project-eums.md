@@ -4,7 +4,7 @@ layout: post
 title: "敏捷开发实践总结•EUMs"
 date: 2016-05-03
 time: "09:55"
-category: "CAREER"
+category: "AGILE"
 
 author: "袁慎建"
 published: true
