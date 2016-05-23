@@ -296,7 +296,7 @@ Code Review也是需要时间成本的，根据团队的规模1~2小时（5~10�
 4. 必要的时候拉长时间，条件允许下建议在一个有大显示器的会议室中进行。
 ```
 
-下面是某个时刻，我们Team四个人正在专注的讨论为一个函数取个更好的名字（猜猜谁是表情帝？？）：
+下面是某个时刻，我们Team四个人正在专注地讨论为一个函数取个更好的名字（猜猜谁是表情帝？？）：
 
 ![Alt text]({{ "/assets/img/agile/agile-development-summary-of-project-eums-code-review.jpg" }})
 
