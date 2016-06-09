@@ -22,14 +22,13 @@ type: "original"
 
 简单写写Java反射和ClassLoader，之前玩过反射，觉得很有趣。
 
-比如在Jdbc中我们通常首先会根据一个字符串加载特定数据库驱动类的字节码，如下：
+比如在Jdbc中我们通常首先会根据一个字符串加载特定数据库驱动类的字节码，如下: 
 
 ```java
-Class.forName("com.mysql.jdbc.Driver");
+Class.forName("com.mysql.jdbc.Driver");  
 Class.forName("oracle.jdbc.OracleDriver");
 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 ```
-
 
 这里其实是用到了类加载器`ClassLoader`：
 
