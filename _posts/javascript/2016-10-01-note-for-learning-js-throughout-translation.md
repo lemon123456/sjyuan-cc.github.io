@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Learning JavaScript 翻译笔记"
+title: "Learning JavaScript 翻译笔记（上）"
 date: 2016-06-11
 time: "23:15"
 category: "JAVASCRIPT"
