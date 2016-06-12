@@ -4,7 +4,7 @@ layout: post
 title: "Learning JavaScript 翻译笔记"
 date: 2016-06-11
 time: "23:15"
-category: "TRANSLATION"
+category: "JAVASCRIPT"
 
 author: "袁慎建"
 published: true
