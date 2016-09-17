@@ -2,12 +2,12 @@
 layout: post
 
 title: "JAVA泛型•通配符限定"
-date: 2014-11-13
+date: 2016-07-12
 time: "09:42"
 category: "JAVASE"
 
 author: "袁慎建"
-published: false
+published: true
 type: "original"
 
 ---
@@ -20,9 +20,9 @@ type: "original"
 ### 引一个例子
 考虑一个这样的场景，计算数组中的最大元素。
 
-***`[code01]`***
-
 ```java
+[code01]
+
 public class ArrayUtil {
 	public static <T> T max(T[] array) {
 		if (array == null || 0 == array.length) { return null ;}
@@ -35,12 +35,11 @@ public class ArrayUtil {
 }
 ```
 
-
-仔细看看`code01`里面的代码(代码不完整)，使用类型参数T定义一个max局部变量，这几意味着这个max可以是任意的类型，那么`max.compareTo(array[i])` 方法的调用的前提是T所属的类中有`compareTo`方法，怎么能做到这一点呢？别着急，让我们来看看如何给类型参数进行限定，现在来对code01中的代码进行完善。
-
-***`[code02]`***
+仔细看看`code01`里面的代码(代码不完整)，使用类型参数T定义一个max局部变量，这几意味着这个max可以是任意的类型，那么`max.compareTo(array[i])` 方法的调用的前提是T所属的类中有`compareTo`方法，怎么能做到这一点呢？别着急，让我们来看看如何给类型参数进行限定，现在来对`code01`中的代码进行完善。
 
 ```java
+[code02]
+
 public class ArrayUtil {
 	public static <T extends Comparable<T>> T max(T[] array) {
 		if (array == null || 0 == array.length) { return null ;}
@@ -59,17 +58,17 @@ public class ArrayUtil {
 
 如果给T限定多个类型，则需要使用符号`&`，如下面格式
 
-***`[code03]`***
-
 ```java
+[code03]
+
 <T extends Runnable & Serializable>
 ```
 
 细心的读者可能会发现，这里限定的都是`interface`，如果限定为`class`是不是也这么自由的呢？先不急着回答这个问题，我们知道Java中可以实现多个接口，而继承只能是单继承，可想而知，当我们给T限定类型的时候，限定为某个`class`的时候是有限制的，看看下面几组泛型限定的代码
 
-***`[code04]`***
-
 ```java
+[code04]
+
 <T extends Runnable & Serializable & ArrayList> // 错误
 <T extends Runnable & ArrayList & Serializable> // 错误
 <T extends ArrayList & LinkedList & Serializable> // 错误
@@ -89,9 +88,9 @@ public class ArrayUtil {
 
 比较遗憾的是，类似`<T extends Runnable & Serializable>`这样的泛型限定子类的语法，来限定超类是没有成为Java中的一个语法规范的，例如：
 
-***`[code05]`***
-
 ```java
+[code05]
+
 <T super File & Runnable> // 错误
 ```
 
@@ -101,11 +100,11 @@ public class ArrayUtil {
 
 ### 咨询面向对象先生
 不得不请教面向对象先生了
->面向接口(抽象)编程，而非面向实现编程。这个设计原则告诉我们，方法调用通过高层的抽象类或者接口来进行，具体调用的方法体就是我们实际运行时期传递的具体实现类的实例，这也是多态的一种体现。我们实现自己的泛型是提供后期应用程序员使用的，限定一个子类，这就需要我们通过子类来调用方法，而调用的方法体则是这个类的超类的实例，继承结构越往上就可能是`abstract`的，或者是`interface`，抽象类和接口是无法实例化对象，这种反设计让调用面临失败，一旦限定的这个类就是抽象的或者是接口，必定会造成这个泛型类或泛型方法无法使用，导致设计失败。举个例子：
-
-***`[code06]`***
+>`面向接口(抽象)编程，而非面向实现编程`。这个设计原则告诉我们，方法调用通过高层的抽象类或者接口来进行，具体调用的方法体就是我们实际运行时期传递的具体实现类的实例，这也是多态的一种体现。我们实现自己的泛型是提供后期应用程序员使用的，限定一个子类，这就需要我们通过子类来调用方法，而调用的方法体则是这个类的超类的实例，继承结构越往上就可能是`abstract`的，或者是`interface`，抽象类和接口是无法实例化对象，这种反设计让调用面临失败，一旦限定的这个类就是抽象的或者是接口，必定会造成这个泛型类或泛型方法无法使用，导致设计失败。举个例子：
 
 ```java
+[code06]
+
 public static <T super Runnable> void test(T runner) {
 	runner.run();
 }
@@ -121,18 +120,18 @@ public static <T super Runnable> void test(T runner) {
 ### 通配符类型
 通配符类型，相比于固定的泛型类型，它是一个巧妙的解决方案。如：
 
-***`[code07]`***
-
 ```java
+[code07]
+
 Couple<? extends Employee>
 ```
 
 表示`Couple`的泛型类型是`Employee`或者其子类，`Couple<Manager>`满足，而`Couple<File>`不满足了。通配符用`?`表示。
 我们来打印一下夫妇类中的wife：
 
-***`[code08]`***
-
 ```java
+[code08]
+
 public static void printWife(Couple<Employee> couple) {
 	Employee wife = couple.getWife();
 	System. out.println(wife);
@@ -140,9 +139,9 @@ public static void printWife(Couple<Employee> couple) {
 ```
 `code08`中的方法参数只能将`Employee`组成的夫妇传入，貌似经理的如`Couple<Manager>`就不能了，这有点不合适了，搞得好像`Manager`还不能结婚了。所以要想让`Manager`也能结婚并打印其wife，需要更改我们的设计了：
 
-***`[code09]`***
-
 ```java
+[code09]
+
 public static void printWife(Couple<? extends Employee> couple) {
 	Employee wife = couple.getWife();
 	System.out.println(wife);
@@ -153,20 +152,20 @@ public static void printWife(Couple<? extends Employee> couple) {
 #### 子类型限定     
 >通配符的子类型限定的语法与文章一开始介绍的类型限定有点相似，但是这里有些细节的秘密。
 
-***`[code10]`***
-
 ```java
+[code10]
+
 public static <T extends Comparable<T>> T max(T[] array) {...}
 public static void printWife(Couple<? extends Employee> couple) {...}
 ```
 
-前者T是预定义的类型参数，`T`可以作为一个具体的类型来定义方法的参数类型，局部变量等，`T`的作用域是整个方法(方法返回值，参数，方法体中局部变量)，这种设计是为了给使用者带来方便，将参数类型的指定权有限制地交给了使用者。而后者中不存在类型参数的定义，max方法参数的类型是预先定义好的`Couple`类型，使用者无法在使用的时候指定其他类型，但可以有限制地指定`Couple`中的泛型参数的类型，
+前者T是预定义的类型参数，`T`可以作为一个具体的类型来定义方法的参数类型，局部变量等，`T`的作用域是整个方法(方法返回值，参数，方法体中局部变量)，这种设计是为了给使用者带来方便，将参数类型的指定权有限制地交给了使用者。而后者中不存在类型参数的定义，`printWife`方法参数的类型是预先定义好的`Couple`类型，使用者无法在使用的时候指定其他类型，但可以有限制地指定`Couple`中的泛型参数的类型，
 
 `? extends Employee`自身不能单独使用，可以理解为只能寄生在其他泛型类中，作为泛型类一个具体的类型参数，通常用于定义阶段，如下面：
 
-***`[code11]`***
-
 ```java
+[code11]
+
 public static ? extends Employee printWife() {...} // 错误
 public static void printWife(? extends Empoyee employee) {...} // 错误
 ```
@@ -179,17 +178,17 @@ public static void printWife(? extends Empoyee employee) {...} // 错误
 #### 超类型限定
 和前面子类型的限定一样，用`?`表示通配符，它的存在必须存在泛型类的类型参数中，如：
 
-***`[code12]`***
-
 ```java
+[code12]
+
 Couple<? super Manager>
 ```
 
 格式跟通配符限定子类型一样，用了关键字`super`，但是这两种方式的通配符存在一个隐蔽的区别，让我们来揭晓吧，先看看下面代码：
 
-***`[code13]`***
-
 ```java
+[code13]
+
 Couple<Manager> couple = new Couple<Manager>(new Manager(),new Manager());
 Couple<? extends Employee> couple2 = couple;
 Employee wife = couple2.getWife();
@@ -197,9 +196,9 @@ Employee wife = couple2.getWife();
 Couple<? extends Employee>定义了couple2后可以将getWife和setWife想象成如下：
 ```
 
-***`[code14]`***
-
 ```java
+[code14]
+
 ? extends Employee getWife() {...}
 void setWife(? extends Employee) {...}
 ```
@@ -207,9 +206,9 @@ getWife是可以通过的，因为将一个返回值的引用赋给超类`Employ
 
 在来看看通配符的超类型限定，即`Couple<? super Manager>`，`getWife`和`setWife`可以想象成：
 
-***`[code15]`***
-
 ```java
+[code15]
+
 ? super Manager getWife() {...}
 void setWife(? super Manager) {...}
 ```
@@ -221,26 +220,26 @@ void setWife(? super Manager) {...}
 
 >无限定通配符去除了超类型和子类型的规则，仅仅用一个`?`表示，并且也只能用于指定泛型类的类型参数中。如`Couple<?>`的形式，此时`getWife `和`setWife `方法如：
 
-***`[code16]`***
-
 ```java
+[code16]
+
 ? getWife() {...}
 void setWife(?) {...}
 ```
 `getWife `返回值直接付给了`Object `，而`setWife `方法是不允许调用的。那么既然这么脆弱，牛逼的Java设计者为什么还要引入这种通配符呢？在一些简单的操作中，五限定通配符还是有用武之地的，比如：
 
-***`[code17]`***
-
 ```java
+[code17]
+
 public static boolean isCoupleComplete(Couple<?> couple) {
 	return couple.getWife() != null && couple.getHusband() != null;
 }
 ```
 这个方法体中，`getWife `和`getHusband `返回值都是`Object `类型的，此时我们只需要判断是否为`null `即可，而不需要知道具体的类型是什么，这就发挥了无限定通配符的作用了。发动脑经想一想，这个方法用文章开始所提到类型限定是否可以代替呢？自我思考中...
 
-***`[code18]`***
-
 ```java
+[code18]
+
 public static <T> boolean isCoupleComplete(Couple<T> couple) {
 	return couple.getWife() != null && couple.getHusband() != null ;
 }
@@ -256,9 +255,9 @@ public static <T extends Employee> boolean isCoupleComplete(Couple<T> couple) {
 
 悲催了，只有第一种能捕获，怎么办呢？别着急，看看下面的小魔术：
 
-***`[code19]`***
-
 ```java
+[code19]
+
 public static void print(Couple<?> couple) {
 	printHelp(couple);
 	}
