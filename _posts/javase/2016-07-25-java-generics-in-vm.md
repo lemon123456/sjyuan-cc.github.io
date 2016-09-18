@@ -2,12 +2,12 @@
 layout: post
 
 title: "JAVA泛型•虚拟机执行泛型代码"
-date: 2014-12-14
+date: 2016-07-25
 time: "09:46"
 category: "JAVASE"
 
 author: "袁慎建"
-published: false
+published: true
 type: "original"
 ---
 
@@ -21,9 +21,9 @@ Java虚拟机是不存在泛型类型对象的，所有的对象都属于普通�
 
 >虚拟机的一种机制：擦除类型参数，并将其替换成特定类型，没有指定特定类型用Object代替，如前文中的Couple<T>类，虚拟机擦除后：   
 
-***`[code01]`***
-
 ```java
+[code01]
+
 public class Couple {
 	private Object wife ;
 	private Object husband ;
@@ -44,9 +44,9 @@ public class Couple {
 
 如有对类型参数有类型限定会怎么替换呢？擦除类型参数机制告诉我们，使用限定的类型代替，如果有多个，使用第一个代替，看一段代码：
 
-***`[code02]`***
-
 ```java
+[code02]
+
 public class Period<T extends Comparable<T> & Serializable> {
 	private T begin;
 	private T end;
@@ -61,11 +61,11 @@ public class Period<T extends Comparable<T> & Serializable> {
 }
 ```
      
-`code02 `擦除后，`Period`的原始类型如下：
-
-***`[code03]`***
+`code02`擦除后，`Period`的原始类型如下：
 
 ```java
+[code03]
+
 public class Period {
 	private Comparable begin;
 	private Comparable end;
@@ -79,7 +79,7 @@ public class Period {
 	}
 }
 ```
-思考一下，如果将`Period<T extends Comparable<T> & Serializable>`写成`Period<T extends Serializable  & Comparable<T>>`会是怎么样呢?
+>思考一下，如果将`Period<T extends Comparable<T> & Serializable>`写成`Period<T extends Serializable  & Comparable<T>>`会是怎么样呢?
 
 ---
 
@@ -89,10 +89,9 @@ public class Period {
 
 先来看看虚拟机执行表达式的时候发生了什么，如：
 
-
-***`[code04]`***
-
 ```java
+[code04]
+
 Couple<Employee> couple = ...;
 Employee wife = couple.getWife();
 ```
@@ -103,23 +102,20 @@ Employee wife = couple.getWife();
 
 再来看看虚拟机执行泛型方法的时候发生了什么，泛型方法如：
 
-
-***`[code05]`***
-
 ```java
+[code05]
+
 public static <T extends Comparable<T>> max(T[] arrays) {... }
-```
 
 擦除后成了:
 
-```java
 public static Comoparable max(Comparable[] arrays) {... }
 ```  
 但是泛型方法的擦除会带来两个复杂的问题，且看第一个实例，一个实例：
 
-***`[code06]`***
-
 ```java
+[code06]
+
 public class Period <T extends Comparable<T> & Serializable> {
 	private T begin;
 	private T end;
@@ -158,33 +154,34 @@ public class DateInterval extends Period<Date> {
 
 #### 桥方法
 
-***`[code07]`***
-
 ```java
+[code07]
+
 Period<Date> period  = new DateInterval(...);
 period.setBegin(new Date());
 ```
 这里因为`period`引用指向了`DateInterval`实例，根据多态性，`setBegin`应该调用`DateInterval`对象的`setBegin`方法，可是这个擦除让`Period`中的 `public void setBegin(Object begin) {...}`被调用，导致了擦除与多态发生了冲突，怎么办呢？虚拟机此时会在`DateInterval`类中生成一个桥方法(bridge method)，调用过程发生了细微的变化：
 
-
-***`[code08]`***
-
 ```java
+[code08]
+
 public void setBegin(Object begin) {
 	setBegin((Date)begin);
 }
 ```
 有了这个合成的桥方法以后，`code07`中对`setBegin`的调用步骤如下：
 
+```
 1. 调用DateInterval.setBegin(Object)方法。
 2. DateInterval.setBegin(Object)方法调用DateInterval.setBegin(Date)方法。
+```
 
 发现了吗，当我们在`DateInterval`中增加了`getBegin`方法之后会是什么样子的呢？是不是`Peroid`中有一个`Object getBegin()`的方法，而`DateInterval`中有一个`Date getBegin()`方法呢，这两个方法在Java中是不能同时存在的？可是Java5以后增加了一个协变类型，使得这里是被允许的，看看`DateInterval`中`getBegin`方法就知道了：
 
 
-***`[code09]`***
-
 ```java
+[code09]
+
 @Override
 public Date getBegin(){ return super.getBegin(); }
 ```
@@ -195,9 +192,10 @@ public Date getBegin(){ return super.getBegin(); }
 
 ### 总结
 
+```
 1. 记住一点，虚拟机中没有泛型，只有普通的类。
 2. 所有泛型的类型参数都用它们限定的类型代替，没有限定则用Object。
 3. 为了保持类型安全性，虚拟机在有必要时插入强制类型转换。
 4. 桥方法的合成用来保持多态性。
 5. 协变类型允许子类覆盖方法后返回一个更严格的类型。
-
+```
