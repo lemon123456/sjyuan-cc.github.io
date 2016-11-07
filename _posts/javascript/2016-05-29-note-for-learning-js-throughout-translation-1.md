@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Learning JavaScript 翻译笔记（上）"
+title: "Learning JavaScript 翻译笔记（一）"
 date: 2016-05-29
 time: "23:15"
 category: "JAVASCRIPT"
@@ -84,7 +84,8 @@ Git（饭桶），团队协作开发的最佳代码版本控制工具，程序�
 
 ```javascript
 let currentTempC = 22; // degrees Celsius
-let targetTempC, room1 = "conference_room_a", room2 = "lobby";```
+let targetTempC, room1 = "conference_room_a", room2 = "lobby";
+```
 
 常量命名，关键字`const`
 
@@ -135,14 +136,23 @@ JavaScript有六种基本类型：`数字`、`字符串`、`布尔型`、`null`�
 数字，都是双精度的，有`二进制`、`八进制`、`十进制`、`十六进制`。
 
 ```javascript
-let count = 10;            // integer literal; count is still a doubleconst blue = 0x0000ff;     // hexadecimal (hex ff = decimal 255)const umask = 0o0022;      // octal (octal 22 = decimal 18)const roomTemp = 21.5;     // decimalconst c = 3.0e6;           // exponential (3.0 × 10^6 = 3,000,000)const e = -1.6e-19;        // exponential (-1.6 × 10^-19 = 0.00000000000000000016)const inf = Infinity;const ninf = -Infinity;const nan = NaN;           // "not a number"
+let count = 10;            // integer literal; count is still a double
+const blue = 0x0000ff;     // hexadecimal (hex ff = decimal 255)
+const umask = 0o0022;      // octal (octal 22 = decimal 18)
+const roomTemp = 21.5;     // decimal
+const c = 3.0e6;           // exponential (3.0 × 10^6 = 3,000,000)
+const e = -1.6e-19;        // exponential (-1.6 × 10^-19 = 0.00000000000000000016)
+const inf = Infinity;
+const ninf = -Infinity;
+const nan = NaN;           // "not a number"
 ```
 
 #### 字符串
 字符串，使用`单引号`、`双引号`、`重音符`，一般使用`双引号`，遇到需要转义时，可灵活选择。
 
 ```javascript
-const dialog1 = "He looked up and said \"don't do that!\" to Max.";const dialog2 = 'He looked up and said "don\'t do that!" to Max.';
+const dialog1 = "He looked up and said \"don't do that!\" to Max.";
+const dialog2 = 'He looked up and said "don\'t do that!" to Max.';
 ```
 常用的特殊字符：`\n`、`\r`、`\t`、`\'`、`\"`、`\$`、`\\`、`\uXXXX`、`\xXX`
 
@@ -151,7 +161,8 @@ const dialog1 = "He looked up and said \"don't do that!\" to Max.";const dialog
 数字和字符串混合运算时，结果往往会造成困惑，如下面例子：  
 
 ```javascript
-const result1 = 3 + '30';  // 3 is converted to a string; result is string '330'const result2 = 3 * '30';  // '30' is converted to a number; result is numeric 90
+const result1 = 3 + '30';  // 3 is converted to a string; result is string '330'
+const result2 = 3 * '30';  // '30' is converted to a number; result is numeric 90
 ```
 
 用来给字符串中插入值，在ES6之前，只能使用`+`来链接字符串，ES6允许使用`${}`来给字符串中插入值。
@@ -159,21 +170,28 @@ const result1 = 3 + '30';  // 3 is converted to a string; result is string '330'
 ES6之前：
 
 ```javascript
-let currentTemp = 19.5;// 00b0 is the Unicode code point for the "degree" symbolconst message = "The current temperature is " + currentTemp + "\u00b0C";
+let currentTemp = 19.5;
+// 00b0 is the Unicode code point for the "degree" symbol
+const message = "The current temperature is " + currentTemp + "\u00b0C";
 ```
 ES6，使用重音符\`代替`"`:
 
 ```javascript
-let currentTemp = 19.5;const message = `The current temperature is ${currentTemp}\u00b0C`;```
+let currentTemp = 19.5;
+const message = `The current temperature is ${currentTemp}\u00b0C`;
+```
 
 #### 多行字符串
 
 使用重音符还可以写出多行字符串，但是有个缺点，换行后的空格也会被插入到多行字符串中。
 
 ```javascript
-const multiline = `line1line2`;
+const multiline = `line1
+line2`;
 
-const multiline = `line1      line2      line3`; 
+const multiline = `line1
+      line2
+      line3`; 
 ```
 
 >实践指导：  
@@ -184,14 +202,17 @@ const multiline = `line1      line2      line3`;
 布尔型只有两种值`true`和`false`，在JavaScript中，任何值都可以代表布尔值。
 
 ```javascript
-let heating = true;let cooling = false;
+let heating = true;
+let cooling = false;
 ```
 
 #### 符号（Symbol）
 符号是ES6的一种新型数据类型，它代表唯一的token。符号的创建：
 
 ```javascript
-const RED = Symbol();const ORANGE = Symbol("The color of a sunset!");RED === ORANGE  // false: every symbol is unique
+const RED = Symbol();
+const ORANGE = Symbol("The color of a sunset!");
+RED === ORANGE  // false: every symbol is unique
 ```
 
 #### null和undefined
@@ -213,19 +234,24 @@ const obj = {
 可以使用`成员访问运算符`访问对象的属性，但要求属性必须是一个合法的标识符，如果标识符不合法时，可以使用`计算机成员访问运算符`访问。
 
 ```javascript
-obj["not an identifier"] = 3;obj["not an identifier"];         // 3obj["color"];                     // "yellow"
+obj["not an identifier"] = 3;
+obj["not an identifier"];         // 3
+obj["color"];                     // "yellow"
 ```
 还可以使用`计算机成员访问运算符`访问`符号`属性：
 
 ```javascript
-const SIZE = Symbol();obj[SIZE] = 8;obj[SIZE];                      // 8
+const SIZE = Symbol();
+obj[SIZE] = 8;
+obj[SIZE];                      // 8
 ```
 
 #### 数字、字符串、布尔型对应的对象类型
 数字、字符串和布尔型对应有`Number`、`String`、`Boolean`对象类型，看一个`String`的例子：
 
 ```javascript
-const s = "hello";s.toUpperCase();        // "HELLO"
+const s = "hello";
+s.toUpperCase();        // "HELLO"
 ```
 
 >ES6引入了`Map`和`Set`以及它们对应的"弱类型"`WeakMap`和`WeakSet`
@@ -235,26 +261,36 @@ const s = "hello";s.toUpperCase();        // "HELLO"
 关于数据类型，看一些直观的例子，转换成数字（如果内容不符合数字类型，结果为`NaN`）：
 
 ```javascript
-const numStr = "33.3";const num = Number(numStr);   // this creates a number value, *not* an instance of the Number object
+const numStr = "33.3";
+const num = Number(numStr);   // this creates a number value, *not* an instance of the Number object
 ```
 还可以使用内置函数，它们会忽略不相关的内容：
 
 ```javascript
-const a = parseInt("16 volts", 10);   // the " volts" is ignored, 16 is parsed in base 10const b = parseInt("3a", 16);         // parse hexadecimal 3a; result is 58const c = parseFloat("15.5 kph");     // the " kph" is ignored; parseFloat always assumes base 10
+const a = parseInt("16 volts", 10);   // the " volts" is ignored, 16 is parsed in base 10
+const b = parseInt("3a", 16);         // parse hexadecimal 3a; result is 58
+const c = parseFloat("15.5 kph");     // the " kph" is ignored; parseFloat always assumes base 10
+
 ```
 
 转换成字符串：
 
 ```javascript
-const n = 33.5;n;                                     // 33.5 - a numberconst s = n.toString();s;                                     // "33.5" - a string
+const n = 33.5;
+n;                                     // 33.5 - a number
+const s = n.toString();
+s;                                     // "33.5" - a string
 
-const arr = [1, true, "hello"];arr.toString();                            // "1,true,hello"
+const arr = [1, true, "hello"];
+arr.toString();                            // "1,true,hello"
 ```
 
 转换成布尔值：
 
 ```javascript
-const n = 0;                    // "falsy" valueconst b1 = !!n;                 // falseconst b2 = Boolean(n);          // false
+const n = 0;                    // "falsy" value
+const b1 = !!n;                 // false
+const b2 = Boolean(n);          // false
 ```
 
 ---
@@ -403,7 +439,11 @@ console.log(i);  //语句
 因为表达式能够解析成值，表达式可以用来赋值，例如：
 
 ```javascript
-let x, y;               y = x = 3 * 5;    // original statementy = x = 15;       // multiplication expression evaluatedy = 15;           // first assignment evaluated; x now has value 15, y is still undefined```
+let x, y;               
+y = x = 3 * 5;    // original statement
+y = x = 15;       // multiplication expression evaluated
+y = 15;           // first assignment evaluated; x now has value 15, y is still undefined
+```
 
 ---
 
@@ -415,11 +455,17 @@ let x, y;               y = x = 3 * 5;    // original statementy = x = 15;    
 算术运算符有`+`、`-`、`*`、`/`、`%`、`++`、`--`，要注意的是`+`和`-`可以用来转换数字的正负值，还可以将字符串转化成数字，看一些例子:
 
 ```javascript
-const x = 5;const y = 3 - -x;     // y is 8
+const x = 5;
+const y = 3 - -x;     // y is 8
 
-const s = "5";const y = 3 + +s;   // y = 8; 如果没有+，将会执行字符串连接操作
+const s = "5";
+const y = 3 + +s;   // y = 8; 如果没有+，将会执行字符串连接操作
 
-const x1 = 0, x2 = 3, x3 = -1.5, x4 = -6.33;const p1 = -x1*1;const p2 = +x2*2;const p3 = +x3*3;const p3 = -x4*4;
+const x1 = 0, x2 = 3, x3 = -1.5, x4 = -6.33;
+const p1 = -x1*1;
+const p2 = +x2*2;
+const p3 = +x3*3;
+const p3 = -x4*4;
 
 const p4 = 10 % 3  // 1
 const p4 = 10 % 3.6  // 2.8
@@ -440,7 +486,20 @@ const p4 = 10 % 3.6  // 2.8
 再看几个关于`==`和`===`的例子:
 
 ```javascript
-const n = 5;const s = "5";n === s;                          // false -- different typesn !== s;                          // truen === Number(s);                  // true -- "5" converted to numeric 5n !== Number(s);                  // falsen == s;                           // true; not recommendedn != s;                           // false; not recommendedconst a = { name: "an object" };const b = { name: "an object" };a === b;                          // false -- distinct objectsa !== b;                          // truea == b;                           // false; not recommendeda != b;                           // true; not recommended
+const n = 5;
+const s = "5";
+n === s;                          // false -- different types
+n !== s;                          // true
+n === Number(s);                  // true -- "5" converted to numeric 5
+n !== Number(s);                  // false
+n == s;                           // true; not recommended
+n != s;                           // false; not recommended
+const a = { name: "an object" };
+const b = { name: "an object" };
+a === b;                          // false -- distinct objects
+a !== b;                          // true
+a == b;                           // false; not recommended
+a != b;                           // true; not recommended
 ```
 
 >实践指导：   
@@ -498,18 +557,30 @@ const n = 5;const s = "5";n === s;                          // false -- differ
 `&&`和`||`都有短路求值功能，看个例子：
 
 ```javascript
-const skipIt = true;let x = 0;const result = skipIt || x++; 
+const skipIt = true;
+let x = 0;
+const result = skipIt || x++; 
 // result = true; x = 0
 
-const doIt = false;let x = 0;const result = doIt && x++;// result = false; x = 0```
+const doIt = false;
+let x = 0;
+const result = doIt && x++;
+// result = false; x = 0
+```
 
 如果将初始条件置换一下，会发生什么呢？
 
 ```javascript
-const skipIt = false;let x = 0;const result = skipIt || x++; 
+const skipIt = false;
+let x = 0;
+const result = skipIt || x++; 
 // result = 0; x = 1
 
-const doIt = true;let x = 0;const result = doIt && x++;// result = 0; x = 1```
+const doIt = true;
+let x = 0;
+const result = doIt && x++;
+// result = 0; x = 1
+```
 
 可以看到，当后者表达式执行后，`result`的值就是表达式的值，这就跳到非布尔值的逻辑运算了，非布尔值的逻辑运算跟布尔值类似，只不过返回值不一定布尔值了。
 
@@ -517,9 +588,18 @@ const doIt = true;let x = 0;const result = doIt && x++;// result = 0; x = 1`
 
 ES6引入了一个很受欢迎的新运算符，`解构运算符`，看个直观的例子：
 
-```javascriptconst obj = { b: 2, c: 3, d: 4 }; // a normal objectconst {a, b, c} = obj;           // object destructuring assignmenta;                              // undefined: there was no property "a" in objb;                             // 2 c;                            // 3 d;                           // reference error: "d" is not defined
+```javascript
+const obj = { b: 2, c: 3, d: 4 }; // a normal object
+const {a, b, c} = obj;           // object destructuring assignment
+a;                              // undefined: there was no property "a" in obj
+b;                             // 2 
+c;                            // 3 
+d;                           // reference error: "d" is not defined
 
-const obj = { b: 2, c: 3, d: 4 };let a, b, c;{a, b, c} = obj;        // 错误的写法({a, b, c} = obj);     // 正确
+const obj = { b: 2, c: 3, d: 4 };
+let a, b, c;
+{a, b, c} = obj;        // 错误的写法
+({a, b, c} = obj);     // 正确
 ```
 
 
