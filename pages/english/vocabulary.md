@@ -1,8 +1,7 @@
 ---
 layout: page
-menu_label:
 title: 51Talk Vocabulary
-permalink: /51talk-vocabulary/
+permalink: /english/vocabulary
 icon: glyphicon-saved
 ---
 

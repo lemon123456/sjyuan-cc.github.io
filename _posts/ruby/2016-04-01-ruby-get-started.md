@@ -4,7 +4,7 @@ layout: post
 title: "Ruby Get Started"
 date: 2016-04-01
 category: "RUBY"
-tag: ["Ruby", "Get Started"]
+tag: ["Ruby", "Get-Started"]
 
 author: "袁慎建"
 published: true

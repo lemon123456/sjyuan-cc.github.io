@@ -1,8 +1,7 @@
 ---
 layout: page
-menu_label:
-title: 英语学习
-permalink: /english/
+title: 51Talk Sentences
+permalink: /english/sentences
 icon: glyphicon-saved
 ---
 

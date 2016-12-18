@@ -1,8 +1,7 @@
 ---
 layout: page
-menu_label:
 title: 51Talk Grammar
-permalink: /51talk-grammar/
+permalink: /english/grammar
 icon: glyphicon-saved
 ---
 
