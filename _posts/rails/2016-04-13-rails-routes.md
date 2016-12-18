@@ -3,8 +3,8 @@ layout: post
 
 title: "Ruby on Rails 路由解析"
 date: 2016-04-13
-time: "09:46"
 category: "RAILS"
+tag: ["Ruby", "Rails", "Routes"]
 
 author: "袁慎建"
 published: true

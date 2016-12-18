@@ -3,8 +3,8 @@ layout: post
 
 title: "JAVA泛型•虚拟机执行泛型代码"
 date: 2016-07-25
-time: "09:46"
 category: "JAVASE"
+tag: ["Java", "Generic"]
 
 author: "袁慎建"
 published: true

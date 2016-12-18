@@ -3,8 +3,8 @@ layout: post
 
 title: "浅析JAVA对象初始化"
 date: 2016-06-15
-time: "10:12"
 category: "JAVASE"
+tag: ["Java", "Initializer"]
 
 author: "袁慎建"
 published: true

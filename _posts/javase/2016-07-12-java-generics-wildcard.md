@@ -3,8 +3,8 @@ layout: post
 
 title: "JAVA泛型•通配符限定"
 date: 2016-07-12
-time: "09:42"
 category: "JAVASE"
+tag: ["Java", "Generic"]
 
 author: "袁慎建"
 published: true

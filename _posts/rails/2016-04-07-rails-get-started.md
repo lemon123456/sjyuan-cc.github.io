@@ -3,8 +3,8 @@ layout: post
 
 title: "Ruby on Rails 初次冲浪体验"
 date: 2016-04-07
-time: "09:46"
 category: "RAILS"
+tag: ["Ruby", "Rails"]
 
 author: "袁慎建"
 publish: true

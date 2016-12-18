@@ -3,8 +3,8 @@ layout: post
 
 title: "JAVA泛型•约束和局限性"
 date: 2016-08-14
-time: "09:42"
 category: "JAVASE"
+tag: ["Java", "Generic"]
 
 author: "袁慎建"
 published: true

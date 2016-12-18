@@ -4,7 +4,7 @@ layout: post
 title: "Django 数据库事务"
 date: 2016-02-28
 category: "DJANGO"
-tag: ["Python", "Django"]
+tag: ["Python", "Django", "Transaction"]
 
 author: "袁慎建"
 published: true

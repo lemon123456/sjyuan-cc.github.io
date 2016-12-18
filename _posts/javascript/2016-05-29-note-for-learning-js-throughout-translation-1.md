@@ -3,7 +3,8 @@ layout: post
 
 title: "Learning JavaScript 翻译笔记（一）"
 date: 2016-05-29
-category: "JAVASCRIPT"
+category: "JS"
+tag: ["JS", "Translation"]
 
 author: "袁慎建"
 published: true

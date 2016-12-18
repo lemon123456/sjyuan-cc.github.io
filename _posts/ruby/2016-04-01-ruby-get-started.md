@@ -3,8 +3,8 @@ layout: post
 
 title: "Ruby Get Started"
 date: 2016-04-01
-time: "10:46"
 category: "RUBY"
+tag: ["Ruby", "Get Started"]
 
 author: "袁慎建"
 published: true

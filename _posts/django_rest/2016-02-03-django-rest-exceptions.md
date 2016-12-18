@@ -4,7 +4,7 @@ layout: post
 title: "Django REST 异常处理"
 date: 2016-02-03
 category: "DJANGO-REST"
-tag: ["Python", "Django", "Django-rest"]
+tag: ["Python", "Django", "Django-rest", "Exception"]
 
 author: "袁慎建"
 published: true

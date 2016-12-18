@@ -5,6 +5,7 @@ title: "JAVA泛型•认识泛型"
 date: 2016-06-28
 time: "16:32"
 category: "JAVASE"
+tag: ["Java", "Generic"]
 
 author: "袁慎建"
 published: true
