@@ -3,6 +3,16 @@
 
 $sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+  float: left;
+}
+
+
 .width-10 {
   margin-left: 10px;
 }
