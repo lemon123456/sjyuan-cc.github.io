@@ -3,8 +3,8 @@ layout: post
 
 title: "Buddy/Sponsor培训•信任的构建"
 date: 2016-05-15
-time: "10:25"
 category: "CAREER"
+tags: ["ThoughtWorks", "Buddy", "Sponsor"]
 
 author: "袁慎建"
 published: true

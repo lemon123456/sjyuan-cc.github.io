@@ -11,8 +11,15 @@ layout: default
         {{ page.date | date: "%Y" }}
         {% if page.time %} <span>{{ page.time }}</span>{% endif %}
         <span class="width-10"></span>
-        {% if page.category %} <span>{{ page.category }}</span>{% endif %}
+        {% if page.category %} <span class="category">{{ page.category }}</span>{% endif %}
+        <!--<span class="width-20"></span>-->
+        <!--{% if page.tags %}-->
+            <!--{% for tag in page.tags %}-->
+                <!--<span class="tag">{{ tag }}</span>-->
+            <!--{% endfor %}-->
+        <!--{% endif %}-->
     </p>
+
 
     {% if page.type == 'translation' %}
     <blockquote>
@@ -37,7 +44,7 @@ layout: default
     </div>
 
     <div>
-        {% include bd-share.html%}
+        {% include baidu-share.html%}
     </div>
 
 
@@ -55,7 +62,7 @@ layout: default
         {% endif %}
     </div>
 
-    <div>{% include ds-comment.html%}</div>
+    <div>{% include duoshuo-comment.html%}</div>
 </div>
 
 

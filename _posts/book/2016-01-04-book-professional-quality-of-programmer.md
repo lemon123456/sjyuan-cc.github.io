@@ -3,8 +3,8 @@ layout: post
 
 title: "程序员的职业素养"
 date: 2016-01-04
-time: "21:58"
 category: "图书分享"
+tags: ["图书", "Clean Coder"]
 
 author: "袁慎建"
 published: true

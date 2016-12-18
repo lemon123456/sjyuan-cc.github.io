@@ -3,7 +3,6 @@ layout: post
 
 title: "Learning JavaScript 翻译笔记（一）"
 date: 2016-05-29
-time: "23:15"
 category: "JAVASCRIPT"
 
 author: "袁慎建"

@@ -3,8 +3,8 @@ layout: post
 
 title: "Effective Java中文版（第2版）"
 date: 2016-01-05
-time: "12:49"
 category: "图书分享"
+tags: ["图书", "Java"]
 
 author: "袁慎建"
 published: true

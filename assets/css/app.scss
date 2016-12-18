@@ -7,6 +7,10 @@ $sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
   margin-left: 10px;
 }
 
+.width-20 {
+  margin-left: 20px;
+}
+
 .height-50 {
   margin-top: 50px;
 }
@@ -772,6 +776,10 @@ dd {
   .meta {
     color: gray;
     text-align: center;
+    .tag, .category {
+      border-radius: 15%;
+      background-color: #fbebd4;
+    }
   }
   figure {
     margin: 3rem 0;

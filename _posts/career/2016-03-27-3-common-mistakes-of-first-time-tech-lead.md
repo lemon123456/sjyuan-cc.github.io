@@ -3,8 +3,8 @@ layout: post
 
 title: "初次做技术领导的3个陷阱"
 date: 2016-03-27
-time: "10:25"
 category: "CAREER"
+tags: ["Tech Leader"]
 
 author: "袁慎建"
 published: true

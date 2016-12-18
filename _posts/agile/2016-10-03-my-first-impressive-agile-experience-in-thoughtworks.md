@@ -3,12 +3,13 @@ layout: post
 
 title: "我在ThoughtWorks的敏捷初体验"
 date: 2016-10-02
-time: "21:55"
 category: "AGILE"
+tags: ["Agile", "ThoughtWorks"]
 
 author: "袁慎建"
 published: true
 type: "original"
+
 
 ---
 

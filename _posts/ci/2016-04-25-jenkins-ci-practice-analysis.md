@@ -3,8 +3,8 @@ layout: post
 
 title: "Jenkins搭建CI实践分析"
 date: 2016-05-20
-time: "15:46"
 category: "DOCKER"
+tag: ["CI", "Jenkins", "Docker"]
 
 author: "袁慎建"
 published: false
@@ -24,21 +24,21 @@ type: "original"
 ## 定制Jenkins主题
 [Jenkins主题](http://jenkins-contrib-themes.github.io/jenkins-material-theme/)
 
-## 插件安装
+## 实用插件
 * Simple Theme Plugin
 	* [Materia主题](http://jenkins-contrib-themes.github.io/jenkins-material-theme/)
 	* [Neo主题](http://aarjithn.github.io/jenkins-neo-theme/)
 * Git plugin
-	*  	使用Git作为版本管理工具
+	* 使用Git作为版本控制工具
 * Dependency Graph Viewer Plugin
 	* 用于可视化Builds之间的依赖关系
 	* Jenkins Server需要安装[graphviz](http://www.graphviz.org/)
 * Join plugin
-	* 用于管理并行build都完成后才触发下游的build
+	* 用于管理并行build，保证并行的builds完成后才触发下游的build
 * Environment Injector Plugin
-	* 给build设置环境变量的 
+	* 用于给build注入环境变量
 * Promoted Builds plugin
-	* 用于设置对下一个build触发条件
+	* 用于设置对后置build触发条件
 * Copy Artifact Plugin
 	* 用于在build中复制其他build生成的artifact
 * Build flow test aggregator

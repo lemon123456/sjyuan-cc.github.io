@@ -3,8 +3,8 @@ layout: post
 
 title: "Django 数据库事务"
 date: 2016-02-28
-time: "23:01"
 category: "DJANGO"
+tag: ["Python", "Django"]
 
 author: "袁慎建"
 published: true

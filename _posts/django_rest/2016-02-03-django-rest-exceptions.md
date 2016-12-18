@@ -3,8 +3,8 @@ layout: post
 
 title: "Django REST 异常处理"
 date: 2016-02-03
-time: "10:25"
 category: "DJANGO-REST"
+tag: ["Python", "Django", "Django-rest"]
 
 author: "袁慎建"
 published: true
