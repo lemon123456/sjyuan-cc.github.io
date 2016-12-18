@@ -33,7 +33,7 @@ EUMs(End User Monitor System)是一个在线的物资跟踪监控系统。由[Th
 ---
 
 ### 成员背景
-[ThoughtWorks](https://thoughtworks.com/)提供完整的交付团队(`PM`, `BA`, `TL`, `QA`, `DEV`)，团队为颇具代表性的敏捷团队，规模10人左右。Unicef团队主要接口人3位。
+[ThoughtWorks](https://thoughtworks.com/)提供完整的交付团队(`PM`, `BA`, `TL`, `QA`, `DEV`, `UX`)，团队为颇具代表性的敏捷团队，规模10人左右。Unicef团队主要接口人3位。
 
 [ThoughtWorks](https://thoughtworks.com/)团队成员，犹如一架生猛的战斗机：PM英文一流，敏捷开发管理相当到位，因为看了上万本`脑残`小说，时不时就用到了生活中来。TL拥有7年以上的开发经验，7年之痒，什么，不用说都懂的。TL还富有学习激情和被黑精神，黑历史墙列满了他的关辉`血泪史`。QA被誉为IT界的福尔摩斯，DEV都休想逃过她敏锐的鼻子（怎么是鼻子呢？太陶醉了吧，这是境界！），最后，就是`'苦逼'`的DEV，也就是以`程序员`自居的我们。
 
@@ -528,6 +528,7 @@ Web 客户端采用了Single-page模式，所有的数据都是通过请求后�
 * TL：Techonical Leader，技术领导
 * QA：Quality Assurance，测试人员
 * DEV：Developer，开发人员
+* UX：User Experience，用户体检设计师
 * AC：Acceptance Criteria，验收条件
 * UAT：User Acceptance Test，用户验收测试
 * Retro：Retrospective，回顾会议 
