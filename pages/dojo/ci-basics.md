@@ -45,9 +45,6 @@ Check out, Run build, Compile, Test (Unit, Integration, E2E), Deploy
 
 构建运行完毕，`Build Server`会输出构建结果，`CI Master`会根据结果失败与否设置状态（失败：红，成功：绿），最后通知`开发人员`、`QA`以及`Team Leader`。
 
->实践指导：  
-在Jenkins中，存在`Master`和`Slave`概念，通常由Master负责管理各个Slave，具体的构建任务由Slave来完成，Master起到一个协调的作用。在大型复杂的构建系统中，Slave和Slave之间是独立的（独立的物理主机独立的IP），通过Master将它们协调在一起去完成大型的构建任务。当然Master也是可以独立完成构建任务的，通常一些小型简单构建系统中值创建了以个Master就可以完成所有的事情。
-
 ---
 
 ### 为什么要构建CI?
@@ -141,3 +138,100 @@ $ vagrant -v
 Vagrant 1.9.1
 ```
 
+创建一个目录`dojo-ci`，在dojo-ci目录中进行初始化：
+
+```
+$ mkdri dojo-ci
+$ cd dojo-ci
+$ vagrant init ubuntu/trusty64
+
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+
+```
+首次运行，Vagrant会联网下载`ubuntu/trusty64`，需要等待一段时间。
+
+执行完毕，会生成一个Vagrantfile文件，我们对该文件做一些配置，添加如下配置信息：
+
+```sh
+Vagrant.configure("2") do |config|
+  config.vm.define :jenkins_ubuntu do |config|
+     config.vm.box = "ubuntu/trusty64"
+     config.vm.hostname = "jenkins-ubuntu"
+     config.vm.synced_folder "~/Personal-sjyuan/ysj_hub/docker-jenkins", "/home/vagrant/docker-jenkins"
+     config.vm.network "private_network", ip: "10.29.2.122"
+     config.vm.network "forwarded_port", guest: 80, host: 80
+     config.vm.network :forwarded_port, guest: 8080, host: 8080
+     # config.vm.provision :shell, path: "./setup-jenkins.sh"
+     config.vm.provider "virtualbox" do |vb|
+       vb.memory = "1024"
+     end
+   end
+end
+```
+上面主要配置信息注释：
+
+```
+1. hostname，指定虚拟机用户名
+2. synced_folder，Host主机与虚拟机所挂载的同步目录，前者是Host主机上的目录，必须存在，后者在虚拟机创建之后会自动创建。
+3. network，配置网络选项，可以配置虚拟机IP，以及与Host主机的端口映射。
+4. provision，指定运行的文件，可以在虚拟机创建好之后自动运行脚本安转所需要的环境，该文件必须存在于Host主机上。
+```
+>[Vagrant](https://www.vagrantup.com/)是一个命令行工具，用于管理虚拟机生命周期（启动，关机，注销，移除等），非常易用，官方文档的[getting-started](https://www.vagrantup.com/docs/getting-started/)是一个很好的学习文档。
+
+配置好Vagrantfile，就可以一键启动：
+
+```
+$ vagrant up
+```
+
+等待虚拟机启动完毕，ssh登录到虚拟机，此后的一切操作跟在一台Linux机器的终端上操作别无两样：
+
+```
+$ vagrant ssh
+```
+
+
+---
+
+### 安装Jenkins
+Setup好Ubuntu虚拟机，我们就有了CI服务器，最后，我们来安转[Jenkins](https://jenkins.io/):
+
+```sh
+$ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+$ sudo apt-get update
+$ sudo apt-get install -y jenkins
+```
+
+
+安装完毕后，查看Jenkins服务是否正常启动：
+
+```sh
+$ sudo service jenkins status
+Jenkins Continuous Integration Server is running with the pid 1112
+```
+如果没有启动，需要运行以下命令启动jenkins：
+
+```sh
+$ sudo service jenkins start
+ * Starting Jenkins Continuous Integration Server jenkins                   [ OK ]
+```
+
+访问localhost:8080，可以看到：
+![Alt text]({{ "/assets/img/dojo/ci/jenkins-verify.png" }})
+
+快要成功了，根据页面提示，需要一个密码校验，这个密码在jenkins运行的Server上，也就是之前使用Vagrant启动的Ubuntu的虚拟机上：
+
+```sh
+$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+1ed2af4*****************5ad29e
+```
+
+输入密码之后，选择Continue，然后选择`Install suggested plugins`，等待安装完毕，创建一个用户，可以看到Jenkins Dashboard：
+![Alt text]({{ "/assets/img/dojo/ci/jenkins-dashboard.png" }})
+
+
+<div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
