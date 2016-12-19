@@ -44,7 +44,7 @@ Check out, Run build, Compile, Test (Unit, Integration, E2E), Deploy
 ```
 构建运行完毕，`Build Server`会输出构建结果，`CI Master`会根据结果失败与否设置状态（失败：红，成功：绿），最后通知`开发人员`、`QA`以及`Team Leader`。
 
->实践指导：  
+实践指导：  
 在Jenkins中，存在`Master`和`Slave`概念，通常由Master负责管理各个Slave，具体的构建任务由Slave来完成，Master起到一个协调的作用。在大型复杂的构建系统中，Slave和Slave之间是独立的（独立的物理主机独立的IP），通过Master将它们协调在一起去完成大型的构建任务。当然Master也是可以独立完成构建任务的，通常一些小型简单构建系统中值创建了以个Master就可以完成所有的事情。
 
 
