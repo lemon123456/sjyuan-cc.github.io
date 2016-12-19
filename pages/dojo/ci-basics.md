@@ -18,6 +18,7 @@ type: "original"
 
 
 ## CI基础
+
 >[没有CI的项目开发是在耍流氓。CI在Agile中是一项最基础的设施，它通过自动化来提供有效的反馈机制以及高效的部署，大大降低代了码集成和项目交付的风险。](http://blog.sjyuan.cc/my-first-impressive-agile-experience-in-thoughtworks/#ci)
 
 CI (Continous Integration)，持续集成。在我的印象中，它是一个项目开始前`必须`搭建起来的基础设施。在现在的软件开发项目中，几乎没有项目是只有一个人在开发的。超过一个人就形成了团队，每个人同时并行开发不同模块的功能，这就涉及到代码的集成，所以代码集成是几乎所有开发团队都要面临的问题（一个人的开发项目不在本文范畴中）。
@@ -25,6 +26,7 @@ CI (Continous Integration)，持续集成。在我的印象中，它是一个项
 ---
 
 ### CI是什么?
+
 >，[Martin FLower](http://www.martinfowler.com/) 这样定义持续集成：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，这就意味着每天可能会发生多次集成。
 
 每次集成都通过自动化的构建（编译，自动化测试，部署)来验证正确性，从而尽快地发现集成错误。大多数团队发现这个过程可以大大减少集成的问题，让团队能够更快的开发内聚的软件。
@@ -232,5 +234,7 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 输入密码之后，选择Continue，然后选择`Install suggested plugins`，等待安装完毕，创建一个用户，可以看到Jenkins Dashboard：
-
 ![Alt text]({{ "/assets/img/dojo/ci/jenkins-dashboard.png" }})
+
+
+<div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
