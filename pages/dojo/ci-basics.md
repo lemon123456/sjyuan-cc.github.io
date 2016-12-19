@@ -92,7 +92,7 @@ CI让我们就可以在任何时间发布可以部署的软件，在外界来看
 ---
 
 ### 如何搭建CI?
-CI产生这么多实际的价值，是不是说搭建一个CI是一件很复杂的事情呢？恰恰相反，搭建一个简单的CI本身并不用花费太多的时间。当然，不花费太多时间并不代表它就能够发挥出那些价值，所以在开始前，我们需要了解一些CI的原则和最佳实践，这将有助于我们打造出一个意义重大的CI:
+CI产生这么多实际的价值，是不是说搭建一个CI是一件很复杂的事情呢？恰恰相反，搭建一个简单的CI本身并不用花费太多的时间。当然，不花费太多时间并不代表它就能够发挥出那些价值，所以在开始前，我们需要了解一些CI的原则和最佳实践，这将有助于我们打造出一个能够创造实际价值的CI:
 
 CI需要遵守的原则：
 
@@ -152,7 +152,7 @@ the comments in the Vagrantfile as well as documentation on
 `vagrantup.com` for more information on using Vagrant.
 
 ```
-首次运行，Vagrant会联网下载`ubuntu/trusty64`，所以会好一定的时间。
+首次运行，Vagrant会联网下载`ubuntu/trusty64`，需要等待一段时间。
 
 执行完毕，会生成一个Vagrantfile文件，我们对该文件做一些配置，添加如下配置信息：
 
@@ -222,6 +222,17 @@ $ sudo service jenkins start
 ```
 
 访问localhost:8080，可以看到：
+![Alt text]({{ "/assets/img/dojo/ci/jenkins-verify.png" }})
+
+快要成功了，根据页面提示，需要一个密码校验，这个密码在jenkins运行的Server上，也就是之前使用Vagrant启动的Ubuntu的虚拟机上：
+
+```sh
+$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+1ed2af4*****************5ad29e
+```
+
+输入密码之后，选择Continue，然后选择`Install suggested plugins`，等待安装完毕，创建一个用户，可以看到Jenkins Dashboard：
+![Alt text]({{ "/assets/img/dojo/ci/jenkins-dashboard.png" }})
 
 
 <div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
