@@ -35,14 +35,7 @@ CI (Continous Integration)，持续集成。在我的印象中，它是一个项
 
 集成，就少不了要借助一些工具，将这些工具通过合理的方式组合在一起形成一种工作流模式。且看一张图：
 
-![Alt text]({{ "/assets/img/dojo/ci/ci-flow.png" }})
 
-从图中可以看出，同时会存在多个`开发者`（两个以上），他们会向同一个`版本控制代码库`中提交代码，存在一个`CI Master`去监测代码库是否存在更新，一旦更新，就会在`Build Server`中触发`构建`，一次构建通常包含一下几个步骤：
-
-```
-Check out, Run build, Compile, Test (Unit, Integration, E2E), Deploy
-```
-构建运行完毕，`Build Server`会输出构建结果，`CI Master`会根据结果失败与否设置状态（失败：红，成功：绿），最后通知`开发人员`、`QA`以及`Team Leader`。
 
 
 >实践指导：  
