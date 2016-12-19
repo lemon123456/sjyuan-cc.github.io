@@ -229,7 +229,7 @@ $ sudo service jenkins start
 ```
 
 访问localhost:8080，可以看到：
-![Alt text]({{ "/assets/img/dojo/ci/jenkins-verify.png" }})
+![Alt text]({{ '/assets/img/dojo/ci/jenkins-verify.png' }})
 
 快要成功了，根据页面提示，需要一个密码校验，这个密码在jenkins运行的Server上，也就是之前使用Vagrant启动的Ubuntu的虚拟机上：
 
@@ -240,7 +240,7 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 输入密码之后，选择Continue，然后选择`Install suggested plugins`，等待安装完毕，创建一个用户，可以看到Jenkins Dashboard：
 
-![Alt text]({{ "/assets/img/dojo/ci/jenkins-dashboard.png" }})
+![Alt text]({{ '/assets/img/dojo/ci/jenkins-dashboard.png' }})
 
 
 <div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
