@@ -137,6 +137,7 @@ CI需要遵守的原则：
 1. Vagrant 1.9.1
 2. Virtualbox 5.0.10
 ```
+
 安装好[Vagrant](https://www.vagrantup.com/)之后，查看版本：
 
 ```sh
@@ -177,6 +178,7 @@ Vagrant.configure("2") do |config|
    end
 end
 ```
+
 上面主要配置信息注释：
 
 ```
@@ -237,6 +239,7 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 输入密码之后，选择Continue，然后选择`Install suggested plugins`，等待安装完毕，创建一个用户，可以看到Jenkins Dashboard：
+
 ![Alt text]({{ "/assets/img/dojo/ci/jenkins-dashboard.png" }})
 
 
