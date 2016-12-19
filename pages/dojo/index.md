@@ -4,9 +4,10 @@ menu_label: DOJO
 title: 道场
 permalink: /dojo/
 icon: glyphicon-saved
+
 ---
 
-### [CI 持续集成]({{ "/dojo/ci" }})
+### CI 持续集成
 
 - [CI基础 & Setup环境]({{ "/dojo/ci/basics" }})
 - [手把手搭建CI]({{ "/dojo/ci/step-by-step" }})

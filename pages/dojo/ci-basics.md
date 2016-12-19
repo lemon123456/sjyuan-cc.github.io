@@ -159,7 +159,7 @@ the comments in the Vagrantfile as well as documentation on
 执行完毕，会生成一个Vagrantfile文件，我们对该文件做一些配置，添加如下配置信息：
 
 ```sh
-Vagrant.configure("2") do |config|
+Vagrant.configure(...) do |config|
   config.vm.define :jenkins_ubuntu do |config|
      config.vm.box = "ubuntu/trusty64"
      config.vm.hostname = "jenkins-ubuntu"
