@@ -232,7 +232,5 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 输入密码之后，选择Continue，然后选择`Install suggested plugins`，等待安装完毕，创建一个用户，可以看到Jenkins Dashboard：
+
 ![Alt text]({{ "/assets/img/dojo/ci/jenkins-dashboard.png" }})
-
-
-<div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
