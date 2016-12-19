@@ -158,6 +158,22 @@ the comments in the Vagrantfile as well as documentation on
 
 执行完毕，会生成一个Vagrantfile文件，我们对该文件做一些配置，添加如下配置信息：
 
+```sh
+Vagrant.configure("2") do |config|
+  config.vm.define :jenkins_ubuntu do |config|
+     config.vm.box = "ubuntu/trusty64"
+     config.vm.hostname = "jenkins-ubuntu"
+     config.vm.synced_folder "~/Personal-sjyuan/ysj_hub/docker-jenkins", "/home/vagrant/docker-jenkins"
+     config.vm.network "private_network", ip: "10.29.2.122"
+     config.vm.network "forwarded_port", guest: 80, host: 80
+     config.vm.network :forwarded_port, guest: 8080, host: 8080
+     # config.vm.provision :shell, path: "./setup-jenkins.sh"
+     config.vm.provider "virtualbox" do |vb|
+       vb.memory = "1024"
+     end
+   end
+end
+```
 上面主要配置信息注释：
 
 ```
