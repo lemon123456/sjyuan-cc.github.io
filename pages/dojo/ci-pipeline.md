@@ -18,7 +18,6 @@ type: "original"
 
 ## 待续
 
->实践指导
 
 <div class="align-left"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
 <!--<div class="align-right"><a href="{{"/dojo/ci/continuous-delivery"}}">持续交付</a></div>-->
