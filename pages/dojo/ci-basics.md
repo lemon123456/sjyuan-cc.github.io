@@ -244,3 +244,7 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 <div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
+
+
+
+
