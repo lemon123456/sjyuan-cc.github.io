@@ -71,7 +71,7 @@ E-mail是一个很好的反馈通知机制，为build配置了Email通知，将�
 
 >这里使用 [网易126邮箱](http://www.126.com/) 的免费 [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) 服务器，需要提供有效的邮箱账户，并且需要开启`IMAP/SMTP服务`，具体怎么开启，[Google](http://www.google.com/) 或者 [百度](https://www.baidu.com/) 中可以找到答案。
 
-配置完成后，可以测试一下是否能够发送邮件，选中`Test configuration by sending test e-mail`，填上有效的邮箱地址，点击`Test configuration`即可，通常情况下，你会看到一些红色的异常信息，不要害怕，继续往⬇️看。
+配置完成后，可以测试一下是否能够发送邮件，选中`Test configuration by sending test e-mail`，填上有效的邮箱地址，点击`Test configuration`即可，通常情况下，你会看到一些红色的异常信息，不要害怕，继续往 ⬇️ 看。
 
 ---
 
