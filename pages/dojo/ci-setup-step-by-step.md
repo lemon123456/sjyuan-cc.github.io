@@ -35,7 +35,6 @@ Step by step Build如下：
 2. 测试Success & Failure。
 3. 测试报告。
 4. 邮件通知。
-5. 部署并启动服务。
 ```
 
 ---
@@ -186,7 +185,32 @@ Jenkins提供了用户权限控制，这其实是一个基础的配置。通常J
 ---
 
 ### 运行测试
-待续
+在 `Build` 栏添加build step，`Add build step -> Execute shell`
+
+![]({{ '/assets/img/dojo/ci/build-step-run-test.png' }})
+
+> `./gradlew clean test` 命令是CI所配置的代码库中运行测试的gradle task，[Gradle](https://gradle.org/)是一个用于Java工程的构建工具，做的事情跟[Maven](https://maven.apache.org/)类似，只是目前更加受到Java Developer的青睐。
+
+到这里我们先做一个保存，点击左下方的`Save`按钮，然后再次进入配置界面。
+
+---
+
+### 发布测试报告
+运行测试完毕后，可以直观地看到测试状态 (绿色：成功，红色：失败)，我们还可以在测试报告后发布测试报告，它的配置也很简单，只需要在 `Post-build Actions`栏中添加post-build操作，`Add post-build action->Publish JUnit test result report`：
+
+![]({{ '/assets/img/dojo/ci/publish-test-report.png' }})
+
+---
+
+### 邮件通知
+>CI 不过夜，其实说的是要第一时间修复CI
+
+通常，测试挂了，我们会希望第一时间通知相关人员去修复CI，不要让CI挂了还心安理得地过夜，这就需要一些有效的反馈机制了，此时我们会考虑引入邮件通知，前面我们已经配置好邮件服务器并测试通过了，此时需要添加一个`Post-build Actions`，`Add post-build action->E-mail Notification`:
+
+![]({{ '/assets/img/dojo/ci/post-action-email-notification.png' }})
+
+
+到此，一个可以报告测试状态的CI Build搭建起来，过程并不复杂，我们已经能够直观的看到CI的效果了。下一节课我们来讨论构建构建可持续部署Pipeline的策略并加以实践。
 
 
 
