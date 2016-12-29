@@ -130,7 +130,7 @@ E-mail是一个很好的反馈通知机制，为build配置了Email通知，将�
 ### 用户权限
 Jenkins提供了用户权限控制，这其实是一个基础的配置。通常Jenkins上会包含一些敏感的信息和复杂的配置，以及手动一键部署的步骤，所以我们只允许拥有特定权限的用户才可以对Build执行相关操作，比如说匿名用户只有可读权限，`sjyuan`是管理员权限，`use1`只拥有 `dojo-ci` project的权限。
 
-比较常用的认证方式是`Matrix-based security` 和 `Project-based Matrix Authorization Strategy`，前者配置的权限针对所有Project是一致的，而后者可以将用户权限绑定到某些具体的Project中。相对来说后者更加常用一些，这里以后者为例，`sjyuan`是管理员，在Global配置中费配了所有权限，而`user1`只拥有全局的Read Overall权限（这是前提条件，不然`user1`登陆后什么也看不到）：
+比较常用的认证方式是`Matrix-based security` 和 `Project-based Matrix Authorization Strategy`，前者配置的权限针对所有Project是一致的，而后者可以将用户权限绑定到某些具体的Project中。相对来说后者更加常用一些，这里以后者为例，`sjyuan`是管理员，在Global配置中分配了所有权限，而`user1`只拥有全局的Read Overall权限（这是前提条件，不然`user1`登陆后什么也看不到）：
 
 ![]({{ '/assets/img/dojo/ci/project-based-matrix-authorization.png' }})
 
