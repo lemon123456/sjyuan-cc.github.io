@@ -2,7 +2,7 @@
 layout: post
 permalink: /dojo/ci/step-by-step
 title: "手把手搭建CI"
-date: 2016-12-18
+date: 2016-12-29
 category: "DOJO-CI"
 tags: ["Dojo", "CI"]
 
