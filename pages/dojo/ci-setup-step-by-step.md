@@ -213,7 +213,4 @@ Jenkins提供了用户权限控制，这其实是一个基础的配置。通常J
 到此，一个可以报告测试状态的CI Build搭建起来，过程并不复杂，我们已经能够直观的看到CI的效果了。下一节课我们来讨论构建构建可持续部署Pipeline的策略并加以实践。
 
 
-
-
-<div class="align-left"><a href="{{"/dojo/ci/basics"}}">CI基础 & Setup环境</a></div>
-<div class="align-right"><a href="{{"/dojo/ci/pipeline"}}">构建可持续部署Pipeline</a></div>
+上节课内容回顾：[CI基础 & Setup环境]({{'/dojo/ci/basics'}})
