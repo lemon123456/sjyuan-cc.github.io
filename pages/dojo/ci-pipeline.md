@@ -2,7 +2,7 @@
 layout: post
 permalink: /dojo/ci/pipeline
 title: "构建可持续部署Pipeline"
-date: 2016-12-18
+date: 2016-12-27
 category: "DOJO-CI"
 tags: ["Dojo", "CI"]
 

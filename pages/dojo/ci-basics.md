@@ -2,7 +2,7 @@
 layout: post
 permalink: /dojo/ci/basics
 title: "CI基础 & Setup环境"
-date: 2016-12-18
+date: 2016-12-27
 category: "DOJO-CI"
 tags: ["Dojo", "CI"]
 
@@ -68,19 +68,29 @@ CI是需要付出成本的，既然大家愿意付出成本去搭建CI，它就�
 5. 随时随地可以生成可部署的软件（CD）
 ```
 
+---
+
 #### 减少重复过程
 CI通过自动化，将一些需要重复执行的操作（代码审查、编译、测试、构建、部署）自动化管理起来，大大减少了重复的过程，节省了大量的时间。
 
+---
+
 #### 降低风险
 开发过程中，每天进行多次集成，并且添加了**足够**相应的测试，每次集成CI都会**快速**检查代码中的缺陷并提供及时的反馈，降低了未知的风险。
+
+---
 
 #### 可视化
 提供一个人人都能抬头即见且低头还可见的Dashboard(借助Chrom插件[BuildReactor](https://github.com/AdamNowotny/BuildReactor)，将CI Dashboard集成到Chrom浏览器中来)。
 
 CI提供了大量真实且最新的数据，能够让我们关注当前集成的趋势（例如构建时间、构建失败比例、测试覆盖率等），有利于有效决策。
 
+---
+
 #### 增强团队信心
 每次构建的结果都是公开透明的，所有人清楚地知道自己的每次提交改动对软件所造成的影响。
+
+---
 
 #### 随时随地可以生成可部署的软件（CD）
 
@@ -130,7 +140,7 @@ CI需要遵守的原则：
 
 ---
 
-### Setup Ubuntu虚拟环境
+## Setup Ubuntu虚拟环境
 方便起见，我们准备在Mac主机上Setup一个Ubuntu的虚拟环境，将借助 [Vagrant](https://www.vagrantup.com/) 和 [Virtualbox](https://www.virtualbox.org/) 来完成。在Mac上安装如下版本工具：
 
 ```
@@ -144,10 +154,14 @@ CI需要遵守的原则：
 $ vagrant -v
 Vagrant 1.9.1
 ```
+---
+
+### 配置Vagrant
+
 
 创建一个目录`dojo-ci`，在dojo-ci目录中进行初始化：
 
-```
+```sh
 $ mkdri dojo-ci
 $ cd dojo-ci
 $ vagrant init ubuntu/trusty64
@@ -163,17 +177,27 @@ the comments in the Vagrantfile as well as documentation on
 执行完毕，会生成一个Vagrantfile文件，我们对该文件做一些配置，添加如下配置信息：
 
 ```sh
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
 Vagrant.configure("2") do |config|
   config.vm.define :jenkins_ubuntu do |config|
      config.vm.box = "ubuntu/trusty64"
      config.vm.hostname = "jenkins-ubuntu"
-     config.vm.synced_folder "~/Personal-sjyuan/ysj_hub/docker-jenkins", "/home/vagrant/docker-jenkins"
+     config.vm.synced_folder "./vagrant_shared", "/vagrant"
      config.vm.network "private_network", ip: "10.29.2.122"
      config.vm.network "forwarded_port", guest: 80, host: 80
      config.vm.network :forwarded_port, guest: 8080, host: 8080
-     # config.vm.provision :shell, path: "./setup-jenkins.sh"
+     config.vm.network :forwarded_port, guest: 8088, host: 8088
+     config.vm.network :forwarded_port, guest: 5432, host: 5432
+     config.vm.provision :shell, path: "./vagrant_shared/setup-env.sh"
      config.vm.provider "virtualbox" do |vb|
-       vb.memory = "1024"
+       vb.memory = "4096"
      end
    end
 end
@@ -201,6 +225,13 @@ $ vagrant up
 $ vagrant ssh
 ```
 
+方便起见，你也可以直接将 [dojo-ci](https://github.com/sjyuan-cc/dojo-ci) clone到本地：
+
+```sh
+$ git clone https://github.com/sjyuan-cc/dojo-ci.git
+$ cd dojo-ci
+$ vagrant up
+```
 
 ---
 
@@ -243,7 +274,7 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ![Alt text]({{ '/assets/img/dojo/ci/jenkins-dashboard.png' }})
 
 
-<div class="align-right"><a href="{{"/dojo/ci/step-by-step"}}">手把手搭建CI</a></div>
+>环境搭建好之后，请进入Dojo第二次课程[手把手搭建CI]({{'/dojo/ci/step-by-step'}})
 
 
 
