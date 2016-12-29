@@ -115,8 +115,6 @@ E-mail是一个很好的反馈通知机制，为build配置了Email通知，将�
 	* 通常一个Build flow包含了多个Job，会有多个对应的project，此插件可以定义这些关联的project的执行顺序，并且可以定义触发下游project的条件（自动还是手动）。
 * Join plugin
 	* 管理并行Job，能够保证当前project在所有直接的下游project完成后运行。
-* 	Promoted builds plugin
-	* 可以 
 * Build flow test aggregator
 	* 将build flow中所有build的测试结果聚合展示出来，它提供的是post-build步骤。
 * Dependency Graph Viewer Plugin
