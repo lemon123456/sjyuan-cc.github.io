@@ -1,15 +1,9 @@
 ---
-layout: post
-
-title: "Git troubleshoots"
-date: 2017-01-01
-time: "02:22"
-category: "GIT"
-
-author: "袁慎建"
-published: false
-type: "original"
-
+layout: default
+menu_label: 
+title: Git 锦囊
+permalink: /troubleshoots/git
+icon: glyphicon-saved
 ---
 
 * content

@@ -17,7 +17,7 @@ type: "original"
 
 ---
 
-### 泛型参数的限制
+## 泛型参数的限制
 
 在Java中，实例化泛型类时泛型参数不能使用基本类型，如`List<int>`这是不合法的，要存储基本类型则可以利用基本类型的包装类如`List<Integer>` 、`List<Double>`等，下面补充一下八种基本类型对应的包装类，和默认初始值
 
@@ -35,7 +35,7 @@ boolean              Boolean         false
 ```   
 ---
        
-#### 不能实例化类型参数
+### 不能实例化类型参数
 Java中创建对象使用new关键字，但是泛型的类型参数不能用于实例化对象，如：
 
 ```java
@@ -59,7 +59,7 @@ public static <T> Couple<T> createInstance(Class<T> clazz) {
 ```
 ---
 
-#### 不能实例化泛型数组
+### 不能实例化泛型数组
 
 初学者对Java反射不熟悉不用着急，这里只要知道不能实例化类型参数即可，同理，不能实例化一个泛型数组，如
 
@@ -92,7 +92,7 @@ public static <T extends Comparable<T>> T[] maxTwo(T[] array) {
 
 ---
 
-#### 不能声明参数化的数组
+### 不能声明参数化的数组
 
 `Couple<Employee>[] couple = new Couple<Employee>[5]` ;这种声明式不合法的，这里面有一个问题还是通过类型擦除机制来解释，类型擦除后`couple`的类型是`Couple[]`，考虑一下两种赋值方式：
 
@@ -101,7 +101,7 @@ public static <T extends Comparable<T>> T[] maxTwo(T[] array) {
 
 如果要存放参数化类型对象的集合，可以考虑使用`ArrayList<Couple<Employee>>`进行声明，而且Java中建议优先使用集合，这样既安全又有效。
 
-#### 类型参数不能进行类型查询
+### 类型参数不能进行类型查询
 通常我们会使用if (arg1 instanceof Couple)来判断arg1是否属于Couple类型，有些爱思考的程序员可能会想更具体地去判断arg1类型是属于`Couple<T>`，指定类型参数，如：
 
 ```java
@@ -118,7 +118,7 @@ Couple<Employee> couple = (Couple<Employee>)arg; // 错误
 
 ---
 
-#### 不能抛出、不能捕获泛型类实例
+### 不能抛出、不能捕获泛型类实例
 在Java中，`public class GenericException <T> extends Exception {...}`这种泛型类扩展自`Throwable`是不合法的，不能通过编译器。
 
 不能再catch子句中使用类型参数，如：
@@ -150,7 +150,7 @@ public static <T extends Throwable> void doSomething(T t) throws T {
 }// 正确
 ```
           
-#### 泛型类中的类型参数不能用于静态上下文中
+### 泛型类中的类型参数不能用于静态上下文中
 
 怎么理解这个呢？看个例子就知道了，如一个泛型单例：
 
@@ -169,7 +169,7 @@ public class Singleton <T>{
 
 ---
 
-### 类型擦除后引起的冲突
+## 类型擦除后引起的冲突
 看一个泛型类：
 
 ```java
