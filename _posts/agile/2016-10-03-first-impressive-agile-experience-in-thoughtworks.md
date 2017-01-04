@@ -70,18 +70,9 @@ EUMs(End User Monitor System)是一个在线的物资跟踪监控系统。由[Th
 
 我们是一群快乐的逗比，快乐的人做出来的事情也是让人快乐的。逗比们聚集在一起，探讨出一套适合于逗比团队的敏捷开发流程，每个人都愿意遵守并维护这个工作流程，并且在流程中不断追求最佳的实践，来保证我们的项目的交付进度和软件的质量。
 
-项目中实践主要有
+项目中实践主要围绕迭代进行
 
-* [IPM](#ipm)
-* [Regular catch up with client](#regular-catch-up-with-client)
-* [Story kick-off](#story-kick-off)
-* [Showcase](#showcase)
-* [Standup](#standup)
-* [Pair](#pair)
-* [TDD](#tdd)
-* [Code Review](#code-review)
-* [CI](#ci)
-* [Retro](#retro)
+
 
 
 逗比团队的实践也都是围绕着`协作`与`反馈`展开。
