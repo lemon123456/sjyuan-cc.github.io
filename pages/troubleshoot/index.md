@@ -14,7 +14,7 @@ icon: glyphicon-saved
 * [Intellij IDEA]()
 
 ## **J**
-* [Intellij IDEA]()
+* [Jenkins]({{'/troubleshoots/jenkins'}})
 
 ## **G**
 * [Git]()

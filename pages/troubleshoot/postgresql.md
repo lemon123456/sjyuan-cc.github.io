@@ -30,10 +30,13 @@ psql: server closed the connection unexpectedly
 #### 解决方案  
 访问失败是因为Postgresql监听的host是本机，所以修改监听地址，给所有host添加md5密码认证，最后不要忘记重启Postgresql Server。
 
->
-1. 编辑文件`/etc/postgresql/9.3/main/postgresql.conf`，修改内容
-	* `listen_addresses='localhost'` 修改为 `listen_addresses='*'`
-2. 编辑文件`/etc/postgresql/9.3/main/pg_hba.conf`，追加内容
-	* 在文件末尾添加一行 `host all all * md5`
-3. 重启Postgres服务  
-	* `$ sudo /etc/init.d/postgresql restart`
+```sh
+# listen_addresses='localhost' 修改为 listen_addresses='*'
+$ sudo vim /etc/postgresql/9.3/main/postgresql.conf
+
+# 在文件末尾添加一行 `host all all * md5
+$ sudo vim /etc/postgresql/9.3/main/pg_hba.conf
+
+# 重启服务
+$ sudo /etc/init.d/postgresql restart
+```
