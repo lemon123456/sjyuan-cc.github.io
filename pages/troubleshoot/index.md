@@ -17,7 +17,7 @@ icon: glyphicon-saved
 * [Jenkins]({{'/troubleshoots/jenkins'}})
 
 ## **G**
-* [Git]()
+* [Git]({{'/troubleshoots/git'}})
 * [Github]()
 * [Gradle]()
 
