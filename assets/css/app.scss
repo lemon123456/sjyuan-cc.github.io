@@ -187,7 +187,7 @@ nav ul, nav ol {
   list-style-image: none
 }
 
-img {
+p img {
   border: 0;
   box-shadow: 3px 3px 30px 3px #ccc;
   -ms-interpolation-mode: bicubic;
@@ -735,6 +735,10 @@ dd {
   .logo-large {
     display: none;
     font-family: "Xingkai SC", $sans-serif;
+    img{
+      max-height: 50px;
+      max-width: 200px;
+    }
   }
 
   .logo-small {

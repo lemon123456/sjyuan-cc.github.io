@@ -1,5 +1,5 @@
 <div class="header">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="min-height:0; margin-bottom:0">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -12,7 +12,7 @@
 
                 <div class="logo-small">
                     <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.logo }}</a>
-                        <span class="width-10"></span>
+                    <span class="width-10"></span>
                     <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
                 </div>
             </div>
@@ -24,15 +24,15 @@
                         <a href="{{ '/' | prepend: site.baseurl }}" title="Home">HOME</a>
                     </li>
                     {% for p in site.pages %}
-                        {% if p.menu_label %}
-                            {% if p.url == page.url %}
-                                <li class="current">
-                            {% else %}
-                                <li>
-                            {% endif %}
-                                <a href="{{ p.url | prepend: site.baseurl }}" title="{{ p.menu_label }}">{{ p.menu_label }}</a>
-                            </li>
+                    {% if p.menu_label %}
+                    {% if p.url == page.url %}
+                    <li class="current">
+                        {% else %}
+                    <li>
                         {% endif %}
+                        <a href="{{ p.url | prepend: site.baseurl }}" title="{{ p.menu_label }}">{{ p.menu_label }}</a>
+                    </li>
+                    {% endif %}
                     {% endfor %}
                     <li class="menu-label-github">
                         <a href="https://github.com/{{ site.social.github }}" title="GitHub">GITHUB</a>
@@ -42,8 +42,14 @@
         </div>
     </nav>
     <div class="logo-large">
-        <a  href="{{ site.baseurl }}/">{{ site.logo }}</a>
-        <a  href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <div>
+            <img src="{{ site.baseurl }}/assets/img/logo_nick.svg"/>
+        </div>
+        <div>
+            <img src="{{ site.baseurl }}/assets/img/logo_cc.svg"/>
+        </div>
+        <!--<a  href="{{ site.baseurl }}/">{{ site.logo }}</a>-->
+        <!--<a  href="{{ site.baseurl }}/">{{ site.title }}</a>-->
     </div>
 </div>
 <a href="https://github.com/{{ site.social.github }}">
