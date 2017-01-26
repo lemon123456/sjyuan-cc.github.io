@@ -16,7 +16,7 @@ Dojo一期规划了四节课程：
 
 * [CI基础 & Setup环境]({{ "/dojo/ci/basics" }})
 * [手把手搭建CI]({{ "/dojo/ci/step-by-step" }})
-* [构建可持续部署Pipeline]({{ "/dojo/ci/basics" }})
+* [构建可持续部署Pipeline]({{ "/dojo/ci/pipeline" }})
 * [持续交付]({{ "/dojo/ci/basics" }})
 
 ## **TDD(待续)**

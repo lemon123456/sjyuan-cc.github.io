@@ -11,7 +11,7 @@ icon: glyphicon-saved
 * [Django]()
 
 ## **I**
-* [Intellij IDEA]()
+* [Intellij IDEA]({{'/troubleshoots/intellij'}})
 
 ## **J**
 * [Jenkins]({{'/troubleshoots/jenkins'}})
