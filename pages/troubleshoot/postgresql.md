@@ -1,10 +1,7 @@
 ---
 layout: default
-menu_label: 
 title: Postgresql 锦囊
 permalink: /troubleshoots/postgresql
-icon: glyphicon-saved
-    
 ---
 
 * content

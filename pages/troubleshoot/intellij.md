@@ -1,9 +1,7 @@
 ---
 layout: default
-menu_label: 
-title: Git 锦囊
+title: Intellij 锦囊
 permalink: /troubleshoots/intellij
-icon: glyphicon-saved
 ---
 
 * content

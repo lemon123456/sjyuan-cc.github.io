@@ -1,10 +1,7 @@
 ---
 layout: default
-menu_label: 
 title: Jenkins 锦囊
 permalink: /troubleshoots/jenkins
-icon: glyphicon-saved
-    
 ---
 
 * content

@@ -1,9 +1,7 @@
 ---
 layout: default
-menu_label: 
-title: 道场
+title: 锦囊妙计
 permalink: /troubleshoots/
-icon: glyphicon-saved
     
 ---
 

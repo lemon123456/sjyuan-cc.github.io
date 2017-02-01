@@ -1,9 +1,7 @@
 ---
 layout: default
-menu_label: 
 title: Git 锦囊
 permalink: /troubleshoots/git
-icon: glyphicon-saved
 ---
 
 * content
