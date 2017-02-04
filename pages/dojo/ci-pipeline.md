@@ -2,7 +2,7 @@
 layout: post
 permalink: /dojo/ci/pipeline
 title: "构建可持续部署的Pipeline"
-date: 2016-01-31
+date: 2017-01-31
 category: "DOJO-CI"
 tags: ["Dojo", "CI", "Pipeline"]
 
@@ -148,7 +148,7 @@ CI通常开始源代码的获取，获取了所有完整的代码库后，首先
 ![]({{ '/assets/img/dojo/ci/deployment.png' }})
 
 >实践指导：  
->通常部署后需要管理多个服务的启动，而且这些服务存在依赖关系，它们的启动顺序也是有一定先后，可以使用[surpervisord]()，来管理这些服务的启动顺序和重启策略。
+>通常部署后需要管理多个服务的启动，而且这些服务存在依赖关系，它们的启动顺序也是有一定先后，可以使用[surpervisord](http://www.supervisord.org/)，来管理这些服务的启动顺序和重启策略。
 
 
 
