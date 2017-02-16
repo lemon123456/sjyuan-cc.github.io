@@ -1,0 +1,20 @@
+---
+layout: default
+title: InfoQ
+permalink: /infoq/
+    
+---
+
+## 简介
+这是一个关于CI的Dojo，旨在分享 [程序袁](http://blog.sjyuan.cc) 在 [ThoughtWorks](https://thoughtworks.com/) 中经历项目的CI实践。如果你是Dev或QA或BA，并且还不是很了解CI，那么Dojo将会对你很有帮助。如果你已经熟悉CI并正在实践CI，那么Dojo对你也是有帮助的，因为这里里面将会介绍优秀的实践。
+
+此次Dojo旨在引导那些对CI有兴趣的IT从业者正确地认识CI，通过Step by step的方式来搭建Jenkins CI平台，并借鉴一些优秀的实践来改善CI设施，从而优化交付流程，提高软件的交付质量。
+	
+---
+
+## 已发表文章
+
+---
+
+## 投稿中文章
+* [我在ThoughtWorks中的敏捷实践]({{ "/infoq/agile-practice-in-tw" }})
